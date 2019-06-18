@@ -1,4 +1,4 @@
-# JKGalaxies.net Readme#
+# JKGalaxies.net Readme
 Jedi Knight Galaxies Website (jkgalaxies.net)
 
 
