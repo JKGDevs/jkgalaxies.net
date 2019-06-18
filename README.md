@@ -12,7 +12,7 @@ Contains the main parts of the web page
 -styles.css (overrides styles for the site, most pages use this, additional css styling pages can also be added to root
 
 #### text ####
-Contains easy-to-update .txt files that contain textual blobs that can are inserted into the site such as newsFeed.txt
+Contains easy-to-update .txt files that contain textual blobs that can be/are inserted into the site such as newsFeed.txt
 
 #### scripts ####
 Contains site javascript files.
