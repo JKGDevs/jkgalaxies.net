@@ -1,0 +1,391 @@
+@font-face 
+{
+    font-family: "BankGothic";
+    src: url("./fonts/BankGothicBold.ttf");
+}
+
+body
+{
+    background-color: #021f31;
+    color: lightskyblue;
+    text-align: center;
+}
+
+p
+{
+    padding: 5px;
+}
+
+table
+{
+    background-color: #232323;
+    border: none;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+.table-dark
+{
+    color: #c3e8ff;
+}
+
+th
+{
+    background-color: #505050
+}
+
+td, tr
+{
+    padding: 15px;
+    
+}
+  
+tr:nth-child(even){background-color: #353535}
+
+pre
+{
+    font-size: 16px;
+    font-family: "Consolas";
+    background-color: #232323;
+    color: #b1afac;
+    margin: 25px;
+}
+
+th, td 
+{
+    border: 1px solid black;
+}
+
+h1
+{
+    font-size: 50px;
+    font-family: "BankGothic";
+}
+
+/*hyper links*/
+a:link
+{
+    color:#3da5ee;
+    text-decoration: none;
+}
+a:visited
+{
+    color:#3da5ee;
+    text-decoration: none;
+}
+a:hover
+{
+    color: white;
+    text-decoration: none;
+
+}
+a:active
+{
+    /*color: #dcdcdc;*/
+    text-decoration: none;
+}
+
+.maindiv
+{
+    display: block;
+    margin-right: 15%;
+    margin-left: 15%;
+    text-align: justify;
+    padding: 25px;
+    font-size: 18px;
+}
+
+.centerdivbig
+{
+    display: block;
+    margin-right: 15%;
+    margin-left: 15%;
+    text-align: center;
+    padding: 25px;
+    font-size: 18px;
+}
+
+.centerdiv
+{
+    display: block;
+    margin-right: 15%;
+    margin-left: 15%;
+    text-align: center;
+    padding: 25px;
+}
+
+.logo
+{
+    display: block;
+    text-align: center;
+    visibility: visible;
+}
+
+#navbar 
+{
+    background-color: #555555;
+    font-family: "Rockwell";
+    font-size: 25px;
+    color: white;
+    text-align: left;
+
+    position: fixed;
+    top: 0; /*stay on top*/
+    width: 100%;
+    transition: top 0.5s; /*transition affect when sliding*/
+    visibility: hidden; /*hide initially*/
+}
+
+/*navbar links*/
+#navbar a
+{
+    float: left;
+    display: block;
+    color: white;
+    text-align: left;
+    /*padding-left: 15px*/
+    padding-top: 45px;
+    padding-left: 20px;
+    text-decoration: none;  /*no underlines*/
+    
+}
+
+#navbar a:hover
+{
+    color: #3da5ee;
+    text-shadow: darkgrey;
+}
+
+#navbar img
+{
+    top: 50%;
+    width: 276px;
+    height: 115px;
+    left: 10%;
+}
+
+.copyright
+{
+    color: lightgray;
+    text-align: center;
+    font-family: "Consolas";
+    letter-spacing: 4px;
+    font-size: 12px;
+    bottom: 0;
+    display: block;
+    padding: 20px;
+}
+
+.copyright a
+{
+    color: lightgray;
+}
+
+.copyright a:hover
+{
+    color: white;
+}
+
+#formated
+{
+    padding-left:35em;
+    margin-left: 15em;
+}
+
+/*div gallery*/
+div.gallery 
+{
+
+}
+div.gallery img:hover 
+{
+    width: 100%;
+    height: auto;
+} 
+div.gallery img 
+{
+    width: 85%;
+    height: auto;
+    border-radius: 10%;
+} 
+* {
+    box-sizing: border-box;
+  }
+.responsive 
+{
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+@media only screen and (max-width: 700px) 
+{
+    .responsive 
+    {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+}
+@media only screen and (max-width: 500px) 
+{
+    .responsive 
+    {
+      width: 100%;
+    }
+} 
+.clearfix:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*download buttons*/
+a.assetBtnDownload 
+{
+	-moz-box-shadow:inset 0px 0px 0px 0px #a4e271;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #a4e271;
+	box-shadow:inset 0px 0px 0px 0px #a4e271;
+	background-color:#89c403;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Courier New;
+	font-size:30px;
+	font-weight:bold;
+	padding:12px 14px;
+	text-decoration:none;
+    text-shadow:3px 3px 1px #528009;
+}
+a.assetBtnDownload:hover 
+{
+	background-color:#77a809;
+}
+a.assetBtnDownload:active 
+{
+	position:relative;
+	top:1px;
+}
+
+a.binBtnDownload 
+{
+	-moz-box-shadow:inset 0px 0px 0px 0px #a4e271;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #a4e271;
+	box-shadow:inset 0px 0px 0px 0px #a4e271;
+	background-color:#89c403;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Courier New;
+	font-size:30px;
+	font-weight:bold;
+	padding:12px 14px;
+	text-decoration:none;
+    text-shadow:-3px 3px 1px #528009;
+}
+a.binBtnDownload:hover 
+{
+	background-color:#77a809;
+}
+a.binBtnDownload:active 
+{
+	position:relative;
+	top:1px;
+}
+
+a.map1BtnDownload 
+{
+	-moz-box-shadow:inset 0px 0px 0px 0px #70bce0;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #70bce0;
+	box-shadow:inset 0px 0px 0px 0px #70bce0;
+	background-color:#0476c2;
+	-moz-border-radius:9px;
+	-webkit-border-radius:9px;
+	border-radius:9px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Courier New;
+	font-size:20px;
+	font-weight:bold;
+	padding:12px 8px;
+	text-decoration:none;
+	text-shadow:0px 3px 1px #0a1e80;
+}
+a.map1BtnDownload:hover 
+{
+	background-color:#1f57c0;
+}
+a.map1BtnDownload:active {
+	position:relative;
+	top:1px;
+}
+
+        
+
+/* beta release buttons*/
+a.assetBtnDownloadSm
+{
+	-moz-box-shadow:inset 0px 0px 0px 0px #a4e271;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #a4e271;
+	box-shadow:inset 0px 0px 0px 0px #a4e271;
+	background-color:#89c403;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Courier New;
+	font-size:18px;
+	font-weight:bold;
+	padding:10px 12px;
+	text-decoration:none;
+    text-shadow:2px 2px 1px #528009;
+}
+a.assetBtnDownloadSm:hover 
+{
+	background-color:#77a809;
+}
+a.assetBtnDownloadSm:active 
+{
+	position:relative;
+	top:1px;
+}
+
+a.binBtnDownloadSm
+{
+	-moz-box-shadow:inset 0px 0px 0px 0px #a4e271;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #a4e271;
+	box-shadow:inset 0px 0px 0px 0px #a4e271;
+	background-color:#89c403;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Courier New;
+	font-size:18px;
+	font-weight:bold;
+	padding:10px 12px;
+	text-decoration:none;
+    text-shadow:-2px 2px 1px #528009;
+}
+a.binBtnDownloadSm:hover 
+{
+	background-color:#77a809;
+}
+a.binBtnDownloadSm:active 
+{
+	position:relative;
+	top:1px;
+}
+
+        
+

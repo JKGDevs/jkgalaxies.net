@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>JKG Downloads</title>
+    <meta charset="utf-8">
+    <meta name="Description" content="Jedi Knight Galaxies downloads.">
+    <meta name="Copyright" content="Jedi Knight Galaxies Team">
+    <meta name="Keywords" content="JKG, Jedi Knight Galaxies, jkagalaxies, jkgalaxies, jedi knight, game, star wars, star wars online, star wars multiplayer, star wars multiplayer game, star wars game, star wars mod, download JKG, download">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Language" content="English">
+
+    <link rel="icon" href="images/JKG_logo-inverted.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        window.jQuery || document.write('\x3Cscript type="text/javascript" src="scripts/jquery-3.4.1.min.js">\x3C/script>');
+    </script>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+    <script type="text/javascript" src="scripts/downloads.js"></script>
+</head>
+
+<body class="DownloadPage">
+    <div id="navbar">
+        <img src="images/jkg-big_logo-inverted-dropshadow.png" alt="Jedi Knight Galaxies" align="right">
+        <a href="index.html">Home</a>
+        <a href="download.html">Download</a>
+        <a href="about.html">About</a>
+        <a href="https://jkhub.org/forum/117-jedi-knight-galaxies/">Forum</a>
+    </div>
+
+    <div class="logo" id="logo">
+        <img src="images/jkg-big_logo-inverted-dropshadow.png" alt="Jedi Knight Galaxies" align="center">
+    </div>
+
+    <h1 id="downloadType">Download</h1>
+    <div class="centerdiv">
+        <a id="downloadBinBtn" href="#alternatives" class="binBtnDownload"
+            title="Binaries required for play.">Binaries</a> &nbsp;<img src="images/plus.png" alt="+" height="28"
+            width="28" title="You need both binaries and assets to play.">
+        &nbsp; <a id="downloadAssetBtn" href="#alternatives" class="assetBtnDownload"
+            title="Assets required for play.">Assets</a>
+
+        <p>
+            <br><strong><a href="#" class="patchnotes" title="View developer notes about the latest release.">Patch Notes</a></strong><br>
+            <span class="release-info"></span>
+        </p>
+        <br><br>
+        <a id="downloadMapOneBtn" href="https://jkhub.org/files/file/2652-jedi-knight-galaxies-map-bundle-1/"
+            class="map1BtnDownload" title="Optional maps, required to play on most servers.">Map Bundle #1</a>
+        <br><br><br>
+        <h3><a href="#alternatives">Alternative Downloads</a></h3>
+        <h3><a href="#instructions">Instructions for Installation</a></h3>
+    </div>
+
+    <br id="instructions"><br><br><br>
+    <div class="maindiv">
+        <h1>Installation Info</h1>
+        <p>Watch a <a href="https://www.youtube.com/watch?v=D-q9AJiFWPc" title="Install JKG Tutorial Video">tutorial
+                video</a> to learn how to install or read the instructions below.</p><br>
+
+        <h3>FAQ</h3>
+        <p><strong>What are binaries and assets?</strong><br>
+            The binaries are the executable code of the game and the most frequently updated, it contains the game's
+            logic and instructions. The assets contain the game's artwork, models, music, data, etc. Both are required
+            to play.
+        </p>
+
+        <p><strong>Is Jedi Academy required to play?</strong><br>
+            <a href="about.html#FAQJA2Play" title="Click link for more info.">Jedi Academy</a> must be installed first
+            before you can play.
+        </p>
+
+        <p><strong>Which linux distributions are available?</strong><br>
+            A debian based distribution compiled for ubuntu is available. You may also <a
+                href="https://github.com/JKGDevs/JediKnightGalaxies">build the source code yourself</a> to run it on
+            distributions not provided here.
+        </p>
+
+        <p><strong>Do I need the map packs?</strong><br>
+            The default game comes with only one map, it is highly recommend you install the map packs as well, however
+            you can still technically play with only one map. Most JKG servers use several maps and you will need them
+            installed to play on these servers.
+        </p>
+
+        <p><strong>My antivirus says JKG is a virus. Is it?</strong><br>
+            No. Because Jedi Knight Galaxies is frequently updated, some antivirus vendors may flag it as suspicious. We
+            try to expose new releases to several antivirus vendors shortly after release to help mitigate this, but
+            some vendors are paranoid and notorious for incorrectly identifying legitimate software for malware. If you
+            would like a 2nd opinion, feel free to upload it to <a href="https://www.virustotal.com">Virus Total</a> to
+            have it scanned by major antivirus vendors.
+        </p>
+
+
+        <br>
+
+        <h3>Instructions</h3>
+        <p>After ensuring Jedi Academy is installed, and downloading the binaries and assets for your operating system
+            you are ready to install. These instructions are also available in the readme provided with each release.
+        </p>
+        <p>First, create a directory named jkgalaxies in your Jedi Academy install's GameData folder. The GameData
+            folder is typically in the following location if you have Steam: 'SteamLibrary\steamapps\common\Jedi
+            Academy\GameData'. Other types of installs will have a similar location. </p>
+        <p>Then unzip the contents of the binaries zip downloaded and copy the contents (the folder that contains the
+            readme) to the jkgalaxies directory in your GameData folder. Your folder structure should look like this:
+        </p>
+        <pre id="directoryText"></pre>
+
+        <p>Now that you have created the jkgalaxies folder and placed the binaries inside, you will need to add the
+            assets as well. Unzip the contents of the assets zip downloaded and copy the contents (everything inside the
+            folder that contains the readme) into the JKG folder located inside the jkgalaxies folder.</p>
+
+        <h3>Launching the Game</h3>
+        <p>On Windows:<br>
+            In order to play the game, use the 'Run JKGalaxies.bat' file (which lies in jkgalaxies) by double clicking
+            it. If your game starts <a href="https://i.imgur.com/F81Too9.png"
+                title="Click link to see what this error looks like.">without a blue cursor</a> you most likely
+            installed it wrong (the game is not seeing the Gamedata directory for JKA), you can also edit the batch file
+            if you'd prefer to install it elsewhere from the directions above (but you're on your own if you do!).</p>
+
+        <p>On Linux:<br>
+            In order to play the game, use the 'runjkg.sh' script in the terminal.<br>
+            You will need to make sure you have the necessary dependencies (SDL, libpng, ...) to run the game.
+        </p>
+        <br>
+        <h2>Stuck?</h2>
+        <p>Need help installing? Watch <a href="https://www.youtube.com/watch?v=D-q9AJiFWPc">this tutorial video</a>
+            first.<br> Still stuck? Join our <a href="https://discord.gg/YuG8Zks">Discord</a> and check out the
+            #helpdesk channel.</p>
+    </div>
+
+    <br id="alternatives"><br><br><br><br>
+    <div class="centerdivbig">
+        <h1>Alternative Downloads</h1>
+        <p>
+            Need a download for a different operating system or looking for a different download? 
+            Two types of releases are available: 
+            <ul>
+                <li><strong>Primary</strong>, the most recent, stable release.</li> 
+                <li><strong>Test</strong>, the latest and greatest, beta release.</li>
+            </ul>
+            Note: You will need both binary and asset to play.
+        </p>
+    </div>
+    <div align="center">
+
+
+        <h2>Primary Releases</h2>
+        <a id="downloadBinBtnSm" href="#alternatives" class="binBtnDownloadSm"
+            title="Binaries required for play.">Binaries</a> &nbsp;<img src="images/plus.png" alt="+" height="16"
+            width="16" title="You need both binaries and assets to play.">
+        &nbsp; <a id="downloadAssetBtnSm" href="#alternatives" class="assetBtnDownloadSm"
+            title="Assets required for play.">Assets</a>
+        <p>
+            <strong><a href="#" class="patchnotes" title="View developer notes about the latest release.">Patch Notes</a></strong><br>
+            <span class="release-info"></span><br>
+            <span id="download-count">Total Downloads: </span>
+        </p>
+
+        <div class="centerdiv">
+        <div class="table-responsive-md">
+        <table class="table table-dark" id="tablePrimaryDownload">
+            <thead>
+                <tr>
+                    <th>
+                        <p title="Type of download.">Type</p>
+                    </th>
+                    <th>
+                        <p title="Which operating system. eg: Windows, Linux, etc.">OS</p>
+                    </th>
+                    <th>
+                        <p title="Filesize of download.">File Size</p>
+                    </th>
+                    <th>
+                        <p title="Number of times the file has been downloaded by others.">Download Count</p>
+                    </th>
+                    <th>
+                        <p
+                            title="A file checksum hash (SHA-256) can be used to confirm you have the real, original file and that it hasn’t been corrupted during the download process.  Click link for more info.">
+                            <a href="https://www.howtogeek.com/363735/what-is-a-checksum-and-why-should-you-care/" style="color:#c3e8ff;">Checksum</a>
+                        </p>
+                    </th>
+                    <th>
+                        <p title="Release date.">Date</p>
+                    </th>
+                    <th>
+                        <p title="The primary download server.">Mirror #1</p>
+                    </th>
+                    <th>
+                        <p title="The secondary download server.">Mirror #2</p>
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody> <!-- This is example tbody that will be wiped, once web page is ready.  The real one is autogenerated by the downloads.js script. -->
+            <tr>
+                <td>
+                    Binaries
+                </td>
+                <td>
+                    Windows
+                </td>
+                <td>
+                    (place holder)
+                </td>
+                <td>
+                    (place holder)
+                </td>
+                <td>
+                    <a href="#">-</a>
+                </td>
+                <td>
+                    (place holder)
+                </td>
+                <td>
+                    <a
+                        href="https://github.com/JKGDevs/JediKnightGalaxies/releases/download/Version1.3.18/jkgalaxies_v1.3.18_win.zip">Github.com</a>
+                </td>
+                <td>
+                    <a href="https://uvu.box.com/shared/static/gqppzzcqj8bwwz3989sy7w28lj9c0a6f.zip">Box.com</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Binaries
+                </td>
+                <td>
+                    Linux
+                </td>
+                <td>
+                    (place holder)
+                </td>
+                <td>
+                    (place holder)
+                </td>
+                <td>
+                    <a href="#">-</a>
+                </td>
+                <td>
+                    (place holder)
+                </td>
+                <td>
+                    <a href="#">Github.com</a>
+                </td>
+                <td>
+                    <a href="#">Box.com</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Binaries
+                </td>
+                <td>
+                    OSX
+                </td>
+                <td>
+                    (place holder)
+                </td>
+                <td>
+                    (place holder)
+                </td>
+                <td>
+                    <a href="#">-</a>
+                </td>
+                <td>
+                    (place holder)
+                </td>
+                <td>
+                    <a href="#">Github.com</a>
+                </td>
+                <td>
+                    <a href="#">Box.com</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+        </div>
+        <br><br>
+
+        <div class="centerdiv" id="testdiv">
+            <h2>Test Releases</h2>
+            <a id="downloadBinBtnTestSm" href="#alternatives" class="binBtnDownloadSm"
+                title="Binaries required for play.">Binaries</a> &nbsp;<img src="images/plus.png" alt="+" height="16"
+                width="16" title="You need both binaries and assets to play.">
+            &nbsp; <a id="downloadAssetBtnTestSm" href="#alternatives" class="assetBtnDownloadSm"
+                title="Assets required for play.">Assets</a>
+            <p>
+                <strong><a href="#" class="test-patchnotes" title="View developer notes about the latest release.">Patch Notes</a></strong><br>
+                <span class="test-release-info"></span><br>
+                <span id="test-download-count">Total Downloads: </span>
+            </p>
+
+
+            <div class="table-responsive-md">
+            <table class="table table-dark" id="tableTestDownload" align="center">
+                <thead>
+                    <tr>
+                        <th>
+                            <p title="Type of download.">Type</p>
+                        </th>
+                        <th>
+                            <p title="Which operating system. eg: Windows, Linux, etc.">OS</p>
+                        </th>
+                        <th>
+                            <p title="Filesize of download.">File Size</p>
+                        </th>
+                        <th>
+                            <p title="Number of times the file has been downloaded by others.">Download Count</p>
+                        </th>
+                        <th>
+                            <p
+                                title="A file checksum hash (SHA-256) can be used to confirm you have the real, original file and that it hasn’t been corrupted during the download process.  Click link for more info.">
+                                <a
+                                    href="https://www.howtogeek.com/363735/what-is-a-checksum-and-why-should-you-care/" style="color:#c3e8ff;">Checksum</a>
+                            </p>
+                        </th>
+                        <th>
+                            <p title="Release date.">Date</p>
+                        </th>
+                        <th>
+                            <p title="Click to download.">Download Link</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+        <div class="centerdiv">
+            <p><a href="https://github.com/JKGDevs/JediKnightGalaxies/"><img src="images/GitHub-Mark-Light-64px.png"
+                        height="64" width="64" alt="Github Logo" Title="Get the source code on Github."></a></p>
+            <p><a href="https://github.com/JKGDevs/JediKnightGalaxies/">Source Code on Github</a></p>
+        </div></a>
+    </div>
+
+    <div class="copyright">
+        <p><a href="legal.html">Legal & Privacy Policy</a></p>
+        <p>&copyJedi Knight Galaxies
+            <script>document.write(new Date().getFullYear());</script>
+        </p>
+    </div>
+</body>
+</html>

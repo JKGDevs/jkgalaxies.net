@@ -1,0 +1,1 @@
+Welcome to the new site!  The developers are currently in the process of debugging linux builds for v1.3.20 in preperation for the next release.  If you're experienced with linux C++ development and want to give us a hand, we'd be grateful for help.  Send us a message on the <a href="https://discord.gg/YuG8Zks">Discord.</a>

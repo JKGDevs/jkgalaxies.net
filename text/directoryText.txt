@@ -1,0 +1,16 @@
+    --- Jedi Academy (or Star Wars: Jedi Knight: Jedi Academy if on a CD game)
+    |
+    |----- GameData
+    |  |
+    |  |----jkgalaxies
+    |  |  |
+    |  |  |--- JKG
+    |  |  |
+    |  |  |--- Run JKGalaxies.bat
+    |  |  |
+    |  |  |--- runjkg.sh
+    |  |  |
+    |  |  |--- JKGalaxies-Client-Readme.txt
+    |
+    |----- Install
+    

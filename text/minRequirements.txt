@@ -1,0 +1,21 @@
+<strong>Jedi Academy Required to Play</strong>
+
+<strong>Windows</strong>
+Operating system: Windows XP SP2. Recommended: Windows 10
+Memory: 512 MB RAM. Recommended: 1GB+ RAM
+Graphics: OpenGL 1.2 compliant card. Recommended: OpenGL 3 compliant card.
+Hard Drive: 500 MB free space. Recommended: At least 5GB free space.
+DirectX: DirectX 9.0c (for sound)
+Other: Microsoft VS2013 C++ Redistributable
+An internet connection is required to play online.
+
+<strong>Macintosh</strong>
+Operating System: Snow Leopard. Recommended: Sierra
+Memory: 512 MB RAM. Recommended: 1GB+ RAM
+Graphics: OpenGL 1.2 compliant card. Recommended: OpenGL 3 compliant card.
+Hard Drive: 500 MB free space. Recommended: At least 5GB free space.
+Other: SDL 2.0
+An internet connection is required to play online.
+
+<strong>Linux</strong>
+Linux minimum requirements pending.

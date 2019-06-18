@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Jedi Knight Galaxies - Updates</title>
+    <meta charset="utf-8">
+    <meta name="Description" content="Jedi Knight Galaxies, version check.">
+    <link rel="icon" href="images/JKG_logo-inverted.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        window.jQuery || document.write('\x3Cscript type="text/javascript" src="scripts/jquery-3.4.1.min.js">\x3C/script>');
+    </script>
+    <script type="text/javascript">
+        window.onload = function () 
+        {
+            loadVersionText();
+        }
+
+        function loadVersionText() 
+        {
+            $.getJSON("https://api.github.com/repos/JKGDevs/JediKnightGalaxies/releases/latest").done(function (json) 
+            {
+                var release = json; //set release equal to json
+                var version = release.tag_name; //which version the tag is
+                version = version.replace("Version", "v");
+                document.getElementById("version").innerHTML = version;
+
+                if(navigator.userAgent.indexOf("JKGLauncher") != -1 )
+                {
+                    /*do special launcher stuff*/
+                }
+                else
+                {
+                    alert("The latest version of JKG is: " + version);
+                }
+                
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <p id="version"></p>
+    </div>
+</body>
+
+</html>
