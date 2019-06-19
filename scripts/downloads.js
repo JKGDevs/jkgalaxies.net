@@ -28,6 +28,20 @@ window.onload = function()
     GetLatestReleaseInfo(github_repo, "stable");
     loadDirectoryText();
     //testVirusTotal();
+    resizeMarginsVertMode();
+}
+
+//ensures that margins will be as wide as possible, if in vertical viewing mode
+function resizeMarginsVertMode()
+{
+    if (window.innerHeight > window.innerWidth) 
+    {
+        $(".maindiv").css("margin", "0%");
+        $(".centerdivbig").css("margin", "0%");
+        $(".centerdiv").css("margin", "0%");
+        $(".centerdiv").css("margin", "0%");
+    }
+
 }
 
 //test if virustotal api can scan releases for viruses/provide sha256

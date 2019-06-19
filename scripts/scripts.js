@@ -17,15 +17,17 @@ window.onload = function()
         loadText("#communityContributors", "text/communityContributors.txt");
     }
 
-if(window.innerHeight > window.innerWidth)
-{
-    $(".maindiv").css("margin","0%");
-    $(".centerdivbig").css("margin","0%");
-    $(".centerdiv").css("margin","0%");
-    $(".centerdiv").css("margin","0%");
-}
+
+    if (window.innerHeight > window.innerWidth) 
+    {
+        $(".maindiv").css("margin", "0%");
+        $(".centerdivbig").css("margin", "0%");
+        $(".centerdiv").css("margin", "0%");
+        $(".centerdiv").css("margin", "0%");
+    }
 
 }
+
 
 
         
