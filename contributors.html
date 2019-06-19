@@ -12,6 +12,10 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
 
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            window.jQuery || document.write('\x3Cscript type="text/javascript" src="scripts/jquery-3.4.1.min.js">\x3C/script>');
+        </script>
         <script type="text/javascript" src="scripts/scripts.js"></script>
     </head>
     <body class="CreditsPage">
@@ -27,95 +31,67 @@
             <img src="images/jkg-big_logo-inverted-dropshadow.png" alt="Jedi Knight Galaxies" align="center">
         </div>
 
-        <h1>Contributors</h1>
+        <div class="centerdiv">
+            <h1>Contributors</h1>
+            <div class="table-responsive-md">
+                <table class="table table-dark" id="tableTestDownload" align="center">
+                    <thead>
+                        <tr>
+                            <th>
+                                <h2>Active Developers</h2>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p id="activeDevs"></p>
+                            </td>
+                        </tr>
+                    </tbody>
 
-        <div class="maindiv">
+                    <thead>
+                        <tr>
+                            <th>
+                                <h2>Retired Developers</h2>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p id="retiredDevs"></p>
+                            </td>
+                        </tr>
+                    </tbody>
 
-                    <h2>Active Developers</h2>
-                    Darth Futuza<br>
-                    eezstreet<br>
-                    Silverfang<br>
-                <br><br>
-
-                <h3>Retired Developers</h3>
-                <h4>Coding</h4>
-                    BobaFett<br>
-                    DeathSpike<br>
-                    Didz<br>
-                    Raz0r<br>
-                    Stoiss<br>
-                    UniqueOne<br>
-                    Vek892<br>
-                    Xycaleth<br>
-                
-                <h4>Mapping</h4>
-                    dvg94<br>
-                    MaceCrusherMadunusus<br>
-                    Pande<br>
-                    Sato<br>
-                    SJC<br>
-                    Yzmo<br>
-                
-                <h4>Modeling</h4>
-                    Blastech<br>
-                    CaptainCrazy<br>
-                    DarthPhae<br>
-                    DT<br>
-                    Dusk<br>
-                    IG64<br>
-                    Tri<br>
-                    Pande<br>
-                    Psycho<br>
-                    Resuru<br>
-                
-                <h4>Animations</h4>
-                    Hirman<br>
-                
-                <h4>Artists</h4>
-                    BlasTech<br>
-                    HellKobra<br>
-                    Pande<br>
-                    Resuru<br>
-                    Suibuku<br>
-                
-                <h4>Sound and EFX</h4>
-                    Blastech<br>
-                    Sareth<br>
-                
-                <h4>Misc</h4>
-                    BlueCasket<br>
-                    Caelum<br>
-                    DarthLex<br>
-                    HellKobra<br>
-                    Fighter<br>
-                    Jake (Project Founder)<br>
-                    JohnGWolf<br>
-                    Konradwerks<br>
-                    Mart<br>
-                    Sharpie<br>
-                    TheDarkness<br>
-                
-                <h3>Special Thanks</h3>
-                <p>Thank you to the following for your support of JKG and your efforts in contributing to it with your time in various different ways even though it may not have been through directly developing it. We appreciate the encouragement, advertising, resources, and feedback you've provided:</p>
-                
-                    X̸̨ͣ̀̑͒̊̋͊̒҉̙e͔̮̯ͯḽ͔̹̱̟͕̘̬̅ͦ͊ͬͫ<br>
-                    Arkan (Mapping)<br>
-                    Dalo Lorn<br>
-                    Hapslash (Stormtrooper Model)<br>
-                    Inyri Forge (Instruments & KotOR Objects)<br>
-                    Krattle (Chalmun’s Cantina)<br>
-                    MountainDew<br>
-                    Nightcrawler<br>
-                    Noodle<br>
-                    Obliviion<br>
-                    Ori'Ramikad<br>
-                    Orj (Mosquito Vibroblade)<br>
-                    Plasma (Mapping)<br>
-                    Smoo<br>
-                    Szico VII (Nightfall Map)<br>
-                    Tommy<br>
-                    And many more!<br>
-        </div>  
+                    <thead>
+                        <tr>
+                            <th>
+                                <h2>Special Thanks</h2>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+        
+                            <td>
+                                <p>
+                                    Thank you to the following for your support of JKG and your efforts in contributing to it
+                                    with your time in various different ways even though it may not have been through directly
+                                    developing it. We appreciate the encouragement, advertising, resources, and feedback you've
+                                    provided:<br><br>
+                                </p>
+        
+                                <p id="communityContributors"></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Thanks for playing Jedi Knight Galaxies!</p>
+        
+        </div>
 
 
         <div class="copyright">

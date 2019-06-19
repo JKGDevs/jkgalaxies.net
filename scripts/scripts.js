@@ -10,6 +10,13 @@ window.onload = function()
     if($('body').hasClass("AboutPage"))
         loadText("#minRequirements", "text/minRequirements.txt");
 
+    if($('body').hasClass("CreditsPage"))
+    {
+        loadText("#activeDevs", "text/activeDevs.txt");
+        loadText("#retiredDevs", "text/retiredDevs.txt");
+        loadText("#communityContributors", "text/communityContributors.txt");
+    }
+
 if(window.innerHeight > window.innerWidth)
 {
     $(".maindiv").css("margin","0%");
