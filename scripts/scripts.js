@@ -24,12 +24,30 @@ window.onload = function()
         $(".centerdivbig").css("margin", "0%");
         $(".centerdiv").css("margin", "0%");
         $(".centerdiv").css("margin", "0%");
-
-        alert($(window).width());
     }
-
 }
 
+
+
+$(window).resize(function() 
+{
+
+
+    if ($(window).width() < 769)
+    {
+        $(".maindiv").css("margin", "0%");
+        $(".centerdivbig").css("margin", "0%");
+        $(".centerdiv").css("margin", "0%");
+        $(".centerdiv").css("margin", "0%");
+    }
+    /*else if( ($(window).width() > 768) )
+    {
+        $(".maindiv").css("margin", "15%");
+        $(".centerdivbig").css("margin", "15%");
+        $(".centerdiv").css("margin", "15%");
+        $(".centerdiv").css("margin", "15%");
+    }*/
+});
 
 
         
@@ -37,6 +55,12 @@ window.onload = function()
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() 
 {
+    if($(window).width() < 769 && (window.innerHeight > window.innerWidth))
+    {
+        document.getElementById("navbar").style.top = "0";
+        document.getElementById("navbar").style.visibility = "visible";
+    }
+
     document.getElementById("navbar").style.visibility = "visible";
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos < currentScrollPos) 
