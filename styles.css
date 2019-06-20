@@ -134,6 +134,7 @@ a:active
     width: 100%;
     transition: top 0.5s; /*transition affect when sliding*/
     visibility: hidden; /*hide initially*/
+    z-index: 2;
 }
 
 /*navbar links*/

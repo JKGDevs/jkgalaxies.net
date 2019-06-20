@@ -18,12 +18,14 @@ window.onload = function()
     }
 
 
-    if (window.innerHeight > window.innerWidth) 
+    if ((window.innerHeight > window.innerWidth) && ($(window).width() < 768)) 
     {
         $(".maindiv").css("margin", "0%");
         $(".centerdivbig").css("margin", "0%");
         $(".centerdiv").css("margin", "0%");
         $(".centerdiv").css("margin", "0%");
+
+        alert($(window).width());
     }
 
 }
@@ -35,28 +37,19 @@ window.onload = function()
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() 
 {
-    if(window.innerHeight < window.innerWidth)
-    {
-        document.getElementById("navbar").style.visibility = "visible";
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos < currentScrollPos) 
-        {
-            document.getElementById("navbar").style.top = "0";
-            document.getElementById("logo").style.visibility = "hidden";
-        }
-        else 
-        {
-            document.getElementById("navbar").style.top = "-300px";
-            document.getElementById("logo").style.visibility = "visible";
-        }
-        prevScrollpos = currentScrollPos;
-    }
-    else
+    document.getElementById("navbar").style.visibility = "visible";
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos < currentScrollPos) 
     {
         document.getElementById("navbar").style.top = "0";
-        document.getElementById("navbar").style.visibility = "visible";
         document.getElementById("logo").style.visibility = "hidden";
+    } 
+    else 
+    {
+        document.getElementById("navbar").style.top = "-300px";
+        document.getElementById("logo").style.visibility = "visible";
     }
+    prevScrollpos = currentScrollPos;
 }
 
 /*load a text file into html document*/
