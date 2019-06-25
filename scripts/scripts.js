@@ -52,28 +52,50 @@ $(window).resize(function()
 
         
 /*When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar*/
-var prevScrollpos = window.pageYOffset;
+var prevScrollPos = window.pageYOffset;
 window.onscroll = function() 
 {
-    if($(window).width() < 769 && (window.innerHeight > window.innerWidth))
+
+    //show navbar if scrolling up on mobile
+    if( $(window).width() < 769 && (window.innerHeight > window.innerWidth) )
     {
-        document.getElementById("navbar").style.top = "0";
+        var currentScrollPos = window.pageYOffset;
         document.getElementById("navbar").style.visibility = "visible";
+        if(prevScrollPos < currentScrollPos)
+        {
+            document.getElementById("navbar").style.top = "-300px";
+            document.getElementById("logo").style.visibility = "visible";
+        }
+        else
+        {
+            document.getElementById("navbar").style.top = "0";
+            document.getElementById("logo").style.visibility = "hidden";
+        }
+        prevScrollPos = currentScrollPos;
     }
 
-    document.getElementById("navbar").style.visibility = "visible";
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos < currentScrollPos) 
+    //show navbar if scrolling down on desktop
+    else
     {
-        document.getElementById("navbar").style.top = "0";
-        document.getElementById("logo").style.visibility = "hidden";
-    } 
-    else 
-    {
-        document.getElementById("navbar").style.top = "-300px";
-        document.getElementById("logo").style.visibility = "visible";
+        document.getElementById("navbar").style.visibility = "visible";
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollPos < currentScrollPos) 
+        {
+            document.getElementById("navbar").style.top = "0";
+            document.getElementById("logo").style.visibility = "hidden";
+        } 
+        else 
+        {
+            document.getElementById("navbar").style.top = "-300px";
+            document.getElementById("logo").style.visibility = "visible";
+        }
+        prevScrollPos = currentScrollPos;
     }
-    prevScrollpos = currentScrollPos;
+
+
+
+
+
 }
 
 /*load a text file into html document*/
