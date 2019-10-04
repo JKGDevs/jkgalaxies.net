@@ -8,8 +8,8 @@ How the site code is organized.
 
 #### root ####
 Contains the main parts of the web page.  
--html files (such as index.html, about.html, etc.)  
--styles.css (overrides styles for the site, most pages use this, additional css styling pages can also be added to root, however, the primary css file is styles.css and you should try to just update that if possible before adding new style sheets.
+* +html files (such as index.html, about.html, etc.)  
+* styles.css (overrides styles for the site, most pages use this, additional css styling pages can also be added to root, however, the primary css file is styles.css and you should try to just update that if possible before adding new style sheets.
 
 #### text ####
 Contains easy-to-update .txt files that contain textual blobs that can be/are inserted into the site such as newsFeed.txt
