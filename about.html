@@ -18,6 +18,8 @@
         <script type="text/javascript">
             window.jQuery || document.write('\x3Cscript type="text/javascript" src="scripts/jquery-3.4.1.min.js">\x3C/script>');
         </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script type="text/javascript" src="scripts/scripts.js"></script>
     </head>
     <body class="AboutPage">
@@ -34,6 +36,50 @@
         </div>
 
         <h1>About</h1>
+
+        <div class="centerdiv"><!--Carousel Wrapper-->
+            <div id="video-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!--Slides-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <video class="video-fluid" autoplay loop muted>
+                                <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
+                            </video>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4>Scarif</h4>
+                                <p>Location of the Empire's data records and shipyard for secret projects.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <video class="video-fluid" autoplay loop muted>
+                                <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4" />
+                            </video>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4>Endor</h4>
+                                <p>The 2nd Death Star is being constructed at this installation.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <video class="video-fluid" autoplay loop muted>
+                                <source src="https://mdbootstrap.com/img/video/Agua-natural.mp4" type="video/mp4" />
+                            </video>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4>Dantooine</h4>
+                                <p>A peaveful agricultural world, previously used by the Jedi Council for Jedi Headquarters.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Controls-->
+                    <a class="carousel-control-prev" href="#video-carousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#video-carousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+            </div>
+        </div>
 
         <div class="maindiv" id="description">
             <p>Jedi Knight Galaxies is a competitive and innovative multiplayer shooter, played out in the Star Wars universe. Currently a full conversion mod, the project was originally based on and modified from Raven Software’s <a href="https://en.wikipedia.org/wiki/Star_Wars_Jedi_Knight:_Jedi_Academy">Jedi Knight: Jedi Academy</a>. Jedi Knight Galaxies is open source and available completely free of charge; however, you will need the original game in order to play. (Jedi Academy is frequently available on <a href="http://store.steampowered.com/app/6020/STAR_WARS_Jedi_Knight__Jedi_Academy/">Steam</a> and <a href="https://www.gog.com/game/star_wars_jedi_knight_jedi_academy">GoG</a> during sales for less than $4). We aim to develop the project into a Large Multiplayer Online game, crossing traditional RPG (role playing game) elements with the fast paced excitement of an FPS (first person shooter).</p>

@@ -62,6 +62,12 @@ h1
     font-family: "BankGothic";
 }
 
+video
+{
+    width:80%
+}
+
+
 /*hyper links*/
 a:link
 {
