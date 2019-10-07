@@ -17,17 +17,19 @@ window.onload = function()
         loadText("#communityContributors", "text/communityContributors.txt");
     }
 
-
     if ((window.innerHeight > window.innerWidth) && ($(window).width() < 768)) 
     {
         $(".maindiv").css("margin", "0%");
         $(".centerdivbig").css("margin", "0%");
         $(".centerdiv").css("margin", "0%");
         $(".centerdiv").css("margin", "0%");
+
+        $("#navbarLogoImg").hide();
+        $("#navbar").css("font-size", 18);
+        $("#navbar a").css("padding-top", 15);
+        
     }
 }
-
-
 
 $(window).resize(function() 
 {
@@ -39,6 +41,10 @@ $(window).resize(function()
         $(".centerdivbig").css("margin", "0%");
         $(".centerdiv").css("margin", "0%");
         $(".centerdiv").css("margin", "0%");
+
+        $("#navbarLogoImg").hide();
+        $("#navbar").css("font-size", 18);
+        $("#navbar a").css("padding-top", 15);
     }
     /*else if( ($(window).width() > 768) )
     {
@@ -47,9 +53,15 @@ $(window).resize(function()
         $(".centerdiv").css("margin", "15%");
         $(".centerdiv").css("margin", "15%");
     }*/
+
+    if ($(window).width() > 768 || (window.innerHeight < window.innerWidth) )
+    {
+        $("#navbarLogoImg").show();
+        $("#navbar").css("font-size", 25);
+        $("#navbar a").css("padding-top", 45);
+    }
+
 });
-
-
         
 /*When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar*/
 var prevScrollPos = window.pageYOffset;
