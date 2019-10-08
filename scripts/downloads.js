@@ -40,6 +40,10 @@ function resizeMarginsVertMode()
         $(".centerdivbig").css("margin", "0%");
         $(".centerdiv").css("margin", "0%");
         $(".centerdiv").css("margin", "0%");
+
+        $("#navbarLogoImg").hide();
+        $("#navbar").css("font-size", 18);
+        $("#navbar a").css("padding-top", 15);
     }
 }
 
