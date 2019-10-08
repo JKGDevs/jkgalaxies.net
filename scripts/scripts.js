@@ -39,6 +39,12 @@ window.onload = function()
         loadText("#communityContributors", "text/communityContributors.txt");
     }
 
+    if($('body').hasClass("404Page"))
+    {
+        var random = Math.floor(Math.random() * jQuery('.ErrorJoke').length);
+        jQuery('.ErrorJoke').hide().eq(random).show();
+    }
+
     if ((window.innerHeight > window.innerWidth) && ($(window).width() < 768)) 
     {
         $(".maindiv").css("margin", "0%");

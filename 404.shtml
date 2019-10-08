@@ -1,2 +1,66 @@
 <!-- SHTML Wrapper - 404 Not Found -->
 <!--#exec cgi="/cgi-sys/fourohfour.cgi" -->
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>404 Not Found</title>
+        <meta charset="utf-8">
+        <meta name="Description" content="Jedi Knight Galaxies 404 Not Found Error.">
+        <meta name="Copyright" content="Jedi Knight Galaxies Team">
+        <link rel="icon" href="images/JKG_logo-inverted.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            window.jQuery || document.write('\x3Cscript type="text/javascript" src="scripts/jquery-3.4.1.min.js">\x3C/script>');
+        </script>
+        <script type="text/javascript" src="scripts/scripts.js"></script>
+    </head>
+    <body class="404Page">
+            <div id="navbar">
+                    <img id="navbarLogoImg" src="images/jkg-big_logo-inverted-dropshadow.png" class="img-fluid" alt="Jedi Knight Galaxies" align="right">
+                    <a href="index.html">Home</a>
+                    <a href="download.html">Download</a>
+                    <a href="about.html">About</a>
+                    <a href="https://jkhub.org/forum/117-jedi-knight-galaxies/">Forum</a>
+            </div>
+                
+            <div class="logo" id="logo">
+                <img src="images/jkg-big_logo-inverted-dropshadow.png" class="img-fluid" alt="Jedi Knight Galaxies" align="center">
+            </div>
+        
+            <h1>404 <br> Page Not Found</h1>
+            <br><br>
+
+            <div class="centerdiv">
+                <div class="ErrorJoke">
+                    <h3>This is not the page you're looking for.</h3>
+                    <img src="https://i.imgur.com/TwgFzdm.gif" class="img-fluid" alt="Stormtroopers want you to move along...">
+                    <br><br>
+                </div>
+                <div class="ErrorJoke">
+                    <h3>If an item does not appear in our records, it does not exist.</h3>
+                    <img src="https://i.imgur.com/JlliXwt.gif" class="img-fluid" alt="Perhaps the archives are incomplete...">
+                    <br><br>
+                    
+                </div>
+                <div class="ErrorJoke">
+                    <h3>It's not on any of the charts.</h3>
+                    <img src="https://i.imgur.com/6fWJhKw.gif" class="img-fluid" alt="No Alderaan...">
+                    <br><br>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="centerdiv">
+                <p>
+                    You tried to visit an invalid page that has either moved, changed names, been deleted, or never existed in the first place.<br>
+                    Visit the <a href = "index.html">home page</a> to learn more about Jedi Knight Galaxies.
+                </p>
+            </div>
+    </body>
+
