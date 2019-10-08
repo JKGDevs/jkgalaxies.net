@@ -1,7 +1,53 @@
-<html><head><title>403 Permission Denied</title></head>
-<body bgcolor=white>
-<h1>403 Permission Denied</h1>
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>403 Permission Denied</title>
+        <meta charset="utf-8">
+        <meta name="Description" content="Jedi Knight Galaxies 403 Permission Denied.">
+        <meta name="Copyright" content="Jedi Knight Galaxies Team">
+        <link rel="icon" href="images/JKG_logo-inverted.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
 
-You do not have permission for this request <!--#echo var="REQUEST_URI" -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            window.jQuery || document.write('\x3Cscript type="text/javascript" src="scripts/jquery-3.4.1.min.js">\x3C/script>');
+        </script>
+        <script type="text/javascript" src="scripts/scripts.js"></script>
+    </head>
+    <body class="403Page">
+            <div id="navbar">
+                    <img id="navbarLogoImg" src="images/jkg-big_logo-inverted-dropshadow.png" class="img-fluid" alt="Jedi Knight Galaxies" align="right">
+                    <a href="index.html">Home</a>
+                    <a href="download.html">Download</a>
+                    <a href="about.html">About</a>
+                    <a href="https://jkhub.org/forum/117-jedi-knight-galaxies/">Forum</a>
+            </div>
+                
+            <div class="logo" id="logo">
+                <img src="images/jkg-big_logo-inverted-dropshadow.png" class="img-fluid" alt="Jedi Knight Galaxies" align="center">
+            </div>
+        
+            <h1>403 <br> Permission Denied</h1>
+            <br><br>
 
-</body></html>
+            <div class="centerdiv">
+                <div class="ErrorJoke">
+                    <h3>I am wondering, why are you here?</h3>
+                    <img src="https://i.imgur.com/mb8Qift.gif" class="img-fluid" alt="Security Hologram Sadness">
+                    <br><br>
+                </div>
+            </div>
+
+
+            <div class="centerdiv">
+                <h5>You do not have permission for this request <!--#echo var="REQUEST_URI" --> .</h5> 
+                <h5>Visit the <a href = "index.html">home page</a> to learn more about Jedi Knight Galaxies.</h5>
+            </div>
+			
+			<div class="copyright">
+                <p><a href="legal.html">Legal & Privacy Policy</a></p>
+                <p>&copyJedi Knight Galaxies <script>document.write(new Date().getFullYear());</script></p>
+            </div>
+    </body>
+

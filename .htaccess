@@ -7,8 +7,8 @@
 </IfModule>
 # php -- END cPanel-generated handler, do not edit
 
-ErrorDocument 404 /404.shtml
-#ErrorDocument 403 /403.shtml
+ErrorDocument 404 jkgalaxies.futuza.net/404.shtml
+ErrorDocument 403 /403.shtml
 
 #Redirects, uncomment on site launch.
 #Redirect 301 /about http://jkgalaxies.net/about.html

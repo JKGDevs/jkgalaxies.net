@@ -51,14 +51,15 @@
             </div>
 
 
-
-
-
             <div class="centerdiv">
-                <p>
-                    You tried to visit an invalid page that has either moved, changed names, been deleted, or never existed in the first place.<br>
-                    Visit the <a href = "index.html">home page</a> to learn more about Jedi Knight Galaxies.
-                </p>
+                <h5>You tried to visit an invalid page that has either moved, changed names, been deleted, or never existed in the first place.</h5>
+                <h5>Visit the <a href = "index.html">home page</a> to learn more about Jedi Knight Galaxies.</h5>
+               
+            </div>
+			
+			<div class="copyright">
+                <p><a href="legal.html">Legal & Privacy Policy</a></p>
+                <p>&copyJedi Knight Galaxies <script>document.write(new Date().getFullYear());</script></p>
             </div>
     </body>
 
