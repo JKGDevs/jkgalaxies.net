@@ -1,0 +1,20 @@
+# AddHandler application/x-httpd-ea-php72 .php
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php73” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
+
+ErrorDocument 404 /404.shtml
+#ErrorDocument 403 /403.shtml
+
+#Redirects, uncomment on site launch.
+#Redirect 301 /about http://jkgalaxies.net/about.html
+#Redirect 301 /download http://jkgalaxies.net/download.html
+#Redirect 301 /downloads http://jkgalaxies.net/download.html
+#Redirect 301 /contributors http://jkgalaxies.net/contributors.html
+#Redirect 301 /legal http://jkgalaxies.net/legal.html
+#Redirect 301 /privacy http://jkgalaxies.net/legal.html
+#Redirect 301 /tos http://jkgalaxies.net/legal.html
