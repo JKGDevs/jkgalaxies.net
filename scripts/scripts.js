@@ -1,6 +1,28 @@
 /*load text from file into webpage*/
+window.addEventListener('load', function ()
+{
+        /*reveal navbar*/
+        if( $(window).width() < 769 && (window.innerHeight > window.innerWidth) )
+        {
+            $('#logo').click(function()
+            {
+                window.scrollBy(0, 301);
+                window.scrollBy(0, -301);
+            });
+        }
+        else
+        {
+            $('#logo').click(function()
+            {
+                window.scrollBy(0, 301);
+            });
+        }
+});
+
+
 window.onload = function()
 {
+
     if($('body').hasClass("IndexPage"))
     {
         loadText("#manualNews", "text/newsFeed.txt");
@@ -67,48 +89,48 @@ $(window).resize(function()
 var prevScrollPos = window.pageYOffset;
 window.onscroll = function() 
 {
+    loadNavBar();
+}
 
-    //show navbar if scrolling up on mobile
-    if( $(window).width() < 769 && (window.innerHeight > window.innerWidth) )
-    {
-        var currentScrollPos = window.pageYOffset;
-        document.getElementById("navbar").style.visibility = "visible";
-        if(prevScrollPos < currentScrollPos)
+function loadNavBar()
+{
+        //show navbar if scrolling up on mobile
+        if( $(window).width() < 769 && (window.innerHeight > window.innerWidth) )
         {
-            document.getElementById("navbar").style.top = "-300px";
-            document.getElementById("logo").style.visibility = "visible";
+            var currentScrollPos = window.pageYOffset;
+            document.getElementById("navbar").style.visibility = "visible";
+            if(prevScrollPos < currentScrollPos)
+            {
+                document.getElementById("navbar").style.top = "-300px";
+                document.getElementById("logo").style.visibility = "visible";
+            }
+            else
+            {
+                document.getElementById("navbar").style.top = "0";
+                document.getElementById("logo").style.visibility = "hidden";
+            }
+            prevScrollPos = currentScrollPos;
         }
+    
+        //show navbar if scrolling down on desktop
         else
         {
-            document.getElementById("navbar").style.top = "0";
-            document.getElementById("logo").style.visibility = "hidden";
+            document.getElementById("navbar").style.visibility = "visible";
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollPos < currentScrollPos) 
+            {
+                document.getElementById("navbar").style.top = "0";
+                document.getElementById("logo").style.visibility = "hidden";
+            } 
+            else 
+            {
+                document.getElementById("navbar").style.top = "-300px";
+                document.getElementById("logo").style.visibility = "visible";
+            }
+            prevScrollPos = currentScrollPos;
         }
-        prevScrollPos = currentScrollPos;
-    }
-
-    //show navbar if scrolling down on desktop
-    else
-    {
-        document.getElementById("navbar").style.visibility = "visible";
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollPos < currentScrollPos) 
-        {
-            document.getElementById("navbar").style.top = "0";
-            document.getElementById("logo").style.visibility = "hidden";
-        } 
-        else 
-        {
-            document.getElementById("navbar").style.top = "-300px";
-            document.getElementById("logo").style.visibility = "visible";
-        }
-        prevScrollPos = currentScrollPos;
-    }
-
-
-
-
-
 }
+
 
 /*load a text file into html document*/
 function loadText(tagID, fileLocation)

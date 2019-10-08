@@ -127,6 +127,18 @@ a:active
     visibility: visible;
 }
 
+#video-carousel h4
+{
+    color: white; 
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#video-carousel p
+{
+    color: white; 
+    text-shadow: 2px 2px 4px #000000;
+}
+
 #navbar 
 {
     background-color: #555555;
