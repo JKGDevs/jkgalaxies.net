@@ -214,7 +214,7 @@ function GetLatestReleaseInfo(repo, releasetype)
             //revert to default of jumping to table
             if(releasetype == "test")
             {
-                ; //nothing
+                alert("build_type not found!"); //nothing
             }
             if(releasetype == "stable")
             {
