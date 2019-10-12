@@ -10,15 +10,20 @@ Global Vars Links
 Edit when assets are updated.
 */
 var OSName = "Unknown";
-const asset_url_release = "https://uvu.box.com/shared/static/z1j68r0v1m15v03ergfidtm3somp5ce2.zip";
+const asset_url_release1 = "https://uvu.box.com/shared/static/z1j68r0v1m15v03ergfidtm3somp5ce2.zip";
 const asset_url_release2 = "https://uvu.box.com/shared/static/z1j68r0v1m15v03ergfidtm3somp5ce2.zip";
+const asset_release_hash = "a007b9dde2bc9d44a1deff52701b7bc8bb592b07d7d40d3936279153af521320"; //sha256 hashes of mostly "fixed" files, fixme: autocalculate :(
 const bin_win_url = "";
 const bin_lin_url = "";
 const bin_osx_url = "";
 const asset_url_beta = "https://uvu.box.com/shared/static/v0366gndu6340m28z5p0rvrqkoeh626l.zip";
+const asset_beta_hash = "d9f66a135eb8f2bc84e3251a24323f8ccff160c248fcad853ce5e140f6461c1a"
 const mapPack01_url_jkhub = "https://jkhub.org/files/file/2652-jedi-knight-galaxies-map-bundle-1/";
 const mapPack01_url_moddb = "https://jkhub.org/files/file/2652-jedi-knight-galaxies-map-bundle-1/";
+const mapPack01_hash = "eccb1b4a060628f6e5990f59aa0d0fbe81d0f41cf7a11850400804e8fabb60cd";
 
+    
+    
 window.onload = function()
 {
     var github_repo = "JKGDevs/JediKnightGalaxies"; //location of github repo
@@ -97,8 +102,8 @@ function formatBytes(bytes, decimals = 2)
 function DetectClientOS()
 {
     /*setup up asset link, may be changed by specific OS below*/
-    document.getElementById("downloadAssetBtn").href=asset_url_release;
-    document.getElementById("downloadAssetBtnSm").href=asset_url_release;
+    document.getElementById("downloadAssetBtn").href=asset_url_release1;
+    document.getElementById("downloadAssetBtnSm").href=asset_url_release1;
     document.getElementById("downloadAssetBtnTestSm").href=asset_url_beta; 
 
     document.getElementById("downloadType").innerHTML += "<br>";
@@ -310,22 +315,20 @@ function GetLatestReleaseInfo(repo, releasetype)
 function drawTable(version, release, asset, OS_builds, releasetype)
 {
     //sha256 hashes of mostly "fixed" files
+    //fixme: autocalculate these somehow
     var assetHash = "";    //hash of assets
-    var assetMap01Hash = ""; //hash of map pack01
-
+    var assetMap01Hash = mapPack01_hash; //hash of map pack01
     var whichTable = ""; //which table flag (doubles as as fillable html)  
-
+    
     if (releasetype == "test") 
     {
-        assetMap01Hash = "eccb1b4a060628f6e5990f59aa0d0fbe81d0f41cf7a11850400804e8fabb60cd"; //fixme: autocalculate these somehow
-        assetHash = "d9f66a135eb8f2bc84e3251a24323f8ccff160c248fcad853ce5e140f6461c1a"; 
+        assetHash = asset_beta_hash; 
         whichTable = "#tableTestDownload";
     }
 
     else if(releasetype == "stable")
     {
-        assetMap01Hash = "eccb1b4a060628f6e5990f59aa0d0fbe81d0f41cf7a11850400804e8fabb60cd";
-        assetHash = "a007b9dde2bc9d44a1deff52701b7bc8bb592b07d7d40d3936279153af521320";  
+        assetHash = asset_release_hash;
         whichTable = "#tablePrimaryDownload";
     }
 
@@ -431,7 +434,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
             )
             .append($("<td>")
                 .append($("<a>")
-                    .attr("href", asset_url_release)
+                    .attr("href", asset_url_release1)
                     .text("Box.com")
                 )
             )
