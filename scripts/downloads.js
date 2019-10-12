@@ -214,11 +214,11 @@ function GetLatestReleaseInfo(repo, releasetype)
             //revert to default of jumping to table
             if(releasetype == "test")
             {
-                alert("build_type not found!"); //nothing
+                document.getElementById("downloadBinBtn").href = "#tableTestDownload";
             }
             if(releasetype == "stable")
             {
-                document.getElementById("downloadBinBtn").href = "#alternatives";
+                document.getElementById("downloadBinBtn").href = "#tablePrimaryDownload";
             }
             
             asset = release.assets[0]; //default
@@ -310,7 +310,7 @@ function GetLatestReleaseInfo(repo, releasetype)
 function drawTable(version, release, asset, OS_builds, releasetype)
 {
     //sha256 hashes of mostly "fixed" files
-    var assetHash = "";    //has of assets
+    var assetHash = "";    //hash of assets
     var assetMap01Hash = ""; //hash of map pack01
 
     var whichTable = ""; //which table flag (doubles as as fillable html)  
@@ -339,6 +339,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
     //update binaries on table 
     for (var i = 0, bin_mirror_url = ""; i < 3; i++) 
     {
+        var OSName_temp = OSName; //store detected OS
         switch (i) 
         {
             case 0:
@@ -396,6 +397,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
                     .append(cellContent0)
                 );
         }
+        OSName = OSName_temp; //restore originally detected OS.
     }
 
     //assets for table
