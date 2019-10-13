@@ -10,19 +10,40 @@ Global Vars Links
 Edit when assets are updated.
 */
 var OSName = "Unknown";
-const asset_url_release1 = "https://uvu.box.com/shared/static/z1j68r0v1m15v03ergfidtm3somp5ce2.zip";
-const asset_url_release2 = "https://uvu.box.com/shared/static/z1j68r0v1m15v03ergfidtm3somp5ce2.zip";
-const asset_release_hash = "a007b9dde2bc9d44a1deff52701b7bc8bb592b07d7d40d3936279153af521320"; //sha256 hashes of mostly "fixed" files, fixme: autocalculate :(
-const bin_win_url = "";
+
+//urlrs and hashes - these need to get updated per release by hand, since hashing automatically isn't possible and none of the mirrors have apis we can leverage :(
+
+//mirror urls
+const bin_win_url = "https://uvu.box.com/shared/static/gd59kdk6jpc592uccbrje5fmus7c5yq8.zip";
 const bin_lin_url = "";
 const bin_osx_url = "";
+
+//hash of bin release
+const bin_win_hash_release = "12c10fe854f5728de37e5fcbff5d5adf0a1594e974c396c65bcaf0fa2bea567d";
+const bin_lin_hash_release = "";
+const bin_osx_hash_release = "";
+const bin_hash_release_array = [bin_win_hash_release, bin_lin_hash_release, bin_osx_hash_release];
+
+//hash of bin beta
+const bin_win_hash_beta = "09514263bc77d7b453677157c30ce2f7ccb23a66a9dde8a963c9e885c4c5b93d";
+const bin_lin_hash_beta = "c461c3f750128b53521d4993477699c689e0ea6f44a787a1bbbbbd7888491074";
+const bin_osx_hash_beta = "";
+const bin_hash_beta_array = [bin_win_hash_beta, bin_lin_hash_beta, bin_osx_hash_beta];
+
+//asset urls and hash
+const asset_url_release1 = "https://uvu.box.com/shared/static/z1j68r0v1m15v03ergfidtm3somp5ce2.zip";
+const asset_url_release2 = "";
+const asset_release_hash = "a007b9dde2bc9d44a1deff52701b7bc8bb592b07d7d40d3936279153af521320"; //sha256 hashes of mostly "fixed" files, fixme: autocalculate :(
+
+//beta asset urls and hash
 const asset_url_beta = "https://uvu.box.com/shared/static/v0366gndu6340m28z5p0rvrqkoeh626l.zip";
 const asset_beta_hash = "d9f66a135eb8f2bc84e3251a24323f8ccff160c248fcad853ce5e140f6461c1a"
+
+//map pack urls and hashes
 const mapPack01_url_jkhub = "https://jkhub.org/files/file/2652-jedi-knight-galaxies-map-bundle-1/";
-const mapPack01_url_moddb = "https://jkhub.org/files/file/2652-jedi-knight-galaxies-map-bundle-1/";
+const mapPack01_url_moddb = "";
 const mapPack01_hash = "eccb1b4a060628f6e5990f59aa0d0fbe81d0f41cf7a11850400804e8fabb60cd";
 
-    
     
 window.onload = function()
 {
@@ -314,22 +335,27 @@ function GetLatestReleaseInfo(repo, releasetype)
 /* draws tables on download page, filling them dynamically (somewhat) with content*/
 function drawTable(version, release, asset, OS_builds, releasetype)
 {
-    //sha256 hashes of mostly "fixed" files
-    //fixme: autocalculate these somehow
-    var assetHash = "";    //hash of assets
-    var assetMap01Hash = mapPack01_hash; //hash of map pack01
-    var whichTable = ""; //which table flag (doubles as as fillable html)  
+    //sha256 hashes of mostly "fixed" files, fixme: autocalculate these somehow
+    
+    var assetHash = "";     //hash of assets, there are two types of assets (beta or release)
+    var binHashArr = [];       //hash of binaries, there are two main types (beta or release) and 3 sub types (win, osx, linux)
+    var whichTable = "";    //which table flag (doubles as as fillable html)  
+    var assetMap01Hash = mapPack01_hash;    //hash of map pack01
+    //additional Map Packs go here
+    
     
     if (releasetype == "test") 
     {
         assetHash = asset_beta_hash; 
         whichTable = "#tableTestDownload";
+        binHashArr = bin_hash_beta_array;
     }
 
     else if(releasetype == "stable")
     {
         assetHash = asset_release_hash;
         whichTable = "#tablePrimaryDownload";
+        binHashArr = bin_hash_release_array;
     }
 
     //wtf are you doing
@@ -343,19 +369,23 @@ function drawTable(version, release, asset, OS_builds, releasetype)
     for (var i = 0, bin_mirror_url = ""; i < 3; i++) 
     {
         var OSName_temp = OSName; //store detected OS
+        var binHash = "";
         switch (i) 
         {
             case 0:
                 OSName = "Windows";
                 bin_mirror_url = bin_win_url;
+                binHash = binHashArr[0];
                 break;
             case 1:
                 OSName = "Linux";
                 bin_mirror_url = bin_lin_url;
+                binHash = binHashArr[1];
                 break;
             case 2:
                 OSName = "OSX";
                 bin_mirror_url = bin_osx_url;
+                binHash = binHashArr[2];
                 break;
         }
         build_type = obtainBuildType(OS_builds, version);
@@ -384,8 +414,9 @@ function drawTable(version, release, asset, OS_builds, releasetype)
                     )
                     .append($("<td>")
                         .append($("<a>")
-                            .attr("href", "#")
-                            .text("-") //fix me to actual sha-256
+                            .attr("href", ("#" + binHash))
+                            .text(binHash.substring(0, 7))
+                            .attr("title", ("SHA-256: " + binHash))
                         )
                     )
                     .append($("<td>")
