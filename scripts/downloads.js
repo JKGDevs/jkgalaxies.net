@@ -25,8 +25,8 @@ const bin_osx_hash_release = "54641EA28CFBE9B0AD5A9DA3D8C695587B520A4224597043A7
 const bin_hash_release_array = [bin_win_hash_release, bin_lin_hash_release, bin_osx_hash_release];
 
 //hash of bin beta
-const bin_win_hash_beta = "DE8BA417BBF66CA515A41E939C5108DDE259C9DE8EF2598DC5E7E630CF6261B2";
-const bin_lin_hash_beta = "3C7F4971DF0A5F26D4C9DF400233D5346D94D6CD63C3F7D672E0DDB53D0C6866";
+const bin_win_hash_beta = "169E37DF0D744F880E064AA8522FDBB8BD556B1F8C02B04A9EF43DEF495779B0";
+const bin_lin_hash_beta = "47128E873402BFF8284042666847FD9555BA118498E7E5C19FC0A74696AF3A3B";
 const bin_osx_hash_beta = "";
 const bin_hash_beta_array = [bin_win_hash_beta, bin_lin_hash_beta, bin_osx_hash_beta];
 
