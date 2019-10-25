@@ -412,7 +412,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
 
             var cellContent0 = "";
             if (whichTable == "#tablePrimaryDownload")
-                cellContent0 = '<td><a href="' + bin_mirror_url + '" >ModDB.org</a></td>';
+                cellContent0 = '<td><a href="' + bin_mirror_url + '" >Box.com</a></td>';
 
             $(whichTable + " tbody")
                 .append($("<tr>")
