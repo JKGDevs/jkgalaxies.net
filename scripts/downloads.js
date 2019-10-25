@@ -25,8 +25,8 @@ const bin_osx_hash_release = "";
 const bin_hash_release_array = [bin_win_hash_release, bin_lin_hash_release, bin_osx_hash_release];
 
 //hash of bin beta
-const bin_win_hash_beta = "68DCF769E932AFA4D7EAEB0B222F218C95EE557C5BCB793C828626598CF28B60";
-const bin_lin_hash_beta = "0F7B0B1A733D50F9F8A7B580DCB173C67285260DD3E2AF35910D2C43BFE761C8";
+const bin_win_hash_beta = "DE8BA417BBF66CA515A41E939C5108DDE259C9DE8EF2598DC5E7E630CF6261B2";
+const bin_lin_hash_beta = "3C7F4971DF0A5F26D4C9DF400233D5346D94D6CD63C3F7D672E0DDB53D0C6866";
 const bin_osx_hash_beta = "";
 const bin_hash_beta_array = [bin_win_hash_beta, bin_lin_hash_beta, bin_osx_hash_beta];
 
@@ -280,7 +280,7 @@ function GetLatestReleaseInfo(repo, releasetype)
         if (dateDiff < oneDay) 
         {
             timeAgo = (dateDiff / oneHour).toFixed(1);
-            if(timeAgo == 1)
+            if(timeAgo <= 1)
             {
                 timeAgo = " within the hour";
             }
