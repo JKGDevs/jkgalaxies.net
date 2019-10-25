@@ -276,9 +276,9 @@ function GetLatestReleaseInfo(repo, releasetype)
         {
             timeAgo = (dateDiff / oneHour).toFixed(1);
             if(timeAgo == 1)
-                timeAgo += "hour ago";
+                timeAgo += " hour ago";
             else
-                timeago += " hours ago";
+                timeAgo += " hours ago";
         } 
         else if (dateDiff < oneYear)
         {
