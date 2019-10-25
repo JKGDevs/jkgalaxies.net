@@ -7,7 +7,7 @@
 </IfModule>
 # php -- END cPanel-generated handler, do not edit
 
-ErrorDocument 404 /404.shtml
+ErrorDocument 404 /404.html
 ErrorDocument 403 /403.shtml
 
 #Redirects, uncomment on site launch.
