@@ -20,8 +20,8 @@ const bin_osx_url = "";
 
 //hash of bin release
 const bin_win_hash_release = "12C10FE854F5728DE37E5FCBFF5D5ADF0A1594E974C396C65BCAF0FA2BEA567D"; //sha256 hashes of mostly "fixed" files, fixme: autocalculate :(
-const bin_lin_hash_release = "";
-const bin_osx_hash_release = "";
+const bin_lin_hash_release = "C461C3F750128B53521D4993477699C689E0EA6F44A787A1BBBBBD7888491074";
+const bin_osx_hash_release = "54641EA28CFBE9B0AD5A9DA3D8C695587B520A4224597043A7CDE13E4CA35847";
 const bin_hash_release_array = [bin_win_hash_release, bin_lin_hash_release, bin_osx_hash_release];
 
 //hash of bin beta
