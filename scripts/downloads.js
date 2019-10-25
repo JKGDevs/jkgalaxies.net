@@ -13,36 +13,41 @@ var OSName = "Unknown";
 
 //urlrs and hashes - these need to get updated per release by hand, since hashing automatically isn't possible and none of the mirrors have apis we can leverage :(
 
-//mirror urls
+//mirror urls for bin release 
 const bin_win_url = "https://uvu.box.com/shared/static/gd59kdk6jpc592uccbrje5fmus7c5yq8.zip";
 const bin_lin_url = "";
 const bin_osx_url = "";
 
 //hash of bin release
-const bin_win_hash_release = "12c10fe854f5728de37e5fcbff5d5adf0a1594e974c396c65bcaf0fa2bea567d";
+const bin_win_hash_release = "12C10FE854F5728DE37E5FCBFF5D5ADF0A1594E974C396C65BCAF0FA2BEA567D"; //sha256 hashes of mostly "fixed" files, fixme: autocalculate :(
 const bin_lin_hash_release = "";
 const bin_osx_hash_release = "";
 const bin_hash_release_array = [bin_win_hash_release, bin_lin_hash_release, bin_osx_hash_release];
 
 //hash of bin beta
-const bin_win_hash_beta = "09514263bc77d7b453677157c30ce2f7ccb23a66a9dde8a963c9e885c4c5b93d";
-const bin_lin_hash_beta = "c461c3f750128b53521d4993477699c689e0ea6f44a787a1bbbbbd7888491074";
+const bin_win_hash_beta = "68DCF769E932AFA4D7EAEB0B222F218C95EE557C5BCB793C828626598CF28B60";
+const bin_lin_hash_beta = "0F7B0B1A733D50F9F8A7B580DCB173C67285260DD3E2AF35910D2C43BFE761C8";
 const bin_osx_hash_beta = "";
 const bin_hash_beta_array = [bin_win_hash_beta, bin_lin_hash_beta, bin_osx_hash_beta];
 
 //asset urls and hash
 const asset_url_release1 = "https://uvu.box.com/shared/static/z1j68r0v1m15v03ergfidtm3somp5ce2.zip";
 const asset_url_release2 = "";
-const asset_release_hash = "a007b9dde2bc9d44a1deff52701b7bc8bb592b07d7d40d3936279153af521320"; //sha256 hashes of mostly "fixed" files, fixme: autocalculate :(
+const asset_release_hash = "A007B9DDE2BC9D44A1DEFF52701B7BC8BB592B07D7D40D3936279153AF521320";
+const asset_size_release = "223.4 MB";
+const asset_date_release = "2018-07-07";
 
 //beta asset urls and hash
-const asset_url_beta = "https://uvu.box.com/shared/static/v0366gndu6340m28z5p0rvrqkoeh626l.zip";
-const asset_beta_hash = "d9f66a135eb8f2bc84e3251a24323f8ccff160c248fcad853ce5e140f6461c1a"
+const asset_url_beta = "https://uvu.box.com/shared/static/m6jt4tv88ihhwqe5elafrmt15x4eowby.zip";
+const asset_beta_hash = "C2EF38639E5806E485094A75DFBE34EE7E6E8E5F2CB4674F85E2E81C0D05D52B";
+const asset_size_beta = "240.7 MB";
+const asset_date_beta = "2019-10-25";
 
 //map pack urls and hashes
 const mapPack01_url_jkhub = "https://jkhub.org/files/file/2652-jedi-knight-galaxies-map-bundle-1/";
 const mapPack01_url_moddb = "";
-const mapPack01_hash = "eccb1b4a060628f6e5990f59aa0d0fbe81d0f41cf7a11850400804e8fabb60cd";
+const mapPack01_hash = "ECCB1B4A060628F6E5990F59AA0D0FBE81D0F41CF7A11850400804E8FABB60CD";
+const mapPack_size = "244 MB";
 
     
 window.onload = function()
@@ -276,7 +281,9 @@ function GetLatestReleaseInfo(repo, releasetype)
         {
             timeAgo = (dateDiff / oneHour).toFixed(1);
             if(timeAgo == 1)
-                timeAgo += " hour ago";
+            {
+                timeAgo = " within the hour";
+            }
             else
                 timeAgo += " hours ago";
         } 
@@ -340,6 +347,9 @@ function drawTable(version, release, asset, OS_builds, releasetype)
     var assetHash = "";     //hash of assets, there are two types of assets (beta or release)
     var binHashArr = [];       //hash of binaries, there are two main types (beta or release) and 3 sub types (win, osx, linux)
     var whichTable = "";    //which table flag (doubles as as fillable html)  
+    var asset_size = "0 MB";                //size of the asset download
+    var asset_url = "";                     //url to the asset mirror
+    var asset_date = "0000-00-00";          //date the asset was updated
     var assetMap01Hash = mapPack01_hash;    //hash of map pack01
     //additional Map Packs go here
     
@@ -349,6 +359,9 @@ function drawTable(version, release, asset, OS_builds, releasetype)
         assetHash = asset_beta_hash; 
         whichTable = "#tableTestDownload";
         binHashArr = bin_hash_beta_array;
+        asset_size = asset_size_beta;
+        asset_url = asset_url_beta;
+        asset_date = asset_date_beta;
     }
 
     else if(releasetype == "stable")
@@ -356,6 +369,9 @@ function drawTable(version, release, asset, OS_builds, releasetype)
         assetHash = asset_release_hash;
         whichTable = "#tablePrimaryDownload";
         binHashArr = bin_hash_release_array;
+        asset_size = asset_size_release;
+        asset_url = asset_url_release1;
+        asset_date = asset_date_release;
     }
 
     //wtf are you doing
@@ -437,7 +453,10 @@ function drawTable(version, release, asset, OS_builds, releasetype)
     //assets for table
     var cellContent1 = "";
     if(whichTable == "#tablePrimaryDownload")
+    {
         cellContent1 = '<td><a href="' + asset_url_release2 + '" >ModDB.org</a></td>'; 
+
+    }
 
     $(whichTable + " tbody")
         .append($("<tr>")
@@ -448,7 +467,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
                 .text("All")
             )
             .append($("<td>")
-                .text("223.4 MB")
+                .text(asset_size)
             )
             .append($("<td>")
                 .text("-")
@@ -461,11 +480,11 @@ function drawTable(version, release, asset, OS_builds, releasetype)
                 )
             )
             .append($("<td>")
-                .text("2018-07-07")
+                .text(asset_date)
             )
             .append($("<td>")
                 .append($("<a>")
-                    .attr("href", asset_url_release1)
+                    .attr("href", asset_url)
                     .text("Box.com")
                 )
             )
@@ -487,7 +506,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
                 .text("All")
             )
             .append($("<td>")
-                .text("244 MB")
+                .text(mapPack_size)
             )
             .append($("<td>")
                 .text("-")
@@ -495,7 +514,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
             .append($("<td>")
                 .append($("<a>")
                     .attr("href", ("#" + assetMap01Hash))
-                    .text("eccb1b4")
+                    .text(assetMap01Hash.substring(0, 7))
                     .attr("title", ("SHA-256: " + assetMap01Hash))
                 )
             )
