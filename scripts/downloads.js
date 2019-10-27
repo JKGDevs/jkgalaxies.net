@@ -25,8 +25,8 @@ const bin_osx_hash_release = "54641EA28CFBE9B0AD5A9DA3D8C695587B520A4224597043A7
 const bin_hash_release_array = [bin_win_hash_release, bin_lin_hash_release, bin_osx_hash_release];
 
 //hash of bin beta
-const bin_win_hash_beta = "169E37DF0D744F880E064AA8522FDBB8BD556B1F8C02B04A9EF43DEF495779B0";
-const bin_lin_hash_beta = "47128E873402BFF8284042666847FD9555BA118498E7E5C19FC0A74696AF3A3B";
+const bin_win_hash_beta = "b66106e71d039275d0fc27e7ab84eea1819cc0d421863836ca5daffb231b999d";
+const bin_lin_hash_beta = "e34184604c2d432198c63c36bd84c2637a581dcfe2537152a81831bf1a25ea23";
 const bin_osx_hash_beta = "";
 const bin_hash_beta_array = [bin_win_hash_beta, bin_lin_hash_beta, bin_osx_hash_beta];
 
@@ -372,7 +372,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
         asset_size = asset_size_release;
         asset_url = asset_url_release1;
         asset_date = asset_date_release;
-    }
+    } 
 
     //wtf are you doing
     else
@@ -405,6 +405,9 @@ function drawTable(version, release, asset, OS_builds, releasetype)
                 break;
         }
         build_type = obtainBuildType(OS_builds, version);
+        assetHash = assetHash.toLowerCase();
+        assetMap01Hash = assetMap01Hash.toLowerCase();   
+        binHash = binHash.toLowerCase();
 
         if (build_type >= 0) {
             asset = release.assets[build_type];
