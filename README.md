@@ -22,7 +22,7 @@ Contains easy-to-update .txt files that contain textual blobs that can be/are in
 
 #### scripts ####
 Contains site javascript files.  
-* downloads.js is specialized for download.html and contains logic for autoupdating download page  
+* downloads.js is specialized for download.html and contains logic for autoupdating download page, this is probably the most important script. 
 * scripts.js is a common script shared among most web pages  
 * jquery 3.4.1 is also contained here (but most pages load it from a CDN, this one is a fallback since jquery is critical to the site's functionality.  Some brief testing on jquery's latest stable release should be done about once every few months, to ensure we can update to the later versions.  The primary motivation for updating is mostly just for security fixes and compatibility with other libraries (such as Bootstrap).  
 
