@@ -58,7 +58,7 @@ window.onload = function()
     GetLatestReleaseInfo(github_repo, "test"); //test is for pre-release table, stable is for latest stable release
     GetLatestReleaseInfo(github_repo, "stable");
     loadDirectoryText();
-    //testVirusTotal();
+    //testVirusTotal("https://github.com/JKGDevs/JediKnightGalaxies/releases/download/Version1.3.20/jkgalaxies_v1.3.20_win.zip");
     resizeMarginsVertMode();
 }
 
@@ -78,32 +78,31 @@ function resizeMarginsVertMode()
     }
 }
 
-//test if virustotal api can scan releases for viruses/provide sha256
-function testVirusTotal()
+//test virustotal api
+/*function testVirusTotal(urlToScan)
 {
-    //trying to do: https://developers.virustotal.com/reference#url-scan
-       /*$.ajax({
-        url: "https://www.virustotal.com/vtapi/v2/url/report",
-        beforeSend: function(xhr) { 
-          xhr.setRequestHeader("apikey", "7f08443b45b13d1b7eb6a3aa54a6bd4108dd69a6d26540c15f324abbd0a4a137"); 
-        },
-        type: 'POST',
-        dataType: 'json',
-        contentType: 'application/json',
-        processData: false,
-        data: '{"apikey":"7f08443b45b13d1b7eb6a3aa54a6bd4108dd69a6d26540c15f324abbd0a4a137","url":"https://github.com/JKGDevs/JediKnightGalaxies/releases/download/Version1.3.18/jkgalaxies_v1.3.18_win.zip"}',
-        success: function (data) 
-        {
-          alert(JSON.stringify(data));
-        },
-        error: function(jqXHR, textStatus, errorThrown) 
-        {
-            alert(jqXHR.status);
-            alert(textStatus);
-            alert(errorThrown);
-        }
-    });*/
-}
+    //trying to do: https://developers.virustotal.com/reference#url-report
+    var guestAPIKey = "e2513a75f92a4169e8a47b4ab1df757f83ae45008b4a8a49903450c8402add4d";  //this is a public key
+    var url = "https://www.virustotal.com/vtapi/v2/url/report";
+
+    url = url+"?"+"apikey="+guestAPIKey+"&"+"resource="+urlToScan+"&"+"allinfo=0"+"&"+"scan=1"; //add the url together
+
+    $.get( url, function( data ) {
+        alert( "Data Loaded: " + data );
+      });
+
+    alert(url);
+
+    //will have to process json stuff eventually if this works
+    $.getJSON( url, function( data ) {
+        var items = [];
+        $.each( data, function( key, val ) {
+          items.push( "<li id='" + key + "'>" + val + "</li>" );
+        });
+       
+        
+    });
+}*/
 
 function loadDirectoryText()
 {
