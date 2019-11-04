@@ -1,4 +1,4 @@
-/*load text from file into webpage*/
+
 window.addEventListener('load', function ()
 {
         /*reveal navbar*/
@@ -19,8 +19,11 @@ window.addEventListener('load', function ()
         }
 });
 
-document.onload = function()
+
+
+$(document).ready(function()
 {
+    /*load text from file into webpage*/
     if($('body').hasClass("IndexPage"))
     {
         loadText("#manualNews", "text/newsFeed.txt");
@@ -41,7 +44,7 @@ document.onload = function()
     {
         select404Error();
     }
-}
+});
 
 window.onload = function()
 {
