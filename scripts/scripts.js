@@ -19,10 +19,8 @@ window.addEventListener('load', function ()
         }
 });
 
-
-window.onload = function()
+document.onload = function()
 {
-
     if($('body').hasClass("IndexPage"))
     {
         loadText("#manualNews", "text/newsFeed.txt");
@@ -43,6 +41,10 @@ window.onload = function()
     {
         select404Error();
     }
+}
+
+window.onload = function()
+{
 
     if ((window.innerHeight > window.innerWidth) && ($(window).width() < 768)) 
     {
