@@ -19,7 +19,7 @@ var OSName = "Unknown";
 const mirror0 = "Github.com";
 const mirror1 = "Box.com";
 const mirror2 = "ModDB.com";
-const mirror3 = "DDNS.net";
+const mirror3 = "JK2T.ddns.net";
 const mirror4 = "JKHub.org";
 
 //hash of bin release
