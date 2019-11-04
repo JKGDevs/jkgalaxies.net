@@ -44,11 +44,26 @@ $(document).ready(function()
     {
         select404Error();
     }
+
+    /*resize window before load is complete (for mobile)*/
+    if ((window.innerHeight > window.innerWidth) && ($(window).width() < 768)) 
+    {
+        
+        $(".maindiv").css("margin", "0%");
+        $(".centerdivbig").css("margin", "0%");
+        $(".centerdiv").css("margin", "0%");
+        $(".centerdiv").css("margin", "0%");
+
+        $("#navbarLogoImg").hide();
+        $("#navbar").css("font-size", 18);
+        $("#navbar a").css("padding-top", 15);
+        
+    }
 });
 
 window.onload = function()
 {
-
+    /*resize window after loading all content (for mobile)*/
     if ((window.innerHeight > window.innerWidth) && ($(window).width() < 768)) 
     {
         
