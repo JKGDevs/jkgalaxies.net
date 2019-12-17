@@ -97,6 +97,19 @@ function resizeMarginsVertMode()
     }
 }
 
+function revealInstructionsSpoiler()
+{
+    if(document.getElementById('instructionBody') .style.display=='none')
+    {
+        document.getElementById('instructionBody') .style.display='';
+    }
+
+    else
+    {
+        document.getElementById('instructionBody') .style.display='none';
+    }
+}
+
 //test virustotal api
 /*function testVirusTotal(urlToScan)
 {
