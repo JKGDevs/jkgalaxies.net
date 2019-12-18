@@ -29,8 +29,8 @@ const bin_osx_hash_release = "54641EA28CFBE9B0AD5A9DA3D8C695587B520A4224597043A7
 const bin_hash_release_array = [bin_win_hash_release, bin_lin_hash_release, bin_osx_hash_release];
 
 //hash of bin beta
-const bin_win_hash_beta = "9227e9de5a9bfe7779719d54c0649edfbb23ac3aded2fa68846ea51b5ce85590";
-const bin_lin_hash_beta = "83034b7ea8271f4eabd055d886ab146d0ba0ad823221ccae7bce407baa1d45c6";
+const bin_win_hash_beta = "884E71E69D1447F647F9F03650C95581B9E7F78C5B2B6E920F0B16AB122CD6FA";
+const bin_lin_hash_beta = "83B03D8BAE5890E9E7E11B5E404F121E11C79014B82EDC84A72230525AB47E75";
 const bin_osx_hash_beta = "";
 const bin_hash_beta_array = [bin_win_hash_beta, bin_lin_hash_beta, bin_osx_hash_beta];
 
@@ -94,6 +94,19 @@ function resizeMarginsVertMode()
         $("#navbarLogoImg").hide();
         $("#navbar").css("font-size", 18);
         $("#navbar a").css("padding-top", 15);
+    }
+}
+
+function revealInstructionsSpoiler()
+{
+    if(document.getElementById('instructionBody') .style.display=='none')
+    {
+        document.getElementById('instructionBody') .style.display='';
+    }
+
+    else
+    {
+        document.getElementById('instructionBody') .style.display='none';
     }
 }
 
