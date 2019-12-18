@@ -121,6 +121,12 @@ a:active
     padding: 25px;
 }
 
+.centerdivtables
+{
+    padding: 25px;
+    display:block;
+}
+
 .logo
 {
     display: block;
