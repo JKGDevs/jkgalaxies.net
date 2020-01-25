@@ -59,6 +59,7 @@ $(document).ready(function()
         $("#navbar a").css("padding-top", 15);
         
     }
+
 });
 
 window.onload = function()
