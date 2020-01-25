@@ -30,7 +30,7 @@ $(document).ready(function()
         loadText("welcomemsg", "text/welcomeText.txt");
     }
     
-    if($('body').hasClass("AboutPage"))
+    if($('body').hasClass("FAQPage"))
         loadText("#minRequirements", "text/minRequirements.txt");
 
     if($('body').hasClass("CreditsPage"))
