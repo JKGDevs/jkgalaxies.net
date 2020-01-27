@@ -10,7 +10,8 @@ How the site code is organized.
 Contains the main parts of the web page.  
 * html files (such as index.html, about.html, etc.)  
 * index.html the primary web page, just contains a brief description and announcement feeds, directs to other pages.  
-* about.html explains what the mod is and answers some FAQ.  
+* about.html explains what the mod is and has some media showing the mod off, also links to the faq page.
+* faq.html answers common questions about the mod and provides general information and links to resources.
 * contributors.html lists all the developers and volunteers that have worked on the mod.  
 * download.html contains download links to the test and stable releases for the mod.  
 * legal.html a boring page with legal crap required by law.  
@@ -18,7 +19,7 @@ Contains the main parts of the web page.
 * styles.css (overrides styles for the site, most pages use this, additional css styling pages can also be added to root, however, the primary css file is styles.css and you should try to just update that if possible before adding new style sheets.
 
 #### text ####
-Contains easy-to-update .txt files that contain textual blobs that can be/are inserted into the site such as newsFeed.txt
+Contains easy-to-update .txt files that contain textual blobs that can be/are inserted into the site such as newsFeed.txt this does support html text technically, so you can do formatting if you want.
 
 #### scripts ####
 Contains site javascript files.  
@@ -28,6 +29,9 @@ Contains site javascript files.
 
 #### images ####
 Contain site images such as the banner, or icons.
+
+#### videos ####
+Contains site videos, such as the carousel feed videos on the about page.  Most likely the largest directory, do not upload uncompressed video to the repo!  Use handbrake or something similar to reduce the size first, if your video is longer than 2 minutes, sufficiently large, or has sound, it should be a youtube video and be hosted there not directly on the webpage.
 
 #### fonts ####
 Contains specialized fonts for the website.
