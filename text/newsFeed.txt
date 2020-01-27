@@ -1,1 +1,7 @@
 Welcome to the new site!  The developers are currently in the process of debugging the linux client builds for v1.3.20 in preperation for the next release.  If you're experienced with linux C++ development and want to give us a hand, we'd be grateful for help.  Send us a message on the <a href="https://discord.gg/YuG8Zks">Discord.</a>
+<br>
+<br> <!--curious if comments show up-->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vJnh-hNendI" 
+    frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+    picture-in-picture" allowfullscreen alt="Gameplay Video">
+</iframe>
