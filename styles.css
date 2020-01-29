@@ -423,6 +423,35 @@ a.binBtnDownloadSm:active
 	top:1px;
 }
 
+
+/*for main page*/
+a.bigDownloadHoverBtn {
+	box-shadow:inset 0px 0px 0px 0px #a4e271;
+	background-color:#89c403;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:BankGothic;
+	font-size:35px;
+	font-weight:bold;
+	padding:10px 24px;
+	text-decoration:none;
+	text-shadow:2px 2px 0px #528009;
+	position: fixed;
+	z-index: 9;
+	right: 30px;
+	bottom: 30px;
+}
+a.bigDownloadHoverBtn:hover {
+	background-color:#77a809;
+}
+a.bigDownloadHoverBtn:active {
+	bottom: 28px;
+}
+
+        
+
 .card {
     border: 3;
     background-color: lightskyblue;
