@@ -61,6 +61,11 @@ $(document).ready(function()
         
     }
 
+    if (window.navigator.userAgent.indexOf("Windows") !=-1)
+    {
+        document.getElementById("downloadHoverButton").innerHTML = "&#11123;";
+    }
+
 });
 
 window.onload = function()
