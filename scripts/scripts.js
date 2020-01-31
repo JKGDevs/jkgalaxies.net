@@ -61,9 +61,9 @@ $(document).ready(function()
         
     }
 
-    if (window.navigator.userAgent.indexOf("Windows"))
+    if (window.navigator.userAgent.indexOf("Windows") !=-1)
     {
-        document.getElementById("downloadHoverButton").innerHTML = "⭳";
+        document.getElementById("downloadHoverButton").innerHTML = "&#11123;";
     }
 
 });
