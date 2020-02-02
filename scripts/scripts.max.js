@@ -61,7 +61,7 @@ $(document).ready(function()
         
     }
 
-    if (window.navigator.userAgent.indexOf("Windows") !=-1)
+    if ((window.navigator.userAgent.indexOf("Windows NT 10.0") !=-1))
     {
         document.getElementById("downloadHoverButton").innerHTML = "&#11123;";
     }
