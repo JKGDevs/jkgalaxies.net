@@ -1,22 +1,4 @@
 
-let hover_dwnload_btn = document.getElementById('downloadHoverButton');
-hover_dwnload_btn.onmouseover = hover_dwn_btn;
-hover_dwnload_btn.onmouseleave = unhover_dwn_btn
-hover_dwn_btn_text = "";
-
-function hover_dwn_btn(btn)
-{
-    dwn_btn_text = btn.currentTarget.innerHTML;
-    btn.currentTarget.innerHTML = "Get<br>JKG!";
-    
-}
-
-function unhover_dwn_btn(btn)
-{
-    btn.currentTarget.innerHTML = dwn_btn_text;
-}
-
-
 window.addEventListener('load', function ()
 {
         /*reveal navbar*/
@@ -63,6 +45,32 @@ $(document).ready(function()
         select404Error();
     }
 
+    if($('body').hasClass("IndexPage")|| $('body').hasClass("AboutPage") )
+    {
+        let hover_dwnload_btn = document.getElementById('downloadHoverButton');
+        hover_dwnload_btn.onmouseover = hover_dwn_btn;
+        hover_dwnload_btn.onmouseleave = unhover_dwn_btn
+        hover_dwn_btn_text = "";
+        
+        function hover_dwn_btn(btn)
+        {
+            dwn_btn_text = btn.currentTarget.innerHTML;
+            btn.currentTarget.innerHTML = "Get<br>JKG!";
+            
+        }
+        
+        function unhover_dwn_btn(btn)
+        {
+            btn.currentTarget.innerHTML = dwn_btn_text;
+        }
+
+        //only win10 currently supports extended unicode :( so nobody else gets fancy download arrow yet
+        if ((window.navigator.userAgent.indexOf("Windows NT 10.0") !=-1))
+        {
+            document.getElementById("downloadHoverButton").innerHTML = "&#11123;";
+        }
+    }
+
     /*resize window before load is complete (for mobile)*/
     if ((window.innerHeight > window.innerWidth) && ($(window).width() < 768)) 
     {
@@ -77,11 +85,6 @@ $(document).ready(function()
         $("#navbar a").css("padding-top", 15);
         $("#downloadHoverButton").hide();
         
-    }
-
-    if ((window.navigator.userAgent.indexOf("Windows NT 10.0") !=-1))
-    {
-        document.getElementById("downloadHoverButton").innerHTML = "&#11123;";
     }
 
 });
