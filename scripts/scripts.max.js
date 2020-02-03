@@ -1,4 +1,22 @@
 
+let hover_dwnload_btn = document.getElementById('downloadHoverButton');
+hover_dwnload_btn.onmouseover = hover_dwn_btn;
+hover_dwnload_btn.onmouseleave = unhover_dwn_btn
+hover_dwn_btn_text = "";
+
+function hover_dwn_btn(btn)
+{
+    dwn_btn_text = btn.currentTarget.innerHTML;
+    btn.currentTarget.innerHTML = "Get<br>JKG!";
+    
+}
+
+function unhover_dwn_btn(btn)
+{
+    btn.currentTarget.innerHTML = dwn_btn_text;
+}
+
+
 window.addEventListener('load', function ()
 {
         /*reveal navbar*/

@@ -397,7 +397,10 @@ a.bigDownloadHoverBtn {
 	bottom: 30px;
 }
 a.bigDownloadHoverBtn:hover {
-	background-color:#77a809;
+	background-color:#1f57c0;
+	border-radius: 90px;
+    font-size: 15px;
+    padding:20px 24px;
 }
 a.bigDownloadHoverBtn:active {
 	bottom: 28px;
