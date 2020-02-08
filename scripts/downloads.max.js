@@ -29,8 +29,8 @@ const bin_osx_hash_release = "54641EA28CFBE9B0AD5A9DA3D8C695587B520A4224597043A7
 const bin_hash_release_array = [bin_win_hash_release, bin_lin_hash_release, bin_osx_hash_release];
 
 //hash of bin beta
-const bin_win_hash_beta = "91C6456DCF8065C13784B8C9BED43B3C559D5941FFB934ACD6185D116121AEDB";
-const bin_lin_hash_beta = "B08A236BFD132BD3650FC29C330ADDF47F50597C38ABA9C6C1CF2B07C5B540F4";
+const bin_win_hash_beta = "38A4F971DAF764318CE48F23F9244BF9F68B468225458275BC57CE74DFB7BCA5";
+const bin_lin_hash_beta = "1EDE0D6239A21CABAE89EA473636FE65B776969110D4969B7E9F55C9DC272467";
 const bin_osx_hash_beta = "";
 const bin_hash_beta_array = [bin_win_hash_beta, bin_lin_hash_beta, bin_osx_hash_beta];
 
@@ -54,10 +54,10 @@ const asset_size_release = "223.4 MB";
 const asset_date_release = "2018-07-07";
 
 //beta asset urls and hash
-const asset_url_beta = "https://uvu.box.com/shared/static/m6jt4tv88ihhwqe5elafrmt15x4eowby.zip";
-const asset_beta_hash = "C2EF38639E5806E485094A75DFBE34EE7E6E8E5F2CB4674F85E2E81C0D05D52B";
-const asset_size_beta = "240.7 MB";
-const asset_date_beta = "2019-10-25";
+const asset_url_beta = "https://uvu.box.com/shared/static/lztt5mayu4daj9szvg8v0rtds6vwmnmq.zip";
+const asset_beta_hash = "95124AA88281D79A1B08C205200074ED2E233901F80FDAD3BEFAF324F1C61D88";
+const asset_size_beta = "240.8 MB";
+const asset_date_beta = "2020-02-08";
 
 //map pack urls and hashes
 const mapPack01_url_jkhub = "https://jkhub.org/files/file/2652-jedi-knight-galaxies-map-bundle-1/";
