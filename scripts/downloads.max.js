@@ -72,7 +72,7 @@ const mapPack01_url_box = "https://uvu.box.com/shared/static/iw9gkh7p80wt0y28h1s
 const mapPack01_url_moddb = "";
 
 const mapPack02_url_jkhub = "";
-const mapPack02_url_ddns = "";
+const mapPack02_url_ddns = "https://jk2t.ddns.net/jkgfiles/kb0wvyqtz0sarzs0kn1c8h03wrpjgb7c.zip";
 const mapPack02_url_box = "https://uvu.box.com/shared/static/kb0wvyqtz0sarzs0kn1c8h03wrpjgb7c.zip";
 const mapPack02_url_moddb = "";
 
@@ -567,13 +567,13 @@ function drawTable(version, release, asset, OS_builds, releasetype)
         var cellContent2_1 = '<td><a href="' + mapPack01_url_box + '" >' + mirror1 +'</a></td>';
         var cellContent2_2 = '<td><a href="' + mapPack01_url_ddns + '" >' + mirror3 +'</a></td>'; 
         var cellContent3_1 = '<td><a href="' + mapPack02_url_box + '" >' + mirror1 +'</a></td>';
-        var cellContent3_2 = '<td>'/*<a href="' + mapPack02_url_ddns + '" >' + mirror3 +'</a>*/+'</td>';
+        var cellContent3_2 = '<td><a href="' + mapPack02_url_ddns + '" >' + mirror3 +'</a></td>';
     }
 
     if(whichTable == "#tableTestDownload")
     {
         var cellContent2_1 = '<td><a href="' + mapPack01_url_ddns + '" >' + mirror3 +'</a></td>';
-        var cellContent3_1 = '<td>'/*<a href="' + mapPack02_url_ddns + '" >' + mirror3 +'</a>*/+'</td>'; 
+        var cellContent3_1 = '<td><a href="' + mapPack02_url_ddns + '" >' + mirror3 +'</a></td>'; 
     }
         
     $(whichTable + " tbody")
