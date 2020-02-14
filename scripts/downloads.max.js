@@ -79,7 +79,7 @@ const mapPack02_url_moddb = "";
 const mapPack01_hash = "ECCB1B4A060628F6E5990F59AA0D0FBE81D0F41CF7A11850400804E8FABB60CD";
 const mapPack01_size = "244 MB";
 
-const mapPack02_hash = "";
+const mapPack02_hash = "AD4CBBD62BD0E739677BBB4D66BE37F01868CE91B10F73CF58B166FA1580E6F9";
 const mapPack02_size = "114 MB";
 
     
@@ -458,7 +458,8 @@ function drawTable(version, release, asset, OS_builds, releasetype)
         }
         build_type = obtainBuildType(OS_builds, version);
         assetHash = assetHash.toLowerCase();
-        assetMap01Hash = assetMap01Hash.toLowerCase();   
+        assetMap01Hash = assetMap01Hash.toLowerCase();
+        assetMap02Hash = assetMap02Hash.toLowerCase();
         binHash = binHash.toLowerCase();
 
         if (build_type >= 0) {
