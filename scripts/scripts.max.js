@@ -45,7 +45,8 @@ $(document).ready(function()
         select404Error();
     }
 
-    if($('body').hasClass("IndexPage")|| $('body').hasClass("AboutPage") )
+    //handle hovering dwnload btn
+    if($('body').hasClass("IndexPage"))
     {
         let hover_dwnload_btn = document.getElementById('downloadHoverButton');
         hover_dwnload_btn.onmouseover = hover_dwn_btn;

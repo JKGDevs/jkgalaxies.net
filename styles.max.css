@@ -401,6 +401,8 @@ a.bigDownloadHoverBtn:hover {
 	border-radius: 90px;
     font-size: 15px;
     padding:20px 24px;
+    right: 25px;
+	bottom: 20px;
 }
 a.bigDownloadHoverBtn:active {
 	bottom: 28px;
