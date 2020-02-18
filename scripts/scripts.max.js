@@ -81,7 +81,7 @@ $(document).ready(function()
         $(".centerdiv").css("margin", "0%");
         $(".centerdiv").css("margin", "0%");
 
-        //$("#navbarLogoImg").hide();
+        $("#navbarLogoImg").hide();
         $("#navbar").css("font-size", 18);
         $("#navbar a").css("padding-top", 15);
         $("#downloadHoverButton").hide();
@@ -101,7 +101,7 @@ window.onload = function()
         $(".centerdiv").css("margin", "0%");
         $(".centerdiv").css("margin", "0%");
 
-        //$("#navbarLogoImg").hide();
+        $("#navbarLogoImg").hide();
         $("#navbar").css("font-size", 18);
         $("#navbar a").css("padding-top", 15);
         $("#downloadHoverButton").hide();
@@ -119,7 +119,7 @@ $(window).resize(function()
         $(".centerdiv").css("margin", "0%");
         $(".centerdiv").css("margin", "0%");
 
-        //$("#navbarLogoImg").hide();
+        $("#navbarLogoImg").hide();
         $("#navbar").css("font-size", 18);
         $("#navbar a").css("padding-top", 15);
         $("#downloadHoverButton").hide();
