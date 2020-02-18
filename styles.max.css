@@ -170,7 +170,7 @@ a:active
     width: 100%;
     transition: top 0.5s; /*transition affect when sliding*/
     visibility: hidden; /*hide initially*/
-    z-index: 2;
+    z-index: 999;
 }
 
 /*navbar links*/
@@ -184,7 +184,7 @@ a:active
     padding-top: 45px;
     padding-left: 20px;
     text-decoration: none;  /*no underlines*/
-    
+    z-index: 999;
 }
 
 #navbar a:hover
@@ -424,4 +424,16 @@ a.bigDownloadHoverBtn:active {
 .card {
     border: 3;
     background-color: lightskyblue;
+}
+
+.carousel-control-next, .carousel-control-prev
+{
+    width: 10%;
+
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon
+{
+    width: 40px;
+    height: 40px;
 }

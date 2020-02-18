@@ -81,7 +81,7 @@ $(document).ready(function()
         $(".centerdiv").css("margin", "0%");
         $(".centerdiv").css("margin", "0%");
 
-        $("#navbarLogoImg").hide();
+        //$("#navbarLogoImg").hide();
         $("#navbar").css("font-size", 18);
         $("#navbar a").css("padding-top", 15);
         $("#downloadHoverButton").hide();
@@ -101,7 +101,7 @@ window.onload = function()
         $(".centerdiv").css("margin", "0%");
         $(".centerdiv").css("margin", "0%");
 
-        $("#navbarLogoImg").hide();
+        //$("#navbarLogoImg").hide();
         $("#navbar").css("font-size", 18);
         $("#navbar a").css("padding-top", 15);
         $("#downloadHoverButton").hide();
@@ -119,7 +119,7 @@ $(window).resize(function()
         $(".centerdiv").css("margin", "0%");
         $(".centerdiv").css("margin", "0%");
 
-        $("#navbarLogoImg").hide();
+        //$("#navbarLogoImg").hide();
         $("#navbar").css("font-size", 18);
         $("#navbar a").css("padding-top", 15);
         $("#downloadHoverButton").hide();
@@ -159,12 +159,12 @@ function loadNavBar()
             if(prevScrollPos < currentScrollPos)
             {
                 document.getElementById("navbar").style.top = "-300px";
-                document.getElementById("logo").style.visibility = "visible";
+                //document.getElementById("logo").style.visibility = "visible";
             }
             else
             {
                 document.getElementById("navbar").style.top = "0";
-                document.getElementById("logo").style.visibility = "hidden";
+                //document.getElementById("logo").style.visibility = "hidden";
             }
             prevScrollPos = currentScrollPos;
         }
@@ -177,12 +177,12 @@ function loadNavBar()
             if (prevScrollPos < currentScrollPos) 
             {
                 document.getElementById("navbar").style.top = "0";
-                document.getElementById("logo").style.visibility = "hidden";
+                //document.getElementById("logo").style.visibility = "hidden";
             } 
             else 
             {
                 document.getElementById("navbar").style.top = "-300px";
-                document.getElementById("logo").style.visibility = "visible";
+                //document.getElementById("logo").style.visibility = "visible";
             }
             prevScrollPos = currentScrollPos;
         }
