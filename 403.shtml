@@ -14,7 +14,7 @@
     </head>
     <body class="403Page">
         <div id="navbar">
-            <img id="navbarLogoImg" src="images/jkg-big_logo-inverted-dropshadow.png" class="img-fluid" alt="Jedi Knight Galaxies" align="right">
+            <img id="navbarLogoImg" src="images/jkg_logo-inverted-dropshadow.png" class="img-fluid" alt="Jedi Knight Galaxies" align="right">
             <a href="index.html">Home</a>
             <a href="download.html" title="Get the game!">Download</a>
             <a href="about.html" title="Learn more about the game.">About</a>
