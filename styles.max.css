@@ -196,8 +196,8 @@ a:active
 #navbar img
 {
     top: 50%;
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
     left: 10%;
 }
 
@@ -419,7 +419,6 @@ a.bigDownloadHoverBtn:active {
 	bottom: 28px;
 }
 
-        
 
 .card {
     border: 3;
@@ -436,4 +435,16 @@ a.bigDownloadHoverBtn:active {
 {
     width: 40px;
     height: 40px;
+}
+
+#image-carousel
+{
+    width: 125%;
+    margin-left: -10%;
+}
+
+#image-inner-carousel
+{
+    width: 80%;
+    margin-left: 10%;
 }

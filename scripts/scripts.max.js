@@ -85,6 +85,15 @@ $(document).ready(function()
         $("#navbar").css("font-size", 18);
         $("#navbar a").css("padding-top", 15);
         $("#downloadHoverButton").hide();
+
+        //reposition arrows on carousel
+        if($("body").hasClass("AboutPage"))
+        {
+            $("#image-carousel").css("width", "auto");
+            $("#image-carousel").css("margin-left", "auto"); 
+            $("#image-inner-carousel").css("width", "auto"); 
+            $("#image-inner-carousel").css("margin-left", "auto");
+        }
         
     }
 
@@ -110,8 +119,6 @@ window.onload = function()
 
 $(window).resize(function() 
 {
-
-
     if ($(window).width() < 769)
     {
         $(".maindiv").css("margin", "0%");
@@ -123,21 +130,36 @@ $(window).resize(function()
         $("#navbar").css("font-size", 18);
         $("#navbar a").css("padding-top", 15);
         $("#downloadHoverButton").hide();
+
+        if($("body").hasClass("AboutPage"))
+        {
+            $("#image-carousel").css("width", "auto");
+            $("#image-carousel").css("margin-left", "auto"); 
+            $("#image-inner-carousel").css("width", "auto"); 
+            $("#image-inner-carousel").css("margin-left", "auto");
+        }
     }
-    /*else if( ($(window).width() > 768) )
-    {
-        $(".maindiv").css("margin", "15%");
-        $(".centerdivbig").css("margin", "15%");
-        $(".centerdiv").css("margin", "15%");
-        $(".centerdiv").css("margin", "15%");
-    }*/
 
     if ($(window).width() > 768 || (window.innerHeight < window.innerWidth) )
     {
+        $(".maindiv").css("margin", "auto 15%");
+        $(".centerdivbig").css("margin", "auto 15%");
+        $(".centerdiv").css("margin", "auto 15%");
+        $(".centerdiv").css("margin", "auto 15%");
+
         $("#navbarLogoImg").show();
         $("#navbar").css("font-size", 25);
         $("#navbar a").css("padding-top", 45);
         $("#downloadHoverButton").show();
+
+
+        if($("body").hasClass("AboutPage"))
+        {
+            $("#image-carousel").css("width", "125%");
+            $("#image-carousel").css("margin-left", "-10%"); 
+            $("#image-inner-carousel").css("width", "80%"); 
+            $("#image-inner-carousel").css("margin-left", "10%");
+        }
     }
 
 });
