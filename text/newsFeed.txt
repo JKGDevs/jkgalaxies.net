@@ -1,4 +1,4 @@
-Welcome to the new site!  A new test release was made available for v1.3.21, it contains several fixes and a few new features from v1.3.20.  Please feel free to test it and give us your feedback.  Check the <a href="https://www.jkgalaxies.net/download.html#testdiv">downloads page</a> to get the test release.  OSX is also now availabe on the test release as well.  If you're experienced with linux C++ development and want to give us a hand, we'd be grateful for help debugging certain distros.  Send us a message on the <a href="https://discord.gg/YuG8Zks">Discord.</a>
+Welcome to the new site!  A new test release was made available for v1.3.21, it contains several fixes and a few new features from v1.3.20.  Please feel free to test it and give us your feedback.  Check the <a href="https://www.jkgalaxies.net/download.html#testdiv">downloads page</a> to get the test release.  OSX is also now availabe on the test release as well.  Special shout out to Flate for helping us fix Linux release builds!
 <br>
 <br>
---2/13/2020--
+--2/18/2020--
