@@ -1,4 +1,6 @@
-Welcome to the new site!  A new test release was made available for v1.3.21, it contains several fixes and a few new features from v1.3.20.  Please feel free to test it and give us your feedback.  Check the <a href="https://www.jkgalaxies.net/download.html#testdiv">downloads page</a> to get the test release.  OSX is also now availabe on the test release as well.  Special shout out to Flate for helping us fix Linux release builds!
+<a href="https://i.imgur.com/NkCRcCx.png"><img src="https://i.imgur.com/NkCRcCxm.png" alt="News feed picture."></a>
+<br><br>
+Welcome to the new site!  A new test release for Jedi Knight Galaxies is available for v1.3.21, it contains several fixes and a few new features from v1.3.20.  Please feel free to test it and give us your feedback.  Check the bottom of the <a href="https://www.jkgalaxies.net/download.html#testdiv">downloads page</a> to get the test release.  We are working on the next patch based on your feedback.  Hope to see you in game!
 <br>
 <br>
 --2/18/2020--
