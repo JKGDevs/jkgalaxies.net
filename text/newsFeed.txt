@@ -1,4 +1,12 @@
 Welcome to the new site!  A new test release for Jedi Knight Galaxies is available for v1.3.21, it contains several fixes and a few new features from v1.3.20.  Please feel free to test it and give us your feedback.  Check the bottom of the <a href="https://www.jkgalaxies.net/download.html#testdiv">downloads page</a> to get the test release.  We are working on the next patch based on your feedback.  Hope to see you in game!
 <br>
 <br>
---2/18/2020--
+
+<!--DO NOT MODIFY BELOW THIS POINT-->
+
+--
+<script>
+ const time = new Date(document.lastModified);
+ document.write(time.getMonth() + "/" + time.getDate() + "/" + time.getFullYear());
+</script>
+--
