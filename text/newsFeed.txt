@@ -5,7 +5,6 @@ Welcome to the new site!  A new test release for Jedi Knight Galaxies is availab
 <!--DO NOT MODIFY BELOW THIS POINT-->
 <p id="newsDate"></p>
 <script>
- const time = new Date(document.lastModified);
- var printDate = "--" + time.getMonth()+1 + "/" + time.getDate() + "/" + time.getFullYear() + "--"; <!--getMonth() is stupidly 0-indexed unlike the rest of the date functions-->
- document.getElementById("newsDate").innerHTML = printDate;
+    const time = new Date(document.lastModified);
+    document.getElementById("newsDate").innerHTML = time.toLocaleDateString();
 </script>
