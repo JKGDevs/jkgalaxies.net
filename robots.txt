@@ -1,0 +1,5 @@
+User-agent: *
+Crawl-delay: 100
+Disallow: /fonts/
+Disallow: /scripts/
+Disallow: /text/
