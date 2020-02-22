@@ -3,10 +3,10 @@ Welcome to the new site!  A new test release for Jedi Knight Galaxies is availab
 <br>
 
 <!--DO NOT MODIFY BELOW THIS POINT-->
-
+<p id="newsDate"></p>
 --
 <script>
  const time = new Date(document.lastModified);
- document.write(time.getMonth() + "/" + time.getDate() + "/" + time.getFullYear());
+ document.getElementById("newsDate").innerHTML(time.getMonth() + "/" + time.getDate() + "/" + time.getFullYear());
 </script>
 --
