@@ -149,7 +149,7 @@ $(window).resize(function()
 
         $("#navbarLogoImg").show();
         $("#navbar").css("font-size", 25);
-        $("#navbar a").css("padding-top", 45);
+        $("#navbar a").css("padding-top", 20);
         $("#downloadHoverButton").show();
 
 
