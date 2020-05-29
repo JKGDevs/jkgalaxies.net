@@ -1,4 +1,4 @@
-Welcome to the new site!  A new test release for Jedi Knight Galaxies is available for v1.3.21, it contains several fixes and a few new features from v1.3.20.  Please feel free to test it and give us your feedback.  Check the bottom of the <a href="https://www.jkgalaxies.net/download.html#testdiv">downloads page</a> to get the test release.  We are working on the next patch based on your feedback.  Hope to see you in game!
+Welcome to the new site!  A new test release for Jedi Knight Galaxies is available for v1.3.21.  Check the bottom of the <a href="https://www.jkgalaxies.net/download.html#testdiv">downloads page</a> to get the test release.  Futuza is busy getting a few new features, balance changes and bug fixes ready for the next patch.  Shout out to Xycaleth for helping me fix some debugger issues and making development way easier.  Hope to see you in game soon!
 <br>
 <br>
 
@@ -8,3 +8,4 @@ Welcome to the new site!  A new test release for Jedi Knight Galaxies is availab
     const time = new Date(document.lastModified);
     document.getElementById("newsDate").innerHTML = time.toLocaleDateString();
 </script>
+<!--Todo: find a way to get current file date of this file (not entire domain), for now this will work.-->
