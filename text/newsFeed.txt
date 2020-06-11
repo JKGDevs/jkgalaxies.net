@@ -1,4 +1,4 @@
-Welcome to the new site!  A new test release for Jedi Knight Galaxies is available for v1.3.21.  Check the bottom of the <a href="https://www.jkgalaxies.net/download.html#testdiv">downloads page</a> to get the test release.  Futuza is busy getting a few new features, balance changes and bug fixes ready for the next patch.  Shout out to Xycaleth for helping me fix some debugger issues and making development way easier.  Hope to see you in game soon!
+The test release for v1.3.22 has been released, you can find it here: <a href="https://www.jkgalaxies.net/download.html#testdiv">downloads page</a>.  Expect an announcement for the next test scrimmage match soon.  If you haven't yet joined the 481st, jump on the discord and react in the #join-the-481st channel to be notified with the latest announcements.  Hope to see you in game soon!
 <br>
 <br>
 
