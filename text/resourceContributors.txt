@@ -1,7 +1,7 @@
-<h4>Graphical Sources</h4>
+<b>Graphical Sources<b>
 Added the missing Jawa icon from WizardMKBK's pack available <a href="https://jkhub.org/files/file/1607-hidden-icons/">here</a> on JKHub.<br><br>
 
-<h4>Audio Sources</h4>
+<b>Audio Sources<b>
 
 Gas Stove Turn On and Off .aif by MWLANDI<br>
 <a href="https://freesound.org/people/MWLANDI/sounds/85844/">https://freesound.org/people/MWLANDI/sounds/85844/</a><br><br>
@@ -79,8 +79,8 @@ Mandrill Striking Rock.wav by Benboncan<br>
 <a href="https://freesound.org/people/Benboncan/sounds/71822/">https://freesound.org/people/Benboncan/sounds/71822/</a><br><br>
 
 Deep Kick Cinematic by Benboncan<br>
-<a href="https://freesound.org/people/Benboncan/sounds/90672/">https://freesound.org/people/Benboncan/sounds/90672/</a><br><br>
-This sound was originally based on deepkickclean.wav by johnnypanic
+<a href="https://freesound.org/people/Benboncan/sounds/90672/">https://freesound.org/people/Benboncan/sounds/90672/</a><br>
+This sound was originally based on deepkickclean.wav by johnnypanic<br><br>
 
 Blast Revisited.wav by Benboncan<br>
 <a href="https://freesound.org/people/Benboncan/sounds/81103/">https://freesound.org/people/Benboncan/sounds/81103/</a><br><br>
@@ -157,6 +157,5 @@ Items in plastic bag.WAV by Spyboticer<br>
 21389__ramjac__ftumquintoor.aiff by ramjac<br>
 <a href="https://freesound.org/people/ramjac/sounds/21389/">https://freesound.org/people/ramjac/sounds/21389/</a><br><br>
 
-<h4>Other Resouces</h4>
 
 
