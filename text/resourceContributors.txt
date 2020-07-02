@@ -1,7 +1,7 @@
-<b>Graphical Sources<b>
+<b>Graphical Sources</b>
 Added the missing Jawa icon from WizardMKBK's pack available <a href="https://jkhub.org/files/file/1607-hidden-icons/">here</a> on JKHub.<br><br>
 
-<b>Audio Sources<b>
+<b>Audio Sources</b>
 
 Gas Stove Turn On and Off .aif by MWLANDI<br>
 <a href="https://freesound.org/people/MWLANDI/sounds/85844/">https://freesound.org/people/MWLANDI/sounds/85844/</a><br><br>
