@@ -29,9 +29,9 @@ const bin_osx_hash_release = "54641EA28CFBE9B0AD5A9DA3D8C695587B520A4224597043A7
 const bin_hash_release_array = [bin_win_hash_release, bin_lin_hash_release, bin_osx_hash_release];
 
 //hash of bin beta
-const bin_win_hash_beta = "DD3B22DBC6A4AE6CB90C99B50D1DD89DEB75F3CCF390A4ED6CEC79A3169BF424";
-const bin_lin_hash_beta = "4A810A3C2247358210FD855A1740E1B4F9E29E22D24AAAF6641C19E9B207EBD3";
-const bin_osx_hash_beta = "C4F0DC7A5D58011FA48549A44B698C38DC978A87E8AAD4776A4754E6D6EAE28E";
+const bin_win_hash_beta = "9A2D7B25DCD7359704B9579B3CBD25B535315C72A62AE010AC140A6624700EFF";
+const bin_lin_hash_beta = "1F61F6F14D953F5E9CDF931E22ED9E58E0CB4E6B402BE82960CEDDDD26AA80B8";
+const bin_osx_hash_beta = "";
 const bin_hash_beta_array = [bin_win_hash_beta, bin_lin_hash_beta, bin_osx_hash_beta];
 
 //binary urls release
@@ -46,9 +46,9 @@ const bin_lin_url3 = "https://jk2t.ddns.net/Linux/jkgalaxies_v1.3.18_linux.zip";
 const bin_osx_url3 = "https://jk2t.ddns.net/macOS/jkgalaxies_v1.3.18_osx.zip";
 
 //binary urls beta
-const bin_win_beta_url3 = "https://jk2t.ddns.net/Windows/jkgalaxies_v1.3.21_win.zip";  //jk2t is probably the only mirror we'll have for test releases, add em here
-const bin_lin_beta_url3 = "https://jk2t.ddns.net/Linux/jkgalaxies_v1.3.21_linux.zip";
-const bin_osx_beta_url3 = "https://jk2t.ddns.net/macOS/jkgalaxies_v1.3.21_osx.zip";
+const bin_win_beta_url3 = "https://jk2t.ddns.net/Windows/jkgalaxies_v1.3.22_win.zip";  //jk2t is probably the only mirror we'll have for test releases, add em here
+const bin_lin_beta_url3 = "https://jk2t.ddns.net/Linux/jkgalaxies_v1.3.22_linux.zip";
+const bin_osx_beta_url3 = "https://jk2t.ddns.net/macOS/jkgalaxies_v1.3.22_osx.zip";
 
 //asset urls and hash
 const asset_url_release1 = "https://uvu.box.com/shared/static/z1j68r0v1m15v03ergfidtm3somp5ce2.zip";
@@ -59,9 +59,9 @@ const asset_size_release = "223.4 MB";
 const asset_date_release = "2018-07-07";
 
 //beta asset urls and hash
-const asset_url_beta1 = "https://uvu.box.com/shared/static/lztt5mayu4daj9szvg8v0rtds6vwmnmq.zip";
+const asset_url_beta1 = "https://uvu.box.com/shared/static/ctdly3jwnhjcji560sx1czfdgnahbtzi.zip";
 const asset_url_beta2 = "https://jk2t.ddns.net/jkgfiles/lztt5mayu4daj9szvg8v0rtds6vwmnmq.zip";
-const asset_beta_hash = "95124AA88281D79A1B08C205200074ED2E233901F80FDAD3BEFAF324F1C61D88";
+const asset_beta_hash = "B6792B130E52313BFCE44963D3000411261570B9B20647217211C80B9679911B";
 const asset_size_beta = "240.8 MB";
 const asset_date_beta = "2020-02-08";
 

@@ -38,6 +38,7 @@ $(document).ready(function()
         loadText("#activeDevs", "text/activeDevs.txt");
         loadText("#retiredDevs", "text/retiredDevs.txt");
         loadText("#communityContributors", "text/communityContributors.txt");
+        loadText("#resourceContributors", "text/resourceContributors.txt");
     }
 
     if($('body').hasClass("404Page"))

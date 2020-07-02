@@ -1,7 +1,7 @@
 Arkan (Mapping)<br>
 Awec(Web Help><br>
 Dalo Lorn<br>
-Daggo<br>
+Daggo(server list and code help)<br>
 Flate (jk2t.ddns.net mirror and server list)<br>
 Hapslash (Stormtrooper Model)<br>
 Inyri Forge (Instruments & KotOR Objects)<br>
