@@ -60,7 +60,7 @@ const asset_date_release = "2018-07-07";
 
 //beta asset urls and hash
 const asset_url_beta1 = "https://uvu.box.com/shared/static/ctdly3jwnhjcji560sx1czfdgnahbtzi.zip";
-const asset_url_beta2 = "";
+const asset_url_beta2 = "https://jk2t.ddns.net/jkgfiles/ctdly3jwnhjcji560sx1czfdgnahbtzi.zip";
 const asset_beta_hash = "B6792B130E52313BFCE44963D3000411261570B9B20647217211C80B9679911B";
 const asset_size_beta = "243 MB";
 const asset_date_beta = "2020-07-01";
