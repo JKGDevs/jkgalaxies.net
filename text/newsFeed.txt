@@ -1,6 +1,5 @@
 The test release for v1.3.22 has been released, you can find it here: <a href="https://www.jkgalaxies.net/download.html#testdiv">downloads page</a>.  We'll be holding 3 playtests for the v1.3.22 this upcoming weekend at the following times:  Thursday 10:00pm, Saturday July 11th 1:00am, and Saturday July 11th 8pm.  All times are GMT(UTC+0).  Hope to see you there!
-<div><b>Next Scrimmage Match</b><br><iframe style="text-align:center;"width="300" height="154" src="https://w2.countingdownto.com/3089189" frameborder="0"></iframe></div>
-<br>
+<br><div><b>Next Scrimmage Match</b><br><iframe style="text-align:center;"width="300" height="154" src="https://w2.countingdownto.com/3089189" frameborder="0"></iframe></div>
 <br>
 <!--DO NOT MODIFY BELOW THIS POINT-->
 <p id="newsDate"></p>
