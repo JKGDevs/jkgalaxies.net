@@ -23,9 +23,9 @@ const mirror3 = "JK2T.ddns.net";
 const mirror4 = "JKHub.org";
 
 //hash of bin release
-const bin_win_hash_release = "12C10FE854F5728DE37E5FCBFF5D5ADF0A1594E974C396C65BCAF0FA2BEA567D"; //sha256 hashes of mostly "fixed" files, fixme: autocalculate :(
-const bin_lin_hash_release = "C461C3F750128B53521D4993477699C689E0EA6F44A787A1BBBBBD7888491074";
-const bin_osx_hash_release = "54641EA28CFBE9B0AD5A9DA3D8C695587B520A4224597043A7CDE13E4CA35847";
+const bin_win_hash_release = "C2A812AA0D80293F95FED73A24069D910C87B5E703615FDDE836F3A120450DA5"; //sha256 hashes of mostly "fixed" files, fixme: autocalculate :(
+const bin_lin_hash_release = "1F61F6F14D953F5E9CDF931E22ED9E58E0CB4E6B402BE82960CEDDDD26AA80B8";
+const bin_osx_hash_release = "";
 const bin_hash_release_array = [bin_win_hash_release, bin_lin_hash_release, bin_osx_hash_release];
 
 //hash of bin beta
@@ -35,15 +35,15 @@ const bin_osx_hash_beta = "383C2CE1FD778FA34886DC34BB94083DC8885AA26DCADBE2D22F4
 const bin_hash_beta_array = [bin_win_hash_beta, bin_lin_hash_beta, bin_osx_hash_beta];
 
 //binary urls release
-const bin_win_url1 = "https://uvu.box.com/shared/static/gd59kdk6jpc592uccbrje5fmus7c5yq8.zip";
-const bin_lin_url1 = ""; //for box
+const bin_win_url1 = "https://uvu.box.com/shared/static/qzj1ewi28g2k8glv4arparbxp36gwzjq.zip"; //for box
+const bin_lin_url1 = "https://uvu.box.com/shared/static/dds514xxoh9xgg8tsuutugd16ve53837.zip"; //for box
 const bin_osx_url1 =  ""; //for box
 const bin_win_url2 = ""; //for moddb
 const bin_lin_url2 = ""; //for moddb
 const bin_osx_url2 = ""; //for moddb
-const bin_win_url3 = "https://jk2t.ddns.net/Windows/jkgalaxies_v1.3.18_win.zip";
-const bin_lin_url3 = "https://jk2t.ddns.net/Linux/jkgalaxies_v1.3.18_linux.zip";
-const bin_osx_url3 = "https://jk2t.ddns.net/macOS/jkgalaxies_v1.3.18_osx.zip";
+const bin_win_url3 = "https://jk2t.ddns.net/Windows/jkgalaxies_v1.3.22a_win.zip";  //for jk2t
+const bin_lin_url3 = "https://jk2t.ddns.net/Linux/jkgalaxies_v1.3.22a_linux.zip";  //for jk2t
+const bin_osx_url3 = "https://jk2t.ddns.net/macOS/jkgalaxies_v1.3.22a_osx.zip";    //for jk2t
 
 //binary urls beta
 const bin_win_beta_url3 = "https://jk2t.ddns.net/Windows/jkgalaxies_v1.3.22_win.zip";  //jk2t is probably the only mirror we'll have for test releases, add em here
@@ -51,12 +51,12 @@ const bin_lin_beta_url3 = "https://jk2t.ddns.net/Linux/jkgalaxies_v1.3.22_linux.
 const bin_osx_beta_url3 = "https://jk2t.ddns.net/macOS/jkgalaxies_v1.3.22_osx.zip";
 
 //asset urls and hash
-const asset_url_release1 = "https://uvu.box.com/shared/static/z1j68r0v1m15v03ergfidtm3somp5ce2.zip";
+const asset_url_release1 = "https://uvu.box.com/shared/static/ctdly3jwnhjcji560sx1czfdgnahbtzi.zip";
 const asset_url_release2 = ""; //for moddb
-const asset_url_release3 = "https://jk2t.ddns.net/jkgfiles/z1j68r0v1m15v03ergfidtm3somp5ce2.zip";
-const asset_release_hash = "A007B9DDE2BC9D44A1DEFF52701B7BC8BB592B07D7D40D3936279153AF521320";
-const asset_size_release = "223.4 MB";
-const asset_date_release = "2018-07-07";
+const asset_url_release3 = "https://jk2t.ddns.net/jkgfiles/ctdly3jwnhjcji560sx1czfdgnahbtzi.zip";
+const asset_release_hash = "B6792B130E52313BFCE44963D3000411261570B9B20647217211C80B9679911B";
+const asset_size_release = "243 MB";
+const asset_date_release = "2020-07-01";
 
 //beta asset urls and hash
 const asset_url_beta1 = "https://uvu.box.com/shared/static/ctdly3jwnhjcji560sx1czfdgnahbtzi.zip";
