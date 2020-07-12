@@ -1,4 +1,4 @@
-The test release for v1.3.22 has been released, you can find it here: <a href="https://www.jkgalaxies.net/download.html#testdiv">downloads page</a>.  Thanks to everyone who helped test the game out this weekend.  We'll be putting up a hotfix up for v1.3.22 that should fix the crashes we discovered, stay tuned.  Also, work on v1.3.23 has started which will improve things based on your feedback and add a few new features as well.
+v1.3.22a has been released! You can find it here: <a href="https://www.jkgalaxies.net/download.html">downloads page</a>.  Thanks to everyone who helped test the game out this weekend, feel free to continue putting your feedback in discord or on the forums.  Work on v1.3.23 has started which will improve things based on your feedback and add a few new features as well.
 <br>
 <br>
 <!--DO NOT MODIFY BELOW THIS POINT-->
