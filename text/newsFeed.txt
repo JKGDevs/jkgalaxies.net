@@ -1,4 +1,4 @@
-v1.3.22a has been released! You can find it here: <a href="https://www.jkgalaxies.net/download.html">downloads page</a>.  Thanks to everyone who helped test the game out this weekend, feel free to continue putting your feedback in discord or on the forums.  Work on v1.3.23 has started which will improve things based on your feedback and add a few new features as well.
+v1.3.22a has been released! You can find it here: <a href="https://www.jkgalaxies.net/download.html">downloads page</a>.  Work on v1.3.23 continues, which will improve <a href="https://github.com/JKGDevs/JediKnightGalaxies/issues/318">things</a> based on community feedback and add a few more features, before we transition our focus v1.4.0.
 <br>
 <br>
 <!--DO NOT MODIFY BELOW THIS POINT-->

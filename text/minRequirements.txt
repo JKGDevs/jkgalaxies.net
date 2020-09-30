@@ -1,7 +1,7 @@
 <strong>Jedi Academy Required to Play</strong>
 
 <strong>Windows</strong>
-Operating system: Windows XP SP2. Recommended: Windows 10
+Operating system: Windows 7. Recommended: Windows 10
 Memory: 512 MB RAM. Recommended: 1GB+ RAM
 Graphics: OpenGL 1.2 compliant card. Recommended: OpenGL 3 compliant card.
 Hard Drive: 500 MB free space. Recommended: At least 5GB free space.
@@ -10,7 +10,7 @@ Other: Microsoft VS2017 C++ Redistributable
 An internet connection is required to play online.
 
 <strong>Macintosh</strong>
-Operating System: Snow Leopard. Recommended: Sierra
+Operating System: Snow Leopard. Recommended: Catalina
 Memory: 512 MB RAM. Recommended: 1GB+ RAM
 Graphics: OpenGL 1.2 compliant card. Recommended: OpenGL 3 compliant card.
 Hard Drive: 500 MB free space. Recommended: At least 5GB free space.
@@ -24,6 +24,7 @@ Graphics: OpenGL 1.2 compliant card. Recommended: OpenGL 3 compliant card.
 Hard Drive: 500 MB free space. Recommended: At least 5GB free space.
 Other: The following libraries are required dependencies:  libjpeg, libpng, zlib, OpenGL, SDL2.  
 An internet connection is required to play online.
-While JKG should work on most distributions, it is only tested for Ubuntu.  
+While JKG should work on most distributions, it is only occasionally tested for Ubuntu.  
 If you would like to compile the binaries yourself, visit the readme on the Github 
 page for instructions: https://github.com/JKGDevs/JediKnightGalaxies/tree/develop#build-guide
+An in depth linux guide for compiling can also be found here: https://github.com/JKGDevs/JediKnightGalaxies/wiki/Flate%27s-Debian-Ubuntu-Compiling-Guide
