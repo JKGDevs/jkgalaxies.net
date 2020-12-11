@@ -113,13 +113,13 @@
                     The goal here is to have a functioning arena based shooter (similar to games such as Call of Duty or Unreal Tournament) with the beginnings of some later RPG elements such as armor, pazaak card game, etc. There are two major milestones currently being worked on.  Milestone 3 includes new features like better melee, armor, shields, jetpacks, debuff system etc.  Milestone 4 primarily focuses on the all new saber system and related features such as duel mode. Later milestones will introduce the skill trees and a rudimentary system for spending xp in preparation for the eventual leveling system in Phase 2 and 3.  In Milestone 5, the Force will be reworked and greatly expanded on using the aforementioned skill tree system.   We are currently on v1.3.20 of this iteration.<br>
                     <br>
                     <h3>Phase 2: Coop</h3>
-                    The main features that are added here include the AI/NPC system and fleshing out of the dialogue system. They also include overhauls to the chat systems, fonts, UI, and more. Prep work for the leveling system and quest system to be introduced here. We may also attempt some MoBA like features (still needs discussion).<br>
+                    The main features that are added here include the NPC system and fleshing out of the dialogue system. They also include overhauls to the chat systems, fonts, UI, and more. Prep work for the leveling system and quest system to be introduced here. Gameplay will primarily consist of teams of players (or individuals) completing simple 'quest' objectives, while being opposed by NPCs, or other teams of players. The game will revolve around a major central city hub (likely Mos Eisley) from which player's can interact with NPCs and other players to start quests, form teams, and explore the world. Most quests that do not take part in the central city, will load a team of player's into an 'instance' where they will complete their quest objectives while isolated from other players not in their group. We may also attempt some MoBA like features (still needs discussion) in larger Phase 1 style matches.<br>
                     <br>
                     <h3>Phase 3: RPG</h3>
-                    Open World RPG. The main features added here include quests, (more) minigames, and AI for existing minigames, like Pazaak. Also includes levelling up, experience, single person quests, large planet-themed maps, character creator, fully fleshed out skill system etc. This mode will mainly focus on implementing things from a single player's perspective. Data will be persistent and exist as long as the server is running.<br>
+                    Open World RPG. The main features added here include quests, (more) minigames, and AI for existing minigames, like Pazaak. Also includes levelling up, experience, single person quests, large planet-themed maps, character creator, fully fleshed out skill system etc. This mode will mainly focus on implementing things from a single player's perspective (within a multiplayer environment). Data will be persistent and exist as long as the server is running.<br>
                     <br>
                     <h3>Phase 4: LMO</h3>
-                    Features to the main game include group quests, Looking For Group system, and a lot of the dungeons that were designed for Phase 2 brought back. Includes a master server based architecture and functioning account system. At this point, the game is pretty much done.<br>
+                    Features to the main game include group quests, Looking For Group system, and a lot of the dungeons that were designed for Phase 2 brought back. Includes a master server based architecture and functioning account system. Data is stored persistently, and official servers are all interconnected.  At this point, the game is pretty much done.<br>
                     Later possible expansions: space battles, more worlds, additional minigames, etc.<br>
             </p>
         </div>
@@ -146,7 +146,7 @@
         <div class="maindiv">
             <h2>What platforms will JKG be released on?</h2>
             <p>
-                JKG is currently only supported on Windows; however, Linux and OSX builds are also available, but not as widely tested.
+                JKG is currently only supported on Windows; however, Linux builds are also available, but not as widely tested.  OSX builds are not available at this time, but the game should work with OSX.
             </p>
         </div>
 
@@ -182,7 +182,7 @@
         </div>
 
         <div class="maindiv">
-            <h2>Why don't you make JKG in a new modern engine like Unreal 4?</h2>
+            <h2>Why don't you make JKG in a new modern engine like Unreal or Unity?</h2>
             <p>
                 First, understand that JKG is a hobby passion project and is not intended to be a professional, (as in you pay money for it, and we make a profit off of it) large industry game.  This means we work on it, because we enjoy it, not because we expect it to become a massive AAA title or because we expect monetary compensation.  We expect it to be a free, open source game.<br><br>
                 Second, know that we love Star Wars and this is very much a fan project, as such we don't really want to divorce the IP (Star Wars) from the game and create our own IP so that we could do the above mentioned.<br><br>
@@ -219,7 +219,7 @@
 
         <div class="maindiv">
             <h2>How do shields work?</h2>
-            <p>After equipping a shield to your ACI (press i to open your inventory and assign it to an ACI slot, they auto assign themselves upon purchase so this is probably not needed), your shield will start changing after its cooldown has expired.  Some shields do not have a cool down.  The shield bar (visible in the upper left corner of the UI), shows how strong your current shield is at the present moment.  Shields will act as a scapegoat for your health for certain types of damage.  If your shield is damaged, it will stop charging until the cooldown for the recharge resets.  If your shield is completely overloaded with damage (reduced to 0), you will be vulnerable to damage until it begins recharging.<br><br>
+            <p>After equipping a shield to your ACI (press i to open your inventory and assign it to an ACI slot, they auto assign themselves upon purchase so this is probably not needed), your shield will start charging after its cooldown has expired.  Some shields do not have a cool down.  The shield bar (visible in the upper left corner of the UI), shows how strong your current shield is at the present moment.  Shields will act as a scapegoat for your health for certain types of damage.  If your shield is damaged, it will stop charging until the cooldown for the recharge resets.  If your shield is completely overloaded with damage (reduced to 0), you will be vulnerable to damage until it begins recharging.<br><br>
                 Blue damage plums appear if you are damaged and the shield does its job of protecting your hp from damage.
             </p>
         </div>
