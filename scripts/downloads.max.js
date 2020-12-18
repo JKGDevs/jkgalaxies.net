@@ -38,8 +38,8 @@ const bin_hash_beta_array = [bin_win_hash_beta, bin_lin_hash_beta, bin_osx_hash_
 const bin_win_url1 = "https://uvu.box.com/shared/static/qzj1ewi28g2k8glv4arparbxp36gwzjq.zip"; //for box
 const bin_lin_url1 = "https://uvu.box.com/shared/static/dds514xxoh9xgg8tsuutugd16ve53837.zip"; //for box
 const bin_osx_url1 =  ""; //for box
-const bin_win_url2 = ""; //for moddb
-const bin_lin_url2 = ""; //for moddb
+const bin_win_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1322a-win"; //for moddb
+const bin_lin_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1-3-22a-linux"; //for moddb
 const bin_osx_url2 = ""; //for moddb
 const bin_win_url3 = "https://jk2t.ddns.net/Windows/jkgalaxies_v1.3.22a_win.zip";  //for jk2t
 const bin_lin_url3 = "https://jk2t.ddns.net/Linux/jkgalaxies_v1.3.22a_linux.zip";  //for jk2t
@@ -52,7 +52,7 @@ const bin_osx_beta_url3 = "https://jk2t.ddns.net/macOS/jkgalaxies_v1.3.22_osx.zi
 
 //asset urls and hash
 const asset_url_release1 = "https://uvu.box.com/shared/static/ctdly3jwnhjcji560sx1czfdgnahbtzi.zip";
-const asset_url_release2 = ""; //for moddb
+const asset_url_release2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jedi-knight-galaxies-v1322-assets"; //for moddb
 const asset_url_release3 = "https://jk2t.ddns.net/jkgfiles/ctdly3jwnhjcji560sx1czfdgnahbtzi.zip";
 const asset_release_hash = "B6792B130E52313BFCE44963D3000411261570B9B20647217211C80B9679911B";
 const asset_size_release = "243 MB";
@@ -69,17 +69,17 @@ const asset_date_beta = "2020-07-01";
 const mapPack01_url_jkhub = "https://jkhub.org/files/file/2652-jedi-knight-galaxies-map-bundle-1/";
 const mapPack01_url_ddns = "https://jk2t.ddns.net/jkgfiles/iw9gkh7p80wt0y28h1sd46lvk54v8bdv.zip";
 const mapPack01_url_box = "https://uvu.box.com/shared/static/iw9gkh7p80wt0y28h1sd46lvk54v8bdv.zip";
-const mapPack01_url_moddb = "";
+const mapPack01_url_moddb = "https://www.moddb.com/mods/jkgalaxies/addons/jkgalaxies-maps1-v1-2";
 
-const mapPack02_url_jkhub = "";
+const mapPack02_url_jkhub = "https://jkhub.org/files/file/3778-jedi-knight-galaxies-map-bundle-2/";
 const mapPack02_url_ddns = "https://jk2t.ddns.net/jkgfiles/kb0wvyqtz0sarzs0kn1c8h03wrpjgb7c.zip";
-const mapPack02_url_box = "https://uvu.box.com/shared/static/kb0wvyqtz0sarzs0kn1c8h03wrpjgb7c.zip";
-const mapPack02_url_moddb = "";
+const mapPack02_url_box = "https://uvu.box.com/shared/static/berqiy7cqs1tv694gs2dfg27zy3wjlwt.zip";
+const mapPack02_url_moddb = "https://www.moddb.com/mods/jkgalaxies/addons/jkgalaxies-maps2-v1-02";
 
 const mapPack01_hash = "ECCB1B4A060628F6E5990F59AA0D0FBE81D0F41CF7A11850400804E8FABB60CD";
 const mapPack01_size = "244 MB";
 
-const mapPack02_hash = "AD4CBBD62BD0E739677BBB4D66BE37F01868CE91B10F73CF58B166FA1580E6F9";
+const mapPack02_hash = "6CEB43D31FABE35A2215B605A93ECCE9648926721880E9E770034C3A0B7FAB78";
 const mapPack02_size = "114 MB";
 
     
@@ -428,7 +428,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
     }
 
     //update binaries on table 
-    for (var i = 0, bin_mirror_url2 = "", bin_mirror_url3 = "", bin_test_mirror_url = ""; i < 3; i++) 
+    for (var i = 0, bin_mirror_url1 = "", bin_mirror_url2 = "", bin_mirror_url3 = "", bin_test_mirror_url = ""; i < 3; i++) 
     {
         var OSName_temp = OSName; //store detected OS
         var binHash = "";
@@ -436,21 +436,24 @@ function drawTable(version, release, asset, OS_builds, releasetype)
         {
             case 0:
                 OSName = "Windows";
-                bin_mirror_url2 = bin_win_url1;
+                bin_mirror_url1 = bin_win_url1;
+                bin_mirror_url2 = bin_win_url2;
                 bin_mirror_url3 = bin_win_url3;
                 bin_test_mirror_url = bin_win_beta_url3;
                 binHash = binHashArr[0];
                 break;
             case 1:
                 OSName = "Linux";
-                bin_mirror_url2 = bin_lin_url1;
+                bin_mirror_url1 = bin_lin_url1;
+                bin_mirror_url2 = bin_lin_url2;
                 bin_mirror_url3 = bin_lin_url3;
                 bin_test_mirror_url = bin_lin_beta_url3;
                 binHash = binHashArr[1];
                 break;
             case 2:
                 OSName = "OSX";
-                bin_mirror_url2 = bin_osx_url1;
+                bin_mirror_url1 = bin_osx_url1;
+                bin_mirror_url2 = bin_osx_url2;
                 bin_mirror_url3 = bin_osx_url3;
                 bin_test_mirror_url = bin_osx_beta_url3;
                 binHash = binHashArr[2];
@@ -470,13 +473,15 @@ function drawTable(version, release, asset, OS_builds, releasetype)
             var cellContent0_2 = "";
             if (whichTable == "#tablePrimaryDownload")
             {
-                cellContent0_1 = '<td><a href="' + bin_mirror_url2 + '" >' + mirror1 + '</a></td>';
-                cellContent0_2 = '<td><a href="' + bin_mirror_url3 + '" >' + mirror3 + '</a></td>';
+                cellContent0_1 = '<td><a href="' + bin_mirror_url1 + '" >' + mirror1 + '</a></td>';
+                cellContent0_2 = '<td><a href="' + bin_mirror_url2 + '" >' + mirror2 + '</a></td>';
+                cellContent0_3 = '<td><a href="' + bin_mirror_url3 + '" >' + mirror3 + '</a></td>';
             }
 
             if(whichTable == '#tableTestDownload')
             {
                 cellContent0_1 = '<td><a href="' + bin_test_mirror_url + '" >' + mirror3 + '</a></td>';
+                cellContent0_3 = '';
             }
 
             $(whichTable + " tbody")
@@ -511,6 +516,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
                     )
                     .append(cellContent0_1)
                     .append(cellContent0_2)
+                    .append(cellContent0_3)
                 );
         }
         OSName = OSName_temp; //restore originally detected OS.
@@ -520,8 +526,9 @@ function drawTable(version, release, asset, OS_builds, releasetype)
     var cellContent1_0 = '<td><a href="' + asset_url + '" >' + mirror1 +'</a></td>'; 
     if(whichTable == "#tablePrimaryDownload")
     {
-        var cellContent1_1 = '<td><a href="' + asset_url_release1 + '" >' + mirror1 +'</a></td>'; 
-        var cellContent1_2 = '<td><a href="' + asset_url_release3 + '" >' + mirror3 +'</a></td>'; 
+        var cellContent1_1 = '<td><a href="' + asset_url_release1 + '" >' + mirror1 +'</a></td>';
+        var cellContent1_2 = '<td><a href="' + asset_url_release2 + '" >' + mirror2 +'</a></td>';
+        var cellContent1_3 = '<td><a href="' + asset_url_release3 + '" >' + mirror3 +'</a></td>'; 
     }
 
     if(whichTable == '#tableTestDownload')
@@ -556,18 +563,21 @@ function drawTable(version, release, asset, OS_builds, releasetype)
             .append(cellContent1_0)
             .append(cellContent1_1)
             .append(cellContent1_2)
+            .append(cellContent1_3)
         );
 
 
     //map packs for table
     var cellContent2_0 = '<td><a href="' + mapPack01_url_jkhub + '" >' + mirror4 +'</a></td>';
-    var cellContent3_0 = '<td><a href="' + mapPack02_url_box + '" >' + mirror1 +'</a></td>'; //after jkhub approves the file, update this to use jkhub
+    var cellContent3_0 = '<td><a href="' + mapPack02_url_jkhub + '" >' + mirror4 +'</a></td>';
     if(whichTable == "#tablePrimaryDownload")
     {
         var cellContent2_1 = '<td><a href="' + mapPack01_url_box + '" >' + mirror1 +'</a></td>';
-        var cellContent2_2 = '<td><a href="' + mapPack01_url_ddns + '" >' + mirror3 +'</a></td>'; 
+        var cellContent2_2 = '<td><a href="' + mapPack01_url_moddb + '" >' + mirror2 +'</a></td>'; 
+        var cellContent2_3 = '<td><a href="' + mapPack01_url_ddns + '" >' + mirror3 +'</a></td>'; 
         var cellContent3_1 = '<td><a href="' + mapPack02_url_box + '" >' + mirror1 +'</a></td>';
-        var cellContent3_2 = '<td><a href="' + mapPack02_url_ddns + '" >' + mirror3 +'</a></td>';
+        var cellContent3_2 = '<td><a href="' + mapPack02_url_moddb + '" >' + mirror2 +'</a></td>'; 
+        var cellContent3_3 = '<td><a href="' + mapPack02_url_ddns + '" >' + mirror3 +'</a></td>';
     }
 
     if(whichTable == "#tableTestDownload")
@@ -603,6 +613,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
             .append(cellContent2_0)
             .append(cellContent2_1)
             .append(cellContent2_2)
+            .append(cellContent2_3)
         )
         .append($("<tr>")
             .append($("<td>")
@@ -629,7 +640,8 @@ function drawTable(version, release, asset, OS_builds, releasetype)
             )
             .append(cellContent3_0)
             .append(cellContent3_1)
-            .append(cellContent3_2) 
+            .append(cellContent3_2)
+            .append(cellContent3_3) 
         );
 
 }
