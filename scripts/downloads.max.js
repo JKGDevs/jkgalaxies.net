@@ -24,13 +24,13 @@ const mirror4 = "JKHub.org";
 
 //hash of bin release
 const bin_win_hash_release = "C2A812AA0D80293F95FED73A24069D910C87B5E703615FDDE836F3A120450DA5"; //sha256 hashes of mostly "fixed" files, fixme: autocalculate :(
-const bin_lin_hash_release = "1F61F6F14D953F5E9CDF931E22ED9E58E0CB4E6B402BE82960CEDDDD26AA80B8";
+const bin_lin_hash_release = "0FE4DAD5159808236180669C4BBA54A0B680A7EE4C76D5D2F6D79C307BE49ED7";
 const bin_osx_hash_release = "";
 const bin_hash_release_array = [bin_win_hash_release, bin_lin_hash_release, bin_osx_hash_release];
 
 //hash of bin beta
 const bin_win_hash_beta = "9A2D7B25DCD7359704B9579B3CBD25B535315C72A62AE010AC140A6624700EFF";
-const bin_lin_hash_beta = "1F61F6F14D953F5E9CDF931E22ED9E58E0CB4E6B402BE82960CEDDDD26AA80B8";
+const bin_lin_hash_beta = "0FE4DAD5159808236180669C4BBA54A0B680A7EE4C76D5D2F6D79C307BE49ED7";
 const bin_osx_hash_beta = "383C2CE1FD778FA34886DC34BB94083DC8885AA26DCADBE2D22F452674D769CB";
 const bin_hash_beta_array = [bin_win_hash_beta, bin_lin_hash_beta, bin_osx_hash_beta];
 
