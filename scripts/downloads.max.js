@@ -25,22 +25,22 @@ const mirror4 = "JKHub.org";
 //hash of bin release
 const bin_win_hash_release = "C2A812AA0D80293F95FED73A24069D910C87B5E703615FDDE836F3A120450DA5"; //sha256 hashes of mostly "fixed" files, fixme: autocalculate :(
 const bin_lin_hash_release = "0FE4DAD5159808236180669C4BBA54A0B680A7EE4C76D5D2F6D79C307BE49ED7";
-const bin_osx_hash_release = "";
+const bin_osx_hash_release = "42B533831AE0A4B2323B5BF840F51C9A2464ACB2F076328FB0C4ADD10C7651DF";
 const bin_hash_release_array = [bin_win_hash_release, bin_lin_hash_release, bin_osx_hash_release];
 
 //hash of bin beta
-const bin_win_hash_beta = "9A2D7B25DCD7359704B9579B3CBD25B535315C72A62AE010AC140A6624700EFF";
+const bin_win_hash_beta = "C2A812AA0D80293F95FED73A24069D910C87B5E703615FDDE836F3A120450DA5";
 const bin_lin_hash_beta = "0FE4DAD5159808236180669C4BBA54A0B680A7EE4C76D5D2F6D79C307BE49ED7";
-const bin_osx_hash_beta = "383C2CE1FD778FA34886DC34BB94083DC8885AA26DCADBE2D22F452674D769CB";
+const bin_osx_hash_beta = "42B533831AE0A4B2323B5BF840F51C9A2464ACB2F076328FB0C4ADD10C7651DF";
 const bin_hash_beta_array = [bin_win_hash_beta, bin_lin_hash_beta, bin_osx_hash_beta];
 
 //binary urls release
 const bin_win_url1 = "https://uvu.box.com/shared/static/qzj1ewi28g2k8glv4arparbxp36gwzjq.zip"; //for box
 const bin_lin_url1 = "https://uvu.box.com/shared/static/dds514xxoh9xgg8tsuutugd16ve53837.zip"; //for box
-const bin_osx_url1 =  ""; //for box
+const bin_osx_url1 =  "https://uvu.box.com/shared/static/6s9azfhatnyxhm1wlni7t5r4ygpzx47j.zip"; //for box
 const bin_win_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1322a-win"; //for moddb
 const bin_lin_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1-3-22a-linux"; //for moddb
-const bin_osx_url2 = ""; //for moddb
+const bin_osx_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1-3-22a-osx"; //for moddb
 const bin_win_url3 = "https://jk2t.ddns.net/Windows/jkgalaxies_v1.3.22a_win.zip";  //for jk2t
 const bin_lin_url3 = "https://jk2t.ddns.net/Linux/jkgalaxies_v1.3.22a_linux.zip";  //for jk2t
 const bin_osx_url3 = "https://jk2t.ddns.net/macOS/jkgalaxies_v1.3.22a_osx.zip";    //for jk2t
