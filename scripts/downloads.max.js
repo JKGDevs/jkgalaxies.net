@@ -72,7 +72,7 @@ const mapPack01_url_box = "https://uvu.box.com/shared/static/iw9gkh7p80wt0y28h1s
 const mapPack01_url_moddb = "https://www.moddb.com/mods/jkgalaxies/addons/jkgalaxies-maps1-v1-2";
 
 const mapPack02_url_jkhub = "https://jkhub.org/files/file/3778-jedi-knight-galaxies-map-bundle-2/";
-const mapPack02_url_ddns = "https://jk2t.ddns.net/jkgfiles/kb0wvyqtz0sarzs0kn1c8h03wrpjgb7c.zip";
+const mapPack02_url_ddns = "https://jk2t.ddns.net/jkgfiles/berqiy7cqs1tv694gs2dfg27zy3wjlwt.zip";
 const mapPack02_url_box = "https://uvu.box.com/shared/static/berqiy7cqs1tv694gs2dfg27zy3wjlwt.zip";
 const mapPack02_url_moddb = "https://www.moddb.com/mods/jkgalaxies/addons/jkgalaxies-maps2-v1-02";
 
