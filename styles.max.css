@@ -450,3 +450,10 @@ a.bigDownloadHoverBtn:active {
     width: 80%;
     margin-left: 10%;
 }
+
+
+.socialblock img
+{
+    padding:10px 2px 10px 2px;
+    margin:10px 2px 10px 2px;
+}
