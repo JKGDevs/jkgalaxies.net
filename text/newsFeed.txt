@@ -1,4 +1,6 @@
-<a href="https://www.jkgalaxies.net/download.html">v1.3.22a</a> has been released!  Development on v1.3.23 continues, alongside prepwork for v1.4.0.  The next patch will improve <a href="https://github.com/JKGDevs/JediKnightGalaxies/issues/318">things</a> based on community feedback and add a few more features.  We also would appreciate your feedback in <a href="https://tinyurl.com/jkgsurvey2">this survey</a>!
+Development on v1.3.23 continues to plod along, alongside prepwork for v1.4.0.  The next patch will improve <a href="https://github.com/JKGDevs/JediKnightGalaxies/issues/318">things</a> based on community feedback and add a few features.  If you've not yet given us feedback for a UI survey, you can access it <a href="https://tinyurl.com/jkgsurvey2"> here</a>.  
+<br>
+<p style="background-color:Orange;">Widgetbot, (used to display Discord announcements below) is currently experiencing an outage and will not work until they have resolved the issue. You can access Discord directly via <a href="https://discord.gg/YuG8Zks">this link</a>.</p>
 <br>
 <br>
 <!--DO NOT MODIFY BELOW THIS POINT-->
