@@ -1,7 +1,15 @@
 
 window.addEventListener('load', function ()
 {
-        /*reveal navbar*/
+        /*reveal navbar by clicking logo*/
+        $('#logo').click(function()
+        {
+            window.scrollBy(0, 301);
+            window.scrollBy(0, -301);
+        });
+
+        //if you want different behavior between mobile/desktop
+        /*
         if( $(window).width() < 769 && (window.innerHeight > window.innerWidth) )
         {
             $('#logo').click(function()
@@ -17,6 +25,7 @@ window.addEventListener('load', function ()
                 window.scrollBy(0, 301);
             });
         }
+        */
 });
 
 
@@ -148,9 +157,10 @@ $(window).resize(function()
         $(".centerdiv").css("margin", "auto 15%");
         $(".centerdiv").css("margin", "auto 15%");
 
-        $("#navbarLogoImg").show();
+        //show navbar on load from desktop?  Nah...not anymore.
+        /*$("#navbarLogoImg").show();
         $("#navbar").css("font-size", 25);
-        $("#navbar a").css("padding-top", 20);
+        $("#navbar a").css("padding-top", 20);*/
         $("#downloadHoverButton").show();
 
 
@@ -174,6 +184,20 @@ window.onscroll = function()
 
 function loadNavBar()
 {
+    var currentScrollPos = window.pageYOffset;
+    document.getElementById("navbar").style.visibility = "visible";
+    if(prevScrollPos < currentScrollPos)
+    {
+        document.getElementById("navbar").style.top = "-300px";
+    }
+    else
+    {
+        document.getElementById("navbar").style.top = "0";
+    }
+    prevScrollPos = currentScrollPos;
+
+    //if you want different behavior for desktop/mobile (old way of doing it)
+    /*
         //show navbar if scrolling up on mobile
         if( $(window).width() < 769 && (window.innerHeight > window.innerWidth) )
         {
@@ -209,6 +233,7 @@ function loadNavBar()
             }
             prevScrollPos = currentScrollPos;
         }
+    */
 }
 
 /* randomly choose a 404 error message to display*/
@@ -230,6 +255,3 @@ function loadText(tagID, fileLocation)
 {
     $(tagID).load(fileLocation);
 }
-
-
-
