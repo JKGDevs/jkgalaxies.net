@@ -55,6 +55,11 @@ $(document).ready(function()
         select404Error();
     }
 
+    if($('body').hasClass("AboutPage"))
+    {
+        handleImageModal();
+    }
+
     //handle hovering dwnload btn
     if($('body').hasClass("IndexPage"))
     {
@@ -254,4 +259,84 @@ function select404Error()
 function loadText(tagID, fileLocation)
 {
     $(tagID).load(fileLocation);
+}
+
+
+
+/*Modal Stuff*/
+function handleImageModal()
+{
+    slideIndex = 1;
+    showSlides(slideIndex);
+
+    //for keypress events
+    $(document).keydown(function(e)
+    {  
+        switch(e.keyCode)
+        {
+            //key press: esc
+            case 27:
+                closeModal();
+                break;
+            //key press: left
+            case 37:
+                showSlides(slideIndex += -1);
+                break;
+            //key press: right
+            case 39:
+                showSlides(slideIndex += 1);
+                break;
+        }
+    });
+}
+
+/* Open the Modal*/
+function openModal() 
+{
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("video-carousel-indicators").style.visibility = "hidden";
+}
+
+/* Close the Modal*/
+function closeModal() 
+{
+    document.getElementById("myModal").style.display = "none";
+    document.getElementById("video-carousel-indicators").style.visibility = "visible";
+}
+
+/* Next/previous controls */
+function plusSlides(n) 
+{
+    showSlides(slideIndex += n);
+}
+  
+// Thumbnail image controls
+function currentSlide(n) 
+{
+    showSlides(slideIndex = n);
+}
+
+/*displays the modal image slides */
+function showSlides(n) 
+{
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var captionText = document.getElementById("captionText");
+  if (n > slides.length) 
+    {
+        slideIndex = 1
+    }
+
+  if (n < 1) 
+    {
+        slideIndex = slides.length
+    }
+
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";
+  }
+
+  slides[slideIndex-1].style.display = "block";
+  captionText.innerHTML = slides[slideIndex-1].querySelector("img").title;
 }
