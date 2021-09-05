@@ -39,12 +39,12 @@
         <div class="centerdiv"><!--Carousel Wrapper-->
             <div id="video-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="8000">
                 <!--Indicators-->
-                <ol class="carousel-indicators">
+                <ol class="carousel-indicators" id="video-carousel-indicators">
                     <li data-target="#video-carousel" data-slide-to="0" class="active"></li>
                     <li data-target="#video-carousel" data-slide-to="1"></li>
                     <li data-target="#video-carousel" data-slide-to="2"></li>
                 </ol>
-                <!--/.Indicators-->
+
                     <!--Slides-->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -118,31 +118,31 @@
                   <div class="carousel-item active">
               
                     <div class="col-md-3 mb-3">
-                        <a href="./images/screens/jamp_2012-07-31_12-55-58-61.png" target="_blank"><div class="card">
-                        <img class="img-fluid" src="./images/screens/jamp_2012-07-31_12-55-58-61.png"
-                            alt="Defending the Passageway" title="Defending the streets of Mos Eisley.">
-                      </div></a>
+                        <div class="card">
+                            <img class="img-fluid" src="./images/screens/jamp_2012-07-31_12-55-58-61.png"
+                             alt="Defending the Passageway" title="Defending the streets of Mos Eisley." onclick="openModal();currentSlide(1)">
+                      </div>
                     </div>
               
                     <div class="col-md-3 mb-3">
-                        <a href="./images/screens/December-25-2010.jpg" target="_blank"><div class="card">
-                        <img class="img-fluid" src="./images/screens/December-25-2010.jpg"
-                            alt="Transporting Spice" title="Transporting Spice can be dangerous business.">
-                      </div></a>
+                        <div class="card">
+                            <img class="img-fluid" src="./images/screens/December-25-2010.jpg"
+                             alt="Transporting Spice" title="Transporting Spice can be dangerous business." onclick="openModal();currentSlide(2)">
+                        </div>
                     </div>
               
                     <div class="col-md-3 mb-3">
-                        <a href="./images/screens/vlcsnap-00003.png" target="_blank"><div class="card">
-                        <img class="img-fluid" src="./images/screens/vlcsnap-00003.png"
-                            alt="Ka-Boom!" title="Ka-boom!">
-                      </div></a>
+                        <div class="card">
+                            <img class="img-fluid" src="./images/screens/vlcsnap-00003.png"
+                             alt="Ka-Boom!" title="Ka-boom!" onclick="openModal();currentSlide(3)">
+                        </div>
                     </div>
               
                     <div class="col-md-3 mb-3">
-                        <a href="./images/screens/e11assault.png" target="_blank"><div class="card">
-                        <img class="img-fluid" src="./images/screens/e11assault.png"
-                            alt="Cargo Heist" title="A trusty E-11 blaster hard at work.">
-                      </div></a>
+                        <div class="card">
+                            <img class="img-fluid" src="./images/screens/e11assault.png"
+                             alt="Cargo Heist" title="A trusty E-11 blaster hard at work." onclick="openModal();currentSlide(4)">
+                        </div>
                     </div>
               
                   </div>
@@ -152,31 +152,31 @@
                   <div class="carousel-item">
               
                     <div class="col-md-3 mb-3">
-                      <a href="https://i.imgur.com/Hy8JJ5D.jpg" target="_blank"><div class="card">
-                        <img class="img-fluid" src="https://i.imgur.com/Hy8JJ5Dm.jpg"
-                          alt="Tatooine Cliffs" title="Hunting for a dangerous bounty.">
-                      </div></a>
+                        <div class="card">
+                            <img class="img-fluid" src="https://i.imgur.com/Hy8JJ5Dm.jpg"
+                             alt="Tatooine Cliffs" title="Hunting for a dangerous bounty." onclick="openModal();currentSlide(5)">
+                        </div>
                     </div>
               
                     <div class="col-md-3 mb-3">
-                        <a href="https://i.imgur.com/pVtwhJw.jpgg" target="_blank"><div class="card">
+                        <div class="card">
                             <img class="img-fluid" src="https://i.imgur.com/pVtwhJwm.jpg"
-                              alt="Hidden Jawa Fortress" title="The magnificent halls of a Jawa fortress.">
-                          </div></a>
+                              alt="Hidden Jawa Fortress" title="The magnificent halls of a Jawa fortress." onclick="openModal();currentSlide(6)">
+                        </div>
                     </div>
               
                     <div class="col-md-3 mb-3">
-                        <a href="https://i.imgur.com/Fkju2YC.jpg" target="_blank"><div class="card">
+                        <div class="card">
                             <img class="img-fluid" src="https://i.imgur.com/Fkju2YCm.jpg"
-                              alt="Snipe" title="Sniper!">
-                          </div></a>
+                              alt="Snipe" title="Sniper!" onclick="openModal();currentSlide(7)">
+                        </div>
                     </div>
               
                     <div class="col-md-3 mb-3">
-                        <a href="https://i.imgur.com/j9oNq0U.jpg" target="_blank"><div class="card">
+                        <div class="card">
                             <img class="img-fluid" src="https://i.imgur.com/j9oNq0Um.jpg"
-                              alt="Cost of War" title="The cost of war is a high price to pay...">
-                          </div></a>
+                              alt="Cost of War" title="The cost of war is a high price to pay..." onclick="openModal();currentSlide(8)">
+                        </div>
                     </div>
               
                   </div>
@@ -186,31 +186,31 @@
                   <div class="carousel-item">
               
                     <div class="col-md-3 mb-3">
-                      <a href="https://i.imgur.com/42ktYoy.jpg" target="_blank"><div class="card">
-                        <img class="img-fluid" src="https://i.imgur.com/42ktYoym.jpg"
-                          alt="Revenge" title="Vengeance is served.">
-                      </div></a>
+                        <div class="card">
+                            <img class="img-fluid" src="https://i.imgur.com/42ktYoym.jpg"
+                             alt="Revenge" title="Vengeance is served." onclick="openModal();currentSlide(9)">
+                        </div>
                     </div>
               
                     <div class="col-md-3 mb-3">
-                        <a href="https://i.imgur.com/7YK5k27.jpg" target="_blank"><div class="card">
+                        <div class="card">
                             <img class="img-fluid" src="https://i.imgur.com/7YK5k27m.jpg"
-                              alt="DLT-19" title="The DLT-19 Heavy Blaster Rifle.">
-                          </div></a>
+                              alt="DLT-19" title="The DLT-19 Heavy Blaster Rifle." onclick="openModal();currentSlide(10)">
+                        </div>
                     </div>
               
                     <div class="col-md-3 mb-3">
-                        <a href="https://i.imgur.com/YLTJbNw.jpg" target="_blank"><div class="card">
+                        <div class="card">
                             <img class="img-fluid" src="https://i.imgur.com/YLTJbNwm.jpg"
-                              alt="Heavy Crossbow" title="This powerful crossbow has quite a kick.">
-                            </div></a>
+                              alt="Heavy Crossbow" title="This powerful crossbow has quite a kick." onclick="openModal();currentSlide(11)">
+                        </div>
                     </div>
               
                     <div class="col-md-3 mb-3">
-                        <a href="https://i.imgur.com/f0SDbk1.jpg" target="_blank"><div class="card">
+                        <div class="card">
                             <img class="img-fluid" src="https://i.imgur.com/f0SDbk1m.jpg"
-                              alt="Melee Duel" title="Blaster's are so uncivilized...dancing however...">
-                          </div></a>
+                              alt="Melee Duel" title="Blaster's are so uncivilized...dancing however..." onclick="openModal();currentSlide(12)">
+                        </div>
                     </div>
               
                   </div>
@@ -220,31 +220,31 @@
                   <div class="carousel-item">
               
                     <div class="col-md-3 mb-3">
-                      <a href="https://i.imgur.com/kf0I9Zt.jpg" target="_blank"><div class="card">
-                        <img class="img-fluid" src="https://i.imgur.com/kf0I9Ztm.jpg"
-                          alt="KYD-21" title="The KYD-21 blaster pistol, popular among bounty hunters.">
-                      </div></a>
+                        <div class="card">
+                            <img class="img-fluid" src="https://i.imgur.com/kf0I9Ztm.jpg"
+                             alt="KYD-21" title="The KYD-21 blaster pistol, popular among bounty hunters." onclick="openModal();currentSlide(13)">
+                        </div>
                     </div>
               
                     <div class="col-md-3 mb-3">
-                        <a href="https://i.imgur.com/6mwaC09.jpg" target="_blank"><div class="card">
+                        <div class="card">
                             <img class="img-fluid" src="https://i.imgur.com/6mwaC09m.jpg"
-                              alt="Tusken Sniper" title="Tusken's will attack those who encroach in their territory.">
-                          </div></a>
+                              alt="Tusken Sniper" title="Tusken's will attack those who encroach in their territory." onclick="openModal();currentSlide(14)">
+                        </div>
                     </div>
               
                     <div class="col-md-3 mb-3">
-                        <a href="https://i.imgur.com/oVeWlap.jpg" target="_blank"><div class="card">
+                        <div class="card">
                             <img class="img-fluid" src="https://i.imgur.com/oVeWlapm.jpg"
-                              alt="Sneak" title="It came from behin-!">
-                          </div></a>
+                              alt="Sneak" title="It came from behin-!" onclick="openModal();currentSlide(15)">
+                        </div>
                     </div>
               
                     <div class="col-md-3 mb-3">
-                        <a href="https://i.imgur.com/17ic2ed.png" target="_blank"><div class="card">
+                        <div class="card">
                             <img class="img-fluid" src="https://i.imgur.com/17ic2edm.png"
-                              alt="Korriban Hallway Standoff" title="There's nothing like explosives and heavy automatic fire to keep a hallway clear.">
-                          </div></a>
+                              alt="Korriban Hallway Standoff" title="There's nothing like explosives and heavy automatic fire to keep a hallway clear." onclick="openModal();currentSlide(16)">
+                        </div>
                     </div>
               
                   </div>
@@ -253,8 +253,6 @@
               
                 </div>
                 <!--/.Slides-->
-
-
 
 
                 <div>
@@ -270,11 +268,125 @@
                     <!--/.Controls-->
                 </div>
                 
-                                
               </div>
               <!--/.Carousel Wrapper-->
         </div>
 
+
+        <!--Modal-->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                  <div class="numbertext">1 / 16</div>
+                  <img src="./images/screens/jamp_2012-07-31_12-55-58-61.png" style="width:100%" 
+                   alt="Defending the Passageway" title="Defending the streets of Mos Eisley.">
+                </div>
+            
+                <div class="mySlides">
+                  <div class="numbertext">2 / 16</div>
+                  <img src="./images/screens/December-25-2010.jpg" style="width:100%"
+                   alt="Transporting Spice" title="Transporting Spice can be dangerous business.">
+                </div>
+            
+                <div class="mySlides">
+                  <div class="numbertext">3 / 16</div>
+                  <img src="./images/screens/vlcsnap-00003.png" style="width:100%"
+                   alt="Ka-Boom!" title="Ka-boom!">
+                </div>
+            
+                <div class="mySlides">
+                  <div class="numbertext">4 / 16</div>
+                  <img src="./images/screens/e11assault.png" style="width:100%"
+                   alt="Cargo Heist" title="A trusty E-11 blaster hard at work.">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 16</div>
+                    <img src="https://i.imgur.com/Hy8JJ5D.jpg"
+                     alt="Tatooine Cliffs" title="Hunting for a dangerous bounty.">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 16</div>
+                    <img src="https://i.imgur.com/pVtwhJw.jpg"
+                     alt="Hidden Jawa Fortress" title="The magnificent halls of a Jawa fortress.">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 16</div>
+                    <img src="https://i.imgur.com/Fkju2YC.jpg"
+                    alt="Snipe" title="Sniper!">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 16</div>
+                    <img src="https://i.imgur.com/j9oNq0U.jpg"
+                    alt="Cost of War" title="The cost of war is a high price to pay...">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">9 / 16</div>
+                    <img src="https://i.imgur.com/42ktYoy.jpg"
+                    alt="Revenge" title="Vengeance is served.">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">10 / 16</div>
+                    <img src="https://i.imgur.com/7YK5k27.jpg"
+                    alt="DLT-19" title="The DLT-19 Heavy Blaster Rifle."">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">11 / 16</div>
+                    <img src="https://i.imgur.com/YLTJbNw.jpg"
+                    alt="Heavy Crossbow" title="This powerful crossbow has quite a kick.">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">12 / 16</div>
+                    <img src="https://i.imgur.com/f0SDbk1.jpg"
+                    alt="Melee Duel" title="Blaster's are so uncivilized...dancing however...">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">13 / 16</div>
+                    <img src="https://i.imgur.com/kf0I9Zt.jpg"
+                    alt="KYD-21" title="The KYD-21 blaster pistol, popular among bounty hunters.">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">14 / 16</div>
+                    <img src="https://i.imgur.com/6mwaC09.jpg"
+                    alt="Tusken Sniper" title="Tusken's will attack those who encroach in their territory.">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">15 / 16</div>
+                    <img src="https://i.imgur.com/oVeWlap.jpg"
+                    alt="Sneak" title="It came from behin-!">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">16 / 16</div>
+                    <img src="https://i.imgur.com/17ic2ed.png"
+                    alt="Korriban Hallway Standoff" title="There's nothing like explosives and heavy automatic fire to keep a hallway clear.">
+                </div>
+                
+
+                <!-- Next/previous controls -->
+                <a class="modal-prev" title="Previous." onclick="plusSlides(-1)" >&#10094;</a>
+                <a class="modal-next" title="Next." onclick="plusSlides(1)" >&#10095;</a>
+            </div>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="captionText"></p>
+            </div>
+        </div>
+        </div>
+
+        <!-- Media Links-->
         <div class="centerdiv" id="media-links">
             <p class="socialblock"> 
                 <a href="https://discord.gg/YuG8Zks" title="Join the Jedi Knight Galaxies Discord server." target="_blank"><img src="images/media_icons/Discord-Mark-64px.png" alt="Jedi Knight Galaxies Discord" class="img-fluid"/></a> &emsp;
