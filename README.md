@@ -38,9 +38,9 @@ Contains specialized fonts for the website.
 
 
 ## Technology ##
-The site is designed for github static web pages, which means we are restricted to client side technology such as html, css, and javascript.  Currently the site incorporates use of bootstrap 4.3.1 (just the css version) and jquery 3.5.1.  Note also that the site incorporates use of a discord bot (through an iframe), so it can see the announcements channel of the JKG discord.
+The site is designed for github static web pages, which means we are restricted to client side technology such as html, css, and javascript.  Currently the site incorporates use of bootstrap 4.3.1 (just the css version) and jquery 3.6.0.  Note also that the site incorporates use of a discord bot (through an iframe), so it can see the announcements channel of the JKG discord.  
 
-We may eventually add django on the serverside or php, but we will need a real web server for that and not github pages.  Right now the functionality is not required.  
+We may eventually add django/php/something else on the serverside, but we will need a real web server for that and not github pages.  I do want to eventually move to a real web server so we can use server-side scripts (eezstreet suggests Node) to implement things like Launcher downloads and generating data for a wiki/databank from the game's json files.  Right now the functionality is not required.  
 
 ## Site Organization ##
 jkgalaxies.net is the primary site and the only piece available at the moment.  update.jkgalaxies.net will be a subdomain used by the launcher to perform updates.  databank.jkgalaxies.net will include a wiki database of game information.  At the moment subdomains don't work with github pages, so these won't do anything for now.
