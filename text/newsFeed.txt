@@ -1,8 +1,6 @@
 Development on <a href="https://github.com/JKGDevs/JediKnightGalaxies/issues/318">v1.3.23</a> continues, alongside prepwork for v1.4.0.  The next patch will improve things based on community feedback and add a few features.  If you've not yet taken our UI survey and would like to provide valuable feedback, you can access it <a href="https://tinyurl.com/jkgsurvey2"> here</a>.  
 <br>
 <br>
-<p style="color:orange;">Widgetbot, (used to display Discord announcements below) is currently experiencing an outage and may not consistently work until they have resolved the issue. You can access Discord directly via <a href="https://discord.gg/YuG8Zks">this link</a>.</p>
-<br>
 <!--DO NOT MODIFY BELOW THIS POINT-->
 <p id="newsDate"></p>
 <script>
