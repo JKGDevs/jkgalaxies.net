@@ -39,8 +39,8 @@
         <div class="maindiv">
         <h1>Welcome</h1>
             <p id="welcomemsg"> <!--Note: this is dynamically loadable, but since we keep this static default text here in case they've got javascript disabled-->
-            Either by luck, or wisdom, you've arrived at the website of the biggest, most extensive and evolving mod ever made for a Star Wars game. Welcome to choices, welcome to adventures! Welcome; to Jedi Knight Galaxies, a free modification for Ravensoft’s Q3-based game, <a href="https://en.wikipedia.org/wiki/Star_Wars_Jedi_Knight:_Jedi_Academy">Jedi Knight: Jedi Academy</a>.<br><br>
-            With new models, animations, maps, music, and naturally including an all new exciting plotline, all backed up by extreme amounts of coding. As far as a total conversion goes, we prefer to call JKG a game, more than just a Jedi Academy mod. Except for the fact that we want to bring you all this, completely free of charge!<br><br>
+            Welcome to choices, welcome to adventures!  Jedi Knight Galaxies is a competitive and innovative multiplayer shooter, played out in the Star Wars universe. Currently a full conversion mod, the project was originally based on and modified from <a href="https://www.ravensoftware.com" alt="Link to Ravensoftware.">Ravensoft’s</a> Q3-based game, <a href="https://en.wikipedia.org/wiki/Star_Wars_Jedi_Knight:_Jedi_Academy" alt="Link to JKA Wikipedia page.">Star Wars Jedi Knight: Jedi Academy</a>.<br><br>
+            Jedi Knight Galaxies is open source and available completely free of charge; however, you will need the original game in order to play. We aim to develop the project into a Large Multiplayer Online game, crossing traditional RPG (role playing game) elements with the fast paced excitement of an FPS (first person shooter).  The game is a much loved hobby project supported by its community and developers who work on it in their freetime, contribution is encouraged and newbies are welcome.<br><br>
             Welcome to Jedi Knight Galaxies, where we break the limits!</p>
             <p><a href="about.html">Learn more...</a></p>
         </div>
@@ -50,15 +50,16 @@
             <p id="manualNews">[loading...]</p> <!--update \text\newsFeed.txt with new news, supports html so feel free to add pics whatever"-->
         </div>
 
-        <div class="centerdiv">
-            <h2><a href="https://discord.gg/YuG8Zks" title="Click to join the JKG Discord community.">Discord Announcements</a></h2>
+        <div class="centerdiv" id="widgetbotdiv">
+            <h2><a href="https://discord.gg/YuG8Zks" alt="Discord server invite link." title="Click to join the JKG Discord community.">Discord Announcements</a></h2>
 
             <widgetbot
+                id="widgetbotframe"
                 server="152168677578506240"
                 channel="152169339208990721"
                 width="480"
                 height="375"
-                shard="https://e.widgetbot.io" <!--Using the beta version, things gunna break probably--->
+                shard="https://e.widgetbot.io"
             </widgetbot>
 
             <!-- //this is the backup iframe if too many people complain about no javascript - it doesn't work as well so I don't want to use it if we can avoid it
