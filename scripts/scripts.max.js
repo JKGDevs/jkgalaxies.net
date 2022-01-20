@@ -137,6 +137,12 @@ window.onload = function()
         $("#navbar a").css("padding-top", 15);
         $("#downloadHoverButton").hide();
     }
+
+        //don't play vids till the page has loaded - autoplay should do this, don't need this
+        /*for(let i=0; i<3; i++)
+        {
+            $("video")[i].play();
+        }*/
 }
 
 $(window).resize(function() 
