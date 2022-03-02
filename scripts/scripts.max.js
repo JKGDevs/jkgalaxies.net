@@ -182,9 +182,9 @@ $(window).resize(function()
         $(".centerdiv").css("margin", "auto 15%");
 
         //show navbar on load from desktop?  Nah...not anymore.
-        /*$("#navbarLogoImg").show();
+        //$("#navbarLogoImg").show();
         $("#navbar").css("font-size", 25);
-        $("#navbar a").css("padding-top", 20);*/
+        $("#navbar a").css("padding-top", 20);
         $("#downloadHoverButton").show();
 
         //resize widgetbot frame back to full
