@@ -146,6 +146,12 @@ a:active
     visibility: visible;
 }
 
+.logo img
+{
+    height: 100%;
+    width: auto;
+}
+
 #video-carousel h4
 {
     color: white; 
