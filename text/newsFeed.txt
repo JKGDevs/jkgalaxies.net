@@ -1,8 +1,4 @@
-Development on <a href="https://github.com/JKGDevs/JediKnightGalaxies/issues/318">v1.3.23</a> continues (the patch is about 80% complete), alongside prepwork for v1.4.0.  Check out this video that showcases some of the new overheating effects:<br>
-<div class="embed-responsive embed-responsive-16by9">
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=lXnXcdjdUVo" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="Gameplay Video" class="embed-responsive-item">
-</iframe>
-</div> 
+Development on <a href="https://github.com/JKGDevs/JediKnightGalaxies/issues/318" title="v1.3.23 checklist" alt="Link to Github">v1.3.23</a> continues (the patch is about 80% complete), alongside prepwork for v1.4.0.  Check out <a href="https://www.youtube.com/watch?v=lXnXcdjdUVo" title="Weapon Heat Showcase Video" alt="Link to youtube video" >this video</a> that showcases some of the new overheating effects.
 
 <br>If you've not yet taken our UI survey and would like to provide valuable feedback, you can access it <a href="https://tinyurl.com/jkgsurvey2"> here</a>.  
 <br>
