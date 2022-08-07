@@ -375,6 +375,8 @@ function openModalMediaShare()
     window.scrollBy(0, 25);
     document.getElementById("MediaShareModal").style.display = "block";
     document.getElementById("video-carousel-indicators").style.visibility = "hidden";
+    document.getElementById("clipNotify").style.display = "none";
+    document.getElementById("clipNotify").style.visibility = "hidden";
 }
 
 /* Close the Modal*/
@@ -382,8 +384,6 @@ function closeModalMediaShare()
 {
     document.getElementById("MediaShareModal").style.display = "none";
     document.getElementById("video-carousel-indicators").style.visibility = "visible";
-    document.getElementById("clipNotify").style.display = "none";
-    document.getElementById("clipNotify").style.visibility = "hidden";
 }
 
 function copyMediaShare()
