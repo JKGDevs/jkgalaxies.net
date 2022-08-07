@@ -318,6 +318,7 @@ function handleImageModal()
 /* Open the Modal*/
 function openModal() 
 {
+    window.scrollBy(0, 25);
     document.getElementById("myModal").style.display = "block";
     document.getElementById("video-carousel-indicators").style.visibility = "hidden";
 }
@@ -365,3 +366,29 @@ function showSlides(n)
   slides[slideIndex-1].style.display = "block";
   captionText.innerHTML = slides[slideIndex-1].querySelector("img").title;
 }
+
+
+
+/* Open the Modal*/
+function openModalMediaShare() 
+{
+    window.scrollBy(0, 25);
+    document.getElementById("MediaShareModal").style.display = "block";
+    document.getElementById("video-carousel-indicators").style.visibility = "hidden";
+}
+
+/* Close the Modal*/
+function closeModalMediaShare() 
+{
+    document.getElementById("MediaShareModal").style.display = "none";
+    document.getElementById("video-carousel-indicators").style.visibility = "visible";
+}
+
+function copyMediaShare()
+{
+    navigator.clipboard.writeText(document.getElementById("shareablelogohtml").innerHTML);
+    document.getElementById("clipNotify").style.display = "block";
+    document.getElementById("clipNotify").style.visibility = "visible";
+}
+
+
