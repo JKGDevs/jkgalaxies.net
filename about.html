@@ -389,7 +389,34 @@
                 <a href="https://www.twitch.tv/jkgalaxies" title="Watch Jedi Knight Galaxies on Twitch." target="_blank"><img src="images/media_icons/Twitch-Mark-64px.png" alt="Jedi Knight Galaxies Twitch" class="img-fluid"/></a> &emsp;
                 <a href="https://www.moddb.com/mods/jkgalaxies" title="View Jedi Knight Galaxies on ModDB". target="_blank"><img src="images/media_icons/ModDB-Mark-64px.png" alt="Jedi Knight Galaxies ModDB" class="img-fluid"/></a>
             </p>
+
+            <p class="socialblock" title="Click to get generate JKG link." onclick="openModalMediaShare();">
+                Share JKG<br>
+                <img src="images/JKG_logo-inverted-64x64.png" alt="Jedi Knight Galaxies Website" class="img-fluid"/>
+            </p>
         </div>
+
+        <!-- Modal content -->
+        <div id="MediaShareModal" class="modal">
+        <div class="modal-content">
+            <br><br><br><br> <br><br><br><br>
+            <span class="close cursor" onclick="closeModalMediaShare()" title="Close.">&times;</span>
+            <div class="centerdiv">
+                <br><br><br><br>
+                Copy the HTML below to generate this logo link for your own site:
+                <a href="https://www.jkgalaxies.net/" alt="Jedi Knight Galaxies" title="Jedi Knight Galaxies" target="_blank">
+                    <img src="https://www.jkgalaxies.net/images/JKG_logo-inverted-64x64.png"/>
+                </a>
+                <br>
+<pre onclick="copyMediaShare()" title="Click to copy code to clipboard." style="text-align: justify"><span id="shareablelogohtml">&lt;a href=&quot;https://www.jkgalaxies.net/&quot; alt=&quot;Jedi Knight Galaxies&quot; title=&quot;Jedi Knight Galaxies&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;https://www.jkgalaxies.net/images/JKG_logo-inverted-64x64.png&quot;/&gt;
+&lt;/a&gt;
+</span></pre>
+<span id="clipNotify">Code copied to clipboard.</span>
+            </div>
+        </div>
+        </div>
+                        
         
 
         <div class="copyright">
