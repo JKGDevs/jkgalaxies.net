@@ -388,7 +388,7 @@ function closeModalMediaShare()
 
 function copyMediaShare()
 {
-    navigator.clipboard.writeText(document.getElementById("shareablelogohtml").innerHTML);
+    navigator.clipboard.writeText(document.getElementById("rawtext").innerHTML);
     document.getElementById("clipNotify").style.display = "block";
     document.getElementById("clipNotify").style.visibility = "visible";
 }
