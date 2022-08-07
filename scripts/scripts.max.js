@@ -382,6 +382,8 @@ function closeModalMediaShare()
 {
     document.getElementById("MediaShareModal").style.display = "none";
     document.getElementById("video-carousel-indicators").style.visibility = "visible";
+    document.getElementById("clipNotify").style.display = "none";
+    document.getElementById("clipNotify").style.visibility = "hidden";
 }
 
 function copyMediaShare()
