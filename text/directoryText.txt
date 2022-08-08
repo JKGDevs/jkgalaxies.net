@@ -1,17 +1,32 @@
---- Jedi Academy (or Star Wars: Jedi Knight: Jedi Academy if on a CD game)
- |
- |----- GameData
- |  |
- |  |---- JKGalaxies-Client-Readme.txt
- |  |
+ Windows
+=========================================================================
+ Jedi Academy (or "Star Wars: Jedi Knight: Jedi Academy" if on a CD game)
+ |-- GameData
  |  |---- jkgalaxies
+ |  |  | --- JKG (sub directory)
  |  |  |
- |  |  |--- JKG
- |  |  |
+ |  |  |--- jkgalaxies.x86.exe 
+ |  |  |--- JKGalaxies-Changelog.txt
+ |  |  |--- jkgalaxiesded.x86.exe
+ |  |  |--- OpenAL32.dll
+ |  |  |--- rd-galaxies_x86.dll
  |  |  |--- RunJKGalaxies.bat
+ |  |  |--- RunServer.bat
+ |  |  |--- SDL2.dll
+ etc...
+
+
+Linux
+=========================================================================
+Jedi Academy
+ |-- GameData
+ |  |---- jkgalaxies
+ |  |  | --- JKG (sub directory)
  |  |  |
- |  |  |--- RunJKGalaxies.sh
- |  |  |
- |  ---etc...
- |
- |----- Install
+ |  |  |--- JKGalaxies-Changelog.txt 
+ |  |  |--- jkgalaxies.x86_64
+ |  |  |--- jkgalaxiesded.x86_64
+ |  |  |--- rd-galaxies_x86_64.so
+ |  |  |--- runJKGalaxies.sh
+ |  |  |--- runServer.sh
+ etc...
