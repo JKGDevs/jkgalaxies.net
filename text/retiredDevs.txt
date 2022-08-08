@@ -18,7 +18,7 @@ SJC<br>
 Yzmo<br><br>
 
 <strong>Modeling</strong><br>
-Blastech<br>
+Blastech/Ocriel<br>
 CaptainCrazy<br>
 DarthPhae<br>
 DT<br>
@@ -33,14 +33,14 @@ Resuru<br><br>
 Hirman<br><br>
 
 <strong>Artists</strong><br>
-BlasTech<br>
+BlasTech/Ocriel<br>
 HellKobra<br>
 Pande<br>
 Resuru<br>
 Suibuku<br><br>
 
 <strong>Sound and EFX</strong><br>
-Blastech<br>
+Blastech/Ocriel<br>
 Sareth<br><br>
 
 <strong>Misc</strong><br>
@@ -55,3 +55,11 @@ Konradwerks<br>
 Mart<br>
 Sharpie<br>
 TheDarkness<br><br>
+
+<strong>Former Project Leads</strong><br>
+Jake<br>
+BobaFett<br>
+MaceCrusherMadunusus<br>
+DarthLex<br>
+BlasTech/Ocriel<br>
+eezstreet
