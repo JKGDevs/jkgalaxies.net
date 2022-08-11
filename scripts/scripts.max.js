@@ -219,10 +219,19 @@ function loadNavBar()
     if(prevScrollPos < currentScrollPos)
     {
         document.getElementById("navbar").style.top = "-300px";
+        document.getElementById("myModalCloser").style.setProperty("top", "10px");
+        document.getElementById("MediaModalCloser").style.setProperty("top", "10px");
     }
     else
     {
+        var pixelsdown = "60px"; //for determing how far down the modal close btn should be
         document.getElementById("navbar").style.top = "0";
+        if($(window).width() < 769 && window.innerHeight > window.innerWidth) 
+        {
+            pixelsdown = "80px"; //go further down on mobile screens so its not covered by the navbar
+        }
+        document.getElementById("myModalCloser").style.setProperty("top", pixelsdown);
+        document.getElementById("MediaModalCloser").style.setProperty("top", "60px");
     }
     prevScrollPos = currentScrollPos;
 
@@ -302,6 +311,7 @@ function handleImageModal()
             //key press: esc
             case 27:
                 closeModal();
+                closeModalMediaShare();
                 break;
             //key press: left
             case 37:
@@ -392,5 +402,3 @@ function copyMediaShare()
     document.getElementById("clipNotify").style.display = "block";
     document.getElementById("clipNotify").style.visibility = "visible";
 }
-
-
