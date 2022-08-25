@@ -29,9 +29,9 @@ const bin_osx_hash_release = "42B533831AE0A4B2323B5BF840F51C9A2464ACB2F076328FB0
 const bin_hash_release_array = [bin_win_hash_release, bin_lin_hash_release, bin_osx_hash_release];
 
 //hash of bin beta
-const bin_win_hash_beta = "C2A812AA0D80293F95FED73A24069D910C87B5E703615FDDE836F3A120450DA5";
-const bin_lin_hash_beta = "0FE4DAD5159808236180669C4BBA54A0B680A7EE4C76D5D2F6D79C307BE49ED7";
-const bin_osx_hash_beta = "42B533831AE0A4B2323B5BF840F51C9A2464ACB2F076328FB0C4ADD10C7651DF";
+const bin_win_hash_beta = "F7E9D2D8E79B65D740171E15CAF07F932875FEE6AC91ABDD4E780454A5447525";
+const bin_lin_hash_beta = "D74266B63C53A185AE097CA9D5CB73F61BAC050761EF681FE66EE43433C287CB";
+const bin_osx_hash_beta = "";
 const bin_hash_beta_array = [bin_win_hash_beta, bin_lin_hash_beta, bin_osx_hash_beta];
 
 //binary urls release
@@ -46,9 +46,9 @@ const bin_lin_url3 = "https://jk2t.ddns.net/Linux/jkgalaxies_v1.3.22a_linux.zip"
 const bin_osx_url3 = "https://jk2t.ddns.net/macOS/jkgalaxies_v1.3.22a_osx.zip";    //for jk2t
 
 //binary urls beta
-const bin_win_beta_url3 = "https://jk2t.ddns.net/Windows/jkgalaxies_v1.3.22_win.zip";  //jk2t is probably the only mirror we'll have for test releases, add em here
-const bin_lin_beta_url3 = "https://jk2t.ddns.net/Linux/jkgalaxies_v1.3.22_linux.zip";
-const bin_osx_beta_url3 = "https://jk2t.ddns.net/macOS/jkgalaxies_v1.3.22_osx.zip";
+const bin_win_beta_url3 = "https://uvu.box.com/shared/static/l3eo6vduufz26kwiioumeem8xup16a3i.zip";  //jk2t is probably the only mirror we'll have for test releases, add em here
+const bin_lin_beta_url3 = "https://uvu.box.com/shared/static/hjbaon0bfi15xu3beyscq37cmywpe7t6.zip";
+const bin_osx_beta_url3 = "";
 
 //asset urls and hash
 const asset_url_release1 = "https://uvu.box.com/shared/static/ctdly3jwnhjcji560sx1czfdgnahbtzi.zip";
@@ -59,28 +59,28 @@ const asset_size_release = "243 MB";
 const asset_date_release = "2020-07-01";
 
 //beta asset urls and hash
-const asset_url_beta1 = "https://uvu.box.com/shared/static/ctdly3jwnhjcji560sx1czfdgnahbtzi.zip";
-const asset_url_beta2 = "https://jk2t.ddns.net/jkgfiles/ctdly3jwnhjcji560sx1czfdgnahbtzi.zip";
-const asset_beta_hash = "B6792B130E52313BFCE44963D3000411261570B9B20647217211C80B9679911B";
-const asset_size_beta = "243 MB";
-const asset_date_beta = "2020-07-01";
+const asset_url_beta1 = "https://uvu.box.com/shared/static/geejtm8xcovvcyt9jra4e6f585beatx1.zip";
+const asset_url_beta2 = "";
+const asset_beta_hash = "B0449F1068EB67832AE6D4073A40979D28137CBB79CD423881C0FFA1FCDC3C50";
+const asset_size_beta = "257 MB";
+const asset_date_beta = "2022-08-25";
 
 //map pack urls and hashes
 const mapPack01_url_jkhub = "https://jkhub.org/files/file/2652-jedi-knight-galaxies-map-bundle-1/";
-const mapPack01_url_ddns = "https://jk2t.ddns.net/jkgfiles/iw9gkh7p80wt0y28h1sd46lvk54v8bdv.zip";
-const mapPack01_url_box = "https://uvu.box.com/shared/static/iw9gkh7p80wt0y28h1sd46lvk54v8bdv.zip";
-const mapPack01_url_moddb = "https://www.moddb.com/mods/jkgalaxies/addons/jkgalaxies-maps1-v1-2";
+const mapPack01_url_ddns = "";
+const mapPack01_url_box = "https://uvu.box.com/shared/static/2wm4soep000wcffah9rra7xpsqfwzit7.zip";
+const mapPack01_url_moddb = "";
 
 const mapPack02_url_jkhub = "https://jkhub.org/files/file/3778-jedi-knight-galaxies-map-bundle-2/";
-const mapPack02_url_ddns = "https://jk2t.ddns.net/jkgfiles/berqiy7cqs1tv694gs2dfg27zy3wjlwt.zip";
-const mapPack02_url_box = "https://uvu.box.com/shared/static/berqiy7cqs1tv694gs2dfg27zy3wjlwt.zip";
-const mapPack02_url_moddb = "https://www.moddb.com/mods/jkgalaxies/addons/jkgalaxies-maps2-v1-02";
+const mapPack02_url_ddns = "";
+const mapPack02_url_box = "https://uvu.box.com/shared/static/beqd7odfuqj2yzh72i55tw6ls2110x3w.zip";
+const mapPack02_url_moddb = "";
 
-const mapPack01_hash = "ECCB1B4A060628F6E5990F59AA0D0FBE81D0F41CF7A11850400804E8FABB60CD";
-const mapPack01_size = "244 MB";
+const mapPack01_hash = "1FAAD62441894D7A1284F75DC9B62EEDEBC1A0ABAC03DE913B32D0BF954CC61A";
+const mapPack01_size = "243 MB";
 
-const mapPack02_hash = "6CEB43D31FABE35A2215B605A93ECCE9648926721880E9E770034C3A0B7FAB78";
-const mapPack02_size = "114 MB";
+const mapPack02_hash = "1AA44880D607A2E331BE5F41D8EF1657D3E3F60AC15DF9B1DF46CB7150859DC7";
+const mapPack02_size = "113 MB";
 
     
 window.onload = function()
@@ -480,7 +480,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
 
             if(whichTable == '#tableTestDownload')
             {
-                cellContent0_1 = '<td><a href="' + bin_test_mirror_url + '" >' + mirror3 + '</a></td>';
+                cellContent0_1 = '<td><a href="' + bin_test_mirror_url + '" >' + mirror1 + '</a></td>';
                 cellContent0_3 = '';
             }
 
