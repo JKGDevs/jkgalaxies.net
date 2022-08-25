@@ -60,7 +60,7 @@ const asset_date_release = "2020-07-01";
 
 //beta asset urls and hash
 const asset_url_beta1 = "https://uvu.box.com/shared/static/geejtm8xcovvcyt9jra4e6f585beatx1.zip";
-const asset_url_beta2 = "";
+const asset_url_beta2 = "https://uvu.box.com/shared/static/geejtm8xcovvcyt9jra4e6f585beatx1.zip";
 const asset_beta_hash = "B0449F1068EB67832AE6D4073A40979D28137CBB79CD423881C0FFA1FCDC3C50";
 const asset_size_beta = "257 MB";
 const asset_date_beta = "2022-08-25";
@@ -533,7 +533,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
 
     if(whichTable == '#tableTestDownload')
     {
-        var cellContent1_1 = '<td><a href="' + asset_url_beta2 + '" >' + mirror3 +'</a></td>'; 
+        var cellContent1_1 = '<td><a href="' + asset_url_beta2 + '" >' + mirror1 +'</a></td>'; 
     }
 
     $(whichTable + " tbody")
@@ -608,7 +608,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
                 )
             )
             .append($("<td>")
-                .text("2016-11-03")
+                .text("2022-08-25")
             )
             .append(cellContent2_0)
             .append(cellContent2_1)
@@ -636,7 +636,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
                 )
             )
             .append($("<td>")
-                .text("2020-02-13")
+                .text("2022-08-25")
             )
             .append(cellContent3_0)
             .append(cellContent3_1)
