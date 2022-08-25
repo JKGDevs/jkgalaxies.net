@@ -582,8 +582,8 @@ function drawTable(version, release, asset, OS_builds, releasetype)
 
     if(whichTable == "#tableTestDownload")
     {
-        var cellContent2_1 = '<td><a href="' + mapPack01_url_ddns + '" >' + mirror3 +'</a></td>';
-        var cellContent3_1 = '<td><a href="' + mapPack02_url_ddns + '" >' + mirror3 +'</a></td>'; 
+        var cellContent2_1 = '<td><a href="' + mapPack01_url_box + '" >' + mirror1 +'</a></td>';
+        var cellContent3_1 = '<td><a href="' + mapPack02_url_box + '" >' + mirror1 +'</a></td>'; 
     }
         
     $(whichTable + " tbody")
