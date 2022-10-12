@@ -54,12 +54,13 @@ const bin_osx_beta_url3 = "";
 const asset_url_release1 = "https://uvu.box.com/shared/static/ctdly3jwnhjcji560sx1czfdgnahbtzi.zip";
 const asset_url_release2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jedi-knight-galaxies-v1322-assets"; //for moddb
 const asset_url_release3 = "https://jk2t.ddns.net/jkgfiles/ctdly3jwnhjcji560sx1czfdgnahbtzi.zip";
+const asset_url_release4 = "https://jkhub.org/files/file/3116-jedi-knight-galaxies-assets/";
 const asset_release_hash = "B6792B130E52313BFCE44963D3000411261570B9B20647217211C80B9679911B";
 const asset_size_release = "243 MB";
 const asset_date_release = "2020-07-01";
 
 //beta asset urls and hash
-const asset_url_beta1 = "https://uvu.box.com/shared/static/geejtm8xcovvcyt9jra4e6f585beatx1.zip";
+const asset_url_beta1 = "https://jkhub.org/files/file/3126-jedi-knight-galaxies-assets-beta/";
 const asset_url_beta2 = "https://uvu.box.com/shared/static/geejtm8xcovvcyt9jra4e6f585beatx1.zip";
 const asset_beta_hash = "B0449F1068EB67832AE6D4073A40979D28137CBB79CD423881C0FFA1FCDC3C50";
 const asset_size_beta = "257 MB";
@@ -175,7 +176,7 @@ function DetectClientOS()
     /*setup up asset link, may be changed by specific OS below*/
     document.getElementById("downloadAssetBtn").href=asset_url_release1;
     document.getElementById("downloadAssetBtnSm").href=asset_url_release1;
-    document.getElementById("downloadAssetBtnTestSm").href=asset_url_beta1; 
+    document.getElementById("downloadAssetBtnTestSm").href=asset_url_beta2; //note: use box.com for this specifically cause it looks nicer
 
     document.getElementById("downloadType").innerHTML += "<br>";
     if (window.navigator.userAgent.indexOf("Windows NT 10.0")!= -1) OSName="Windows";
@@ -416,7 +417,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
         whichTable = "#tablePrimaryDownload";
         binHashArr = bin_hash_release_array;
         asset_size = asset_size_release;
-        asset_url = asset_url_release1;
+        asset_url = asset_url_release4;
         asset_date = asset_date_release;
     } 
 
@@ -523,7 +524,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
     }
 
     //assets for table
-    var cellContent1_0 = '<td><a href="' + asset_url + '" >' + mirror1 +'</a></td>'; 
+    var cellContent1_0 = '<td><a href="' + asset_url + '" >' + mirror4 +'</a></td>'; 
     if(whichTable == "#tablePrimaryDownload")
     {
         var cellContent1_1 = '<td><a href="' + asset_url_release1 + '" >' + mirror1 +'</a></td>';
