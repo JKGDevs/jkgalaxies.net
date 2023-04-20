@@ -60,6 +60,13 @@ $(document).ready(function()
         handleImageModal();
     }
 
+    if($('body').hasClass("DiscordPage"))
+    {
+        window.onload = function() {
+            window.location.replace("https://discord.gg/YuG8Zks"); // similar to a redirect
+        }
+    }
+
     
     if($('body').hasClass("IndexPage"))
     {
