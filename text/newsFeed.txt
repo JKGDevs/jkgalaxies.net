@@ -3,6 +3,9 @@ v1.3.23 is now available as a beta/test release.  Go <a href="https://www.jkgala
 We are currently working on the <a href="https://github.com/JKGDevs/JediKnightGalaxies/issues/355">next patch</a>.
 <br>
 <br>
+May the 4th be with you!  Come join the community for scrimmage matches at <em>Thu May 04 2023 22:30 UTC</em> and again at <em>Fri May 05 2023 05:00 UTC</em>.  Keep those blasters steady!
+<br>
+<br>
 <!--DO NOT MODIFY BELOW THIS POINT-->
 <p id="newsDate"></p>
 <script>
