@@ -18,3 +18,4 @@ ErrorDocument 403 /403.shtml
 #Redirect 301 /legal http://jkgalaxies.net/legal.html
 #Redirect 301 /privacy http://jkgalaxies.net/legal.html
 #Redirect 301 /tos http://jkgalaxies.net/legal.html
+#Redirect 301 /discord https://www.jkgalaxies.net/discord.html
