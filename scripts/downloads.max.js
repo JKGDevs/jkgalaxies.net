@@ -37,21 +37,21 @@ const bin_hash_beta_array = [bin_win_hash_beta, bin_lin_hash_beta, bin_osx_hash_
 //binary urls release
 const bin_win_url1 = "https://uvu.box.com/shared/static/qzj1ewi28g2k8glv4arparbxp36gwzjq.zip"; //for box
 const bin_lin_url1 = "https://uvu.box.com/shared/static/dds514xxoh9xgg8tsuutugd16ve53837.zip"; //for box
-const bin_osx_url1 =  "https://uvu.box.com/shared/static/6s9azfhatnyxhm1wlni7t5r4ygpzx47j.zip"; //for box
-const bin_win_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1322a-win"; //for moddb
-const bin_lin_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1-3-22a-linux"; //for moddb
-const bin_osx_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1-3-22a-osx"; //for moddb
+const bin_osx_url1 = ""; //for box
+const bin_win_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1-3-23-win"; //for moddb
+const bin_lin_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1-3-23-linux"; //for moddb
+const bin_osx_url2 = ""; //for moddb
 const bin_win_url3 = "https://jk2t.ddns.net/jkgalaxies/jkgalaxies_v1.3.23_win.zip";  //for jk2t
 const bin_lin_url3 = "https://jk2t.ddns.net/jkgalaxies/jkgalaxies_v1.3.23_linux.zip";  //for jk2t
 const bin_osx_url3 = "";    //for jk2t
 
 //binary urls beta
-const bin_win_beta_url3 = "https://uvu.box.com/shared/static/l3eo6vduufz26kwiioumeem8xup16a3i.zip";  //jk2t is probably the only mirror we'll have for test releases, add em here
+const bin_win_beta_url3 = "https://uvu.box.com/shared/static/l3eo6vduufz26kwiioumeem8xup16a3i.zip";  //box is probably the only mirror we'll have for test releases, add em here
 const bin_lin_beta_url3 = "https://uvu.box.com/shared/static/hjbaon0bfi15xu3beyscq37cmywpe7t6.zip";
 const bin_osx_beta_url3 = "";
 
 //asset urls and hash
-const asset_url_release1 = "https://uvu.box.com/shared/static/ctdly3jwnhjcji560sx1czfdgnahbtzi.zip";
+const asset_url_release1 = "https://uvu.box.com/shared/static/geejtm8xcovvcyt9jra4e6f585beatx1.zip";
 const asset_url_release2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jedi-knight-galaxies-v1-3-23-assets"; //for moddb
 const asset_url_release3 = "https://jk2t.ddns.net/jkgalaxies/geejtm8xcovvcyt9jra4e6f585beatx1.zip";
 const asset_url_release4 = "https://jkhub.org/files/file/3116-jedi-knight-galaxies/";     //for jkhub, note: download contains both assets and binaries
