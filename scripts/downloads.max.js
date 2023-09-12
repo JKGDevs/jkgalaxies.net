@@ -23,9 +23,9 @@ const mirror3 = "JK2T.ddns.net";
 const mirror4 = "JKHub.org";
 
 //hash of bin release
-const bin_win_hash_release = "F7E9D2D8E79B65D740171E15CAF07F932875FEE6AC91ABDD4E780454A5447525"; //sha256 hashes of mostly "fixed" files, fixme: autocalculate :(
-const bin_lin_hash_release = "D74266B63C53A185AE097CA9D5CB73F61BAC050761EF681FE66EE43433C287CB";
-const bin_osx_hash_release = "";
+const bin_win_hash_release = "C2A812AA0D80293F95FED73A24069D910C87B5E703615FDDE836F3A120450DA5"; //sha256 hashes zip files, fixme: autocalculate :(
+const bin_lin_hash_release = "0FE4DAD5159808236180669C4BBA54A0B680A7EE4C76D5D2F6D79C307BE49ED7";
+const bin_osx_hash_release = "42B533831AE0A4B2323B5BF840F51C9A2464ACB2F076328FB0C4ADD10C7651DF";
 const bin_hash_release_array = [bin_win_hash_release, bin_lin_hash_release, bin_osx_hash_release];
 
 //hash of bin beta
@@ -35,14 +35,14 @@ const bin_osx_hash_beta = "";
 const bin_hash_beta_array = [bin_win_hash_beta, bin_lin_hash_beta, bin_osx_hash_beta];
 
 //binary urls release
-const bin_win_url1 = "https://uvu.box.com/shared/static/l3eo6vduufz26kwiioumeem8xup16a3i.zip"; //for box
-const bin_lin_url1 = "https://uvu.box.com/shared/static/hjbaon0bfi15xu3beyscq37cmywpe7t6.zip"; //for box
-const bin_osx_url1 =  ""; //for box
-const bin_win_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1-3-23-win"; //for moddb
-const bin_lin_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1-3-23-linux"; //for moddb
-const bin_osx_url2 = ""; //for moddb
-const bin_win_url3 = "https://jk2t.ddns.net/Windows/jkgalaxies_v1.3.23_win.zip";  //for jk2t
-const bin_lin_url3 = "https://jk2t.ddns.net/Linux/jkgalaxies_v1.3.23_linux.zip";  //for jk2t
+const bin_win_url1 = "https://uvu.box.com/shared/static/qzj1ewi28g2k8glv4arparbxp36gwzjq.zip"; //for box
+const bin_lin_url1 = "https://uvu.box.com/shared/static/dds514xxoh9xgg8tsuutugd16ve53837.zip"; //for box
+const bin_osx_url1 =  "https://uvu.box.com/shared/static/6s9azfhatnyxhm1wlni7t5r4ygpzx47j.zip"; //for box
+const bin_win_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1322a-win"; //for moddb
+const bin_lin_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1-3-22a-linux"; //for moddb
+const bin_osx_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1-3-22a-osx"; //for moddb
+const bin_win_url3 = "https://jk2t.ddns.net/jkgalaxies/jkgalaxies_v1.3.23_win.zip";  //for jk2t
+const bin_lin_url3 = "https://jk2t.ddns.net/jkgalaxies/jkgalaxies_v1.3.23_linux.zip";  //for jk2t
 const bin_osx_url3 = "";    //for jk2t
 
 //binary urls beta
@@ -51,29 +51,29 @@ const bin_lin_beta_url3 = "https://uvu.box.com/shared/static/hjbaon0bfi15xu3beys
 const bin_osx_beta_url3 = "";
 
 //asset urls and hash
-const asset_url_release1 = "https://uvu.box.com/shared/static/geejtm8xcovvcyt9jra4e6f585beatx1.zip";
+const asset_url_release1 = "https://uvu.box.com/shared/static/ctdly3jwnhjcji560sx1czfdgnahbtzi.zip";
 const asset_url_release2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jedi-knight-galaxies-v1-3-23-assets"; //for moddb
-const asset_url_release3 = "";
-const asset_url_release4 = "https://jkhub.org/files/file/3126-jedi-knight-galaxies-assets-beta/";
-const asset_release_hash = "B0449F1068EB67832AE6D4073A40979D28137CBB79CD423881C0FFA1FCDC3C50";
+const asset_url_release3 = "https://jk2t.ddns.net/jkgalaxies/geejtm8xcovvcyt9jra4e6f585beatx1.zip";
+const asset_url_release4 = "https://jkhub.org/files/file/3116-jedi-knight-galaxies/";     //for jkhub, note: download contains both assets and binaries
+const asset_release_hash = "B6792B130E52313BFCE44963D3000411261570B9B20647217211C80B9679911B";
 const asset_size_release = "257 MB";
 const asset_date_release = "2022-08-25";
 
 //beta asset urls and hash
-const asset_url_beta1 = "https://jkhub.org/files/file/3126-jedi-knight-galaxies-assets-beta/";
-const asset_url_beta2 = "https://uvu.box.com/shared/static/geejtm8xcovvcyt9jra4e6f585beatx1.zip";
+const asset_url_beta1 = "https://jkhub.org/files/file/3126-jedi-knight-galaxies-assets-beta/";      //for jkhub (currently disabled)
+const asset_url_beta2 = "https://uvu.box.com/shared/static/geejtm8xcovvcyt9jra4e6f585beatx1.zip";   //for box
 const asset_beta_hash = "B0449F1068EB67832AE6D4073A40979D28137CBB79CD423881C0FFA1FCDC3C50";
 const asset_size_beta = "257 MB";
 const asset_date_beta = "2022-08-25";
 
 //map pack urls and hashes
 const mapPack01_url_jkhub = "https://jkhub.org/files/file/2652-jedi-knight-galaxies-map-bundle-1/";
-const mapPack01_url_ddns = "https://jk2t.ddns.net/jkgalaxies/iw9gkh7p80wt0y28h1sd46lvk54v8bdv.zip";
+const mapPack01_url_ddns = "https://jk2t.ddns.net/jkgalaxies/2wm4soep000wcffah9rra7xpsqfwzit7.zip";
 const mapPack01_url_box = "https://uvu.box.com/shared/static/2wm4soep000wcffah9rra7xpsqfwzit7.zip";
 const mapPack01_url_moddb = "https://www.moddb.com/mods/jkgalaxies/addons/jkgalaxies-maps1-v1-03";
 
 const mapPack02_url_jkhub = "https://jkhub.org/files/file/3778-jedi-knight-galaxies-map-bundle-2/";
-const mapPack02_url_ddns = "https://jk2t.ddns.net/jkgalaxies/berqiy7cqs1tv694gs2dfg27zy3wjlwt.zip";
+const mapPack02_url_ddns = "https://jk2t.ddns.net/jkgalaxies/beqd7odfuqj2yzh72i55tw6ls2110x3w.zip";
 const mapPack02_url_box = "https://uvu.box.com/shared/static/beqd7odfuqj2yzh72i55tw6ls2110x3w.zip";
 const mapPack02_url_moddb = "https://www.moddb.com/mods/jkgalaxies/addons/jkgalaxies-maps2-v1-03";
 
