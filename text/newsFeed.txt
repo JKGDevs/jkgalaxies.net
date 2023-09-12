@@ -1,4 +1,4 @@
-v1.3.23 is now available as a beta/test release.  Go <a href="https://www.jkgalaxies.net/download.html#testdiv">here</a> to download it!
+v1.3.23 is now the current release.  Go <a href="https://www.jkgalaxies.net/download.html">here</a> to download it!<br>  Jedi Academy is turning 20 this week, and JKG is turning 10, to celebrate we'll be holding scrimmage matches over the weekend.  Check the Discord announcements below for more details.
 <br><br>
 We are currently working on the <a href="https://github.com/JKGDevs/JediKnightGalaxies/issues/355">next patch</a>.
 <br>
