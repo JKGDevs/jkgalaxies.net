@@ -1,26 +1,37 @@
-﻿Arkan (Mapping)<br>
+﻿
+Acika(jkgalaxies.com site web code)<br>
+AngelModder(Mapping)<br>
+Arkan (Mapping)<br>
 Ashura (Mandalorian Neo-Crusader model)<br>
-Awec (Web Help)<br>
+Awec (jkgalaxies.net web help)<br>
 Dalo Lorn<br>
-Daggo (server list and code help)<br>
-Darth Phae (Galinolo Huntsman skin reference)<br>
+Daggo (Server list and code help)<br>
+Dave (Advising)<br>
+Darth Phae (Textures and Galinolo Huntsman skin reference)<br>
 Dwayne "Oddjob" Douglass (<a href="https://mrwonko.de/jk3files/Jedi%20Outcast/Models/Star%20Wars/3622/">Boushh clothing pieces</a>)<br>
 Flate (jk2t.ddns.net mirror and server list)<br>
-George (code help with sabers)<br>
+George (Code help with sabers)<br>
 Hapslash (Stormtrooper Model & Capes)<br>
-Inyri Forge (Instruments & KotOR Objects)<br>
+iFish(jkgalaxies.com site webdesign)<br>
+Inyri Forge (Instruments & KotoR Objects)<br>
 Krattle (Chalmun’s Cantina)<br>
-MountainDew<br>
+MountainDew (Advising)<br>
 Neomarz (Count Dooku Cape, Jango Fett & Zam Wessel clothing pieces)<br>
 Nightcrawler<br>
 Obliviion<br>
+orb101(Video editing)<br>
 Ori'Ramikad<br>
 Orj (Mosquito Vibroblade)<br>
 Plasma (Mapping)<br>
-Smoo<br>
+RoboPhred(Programming)<br>
+Seto(Advising)<br>
+Smoo(Servers, code, and moderation)<br>
+Supa(Advising)<br>
 Szico VII (Nightfall Map)<br>
 Toshi (<a href="https://jkhub.org/files/file/1006-toshis-rotj-luke-skywalker/">RotJ Luke model</a> clothing pieces)<br>
 Tommy<br>
-Xel (Bacta Grenade Models)<br><br>
+Tx606(Advising)<br>
+Xel (Bacta Grenade models)<br>
+Zappa(Video editing)<br><br>
 
 And many more!
