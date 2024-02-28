@@ -320,12 +320,14 @@ function handleImageModal()
                 closeModal();
                 closeModalMediaShare();
                 break;
-            //key press: left
+            //key press: left or a
             case 37:
+            case 65:
                 showSlides(slideIndex += -1);
                 break;
-            //key press: right
+            //key press: right or d
             case 39:
+            case 68:
                 showSlides(slideIndex += 1);
                 break;
         }
