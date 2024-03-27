@@ -48,7 +48,14 @@
             <h2>What is the game like?</h2>
             <p>Current gameplay is a Star Wars FPS shooter, with some alternative objectives (such as capture the flag).  Earn credits by getting kills or completing objectives, then spend those credits on new equipment in the shop.  Check out the gameplay video below which highlights some of the newer introduced features in v1.3.</p>
 
-            <div class="embed-responsive embed-responsive-16by9">
+            <div class="cookie-banner" id="cookieBanner">
+                <p>
+                    In order to display the embedded YouTube videos, you must first opt-in to allow <a href="./legal.html#thirdparty" title="View our legal and cookie policy here.">3rd party cookies</a>  from <a href="https://policies.google.com/privacy" title="Click here to view YouTube/Google's terms.">Google</a>.  This feature is disabled until you opt in.
+                </p>
+                <button onclick="acceptCookies('youtubevids', 'cookieBanner')">Allow</button>
+            </div>
+
+            <div id="youtubevids" class="embed-responsive embed-responsive-16by9">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/vJnh-hNendI"
                         frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope;
                 picture-in-picture" allowfullscreen alt="Gameplay Video" class="embed-responsive-item">
