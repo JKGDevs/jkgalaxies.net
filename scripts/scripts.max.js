@@ -226,8 +226,13 @@ function loadNavBar()
     if(prevScrollPos < currentScrollPos)
     {
         document.getElementById("navbar").style.top = "-300px";
-        document.getElementById("myModalCloser").style.setProperty("top", "10px");
-        document.getElementById("MediaModalCloser").style.setProperty("top", "10px");
+
+        //only shift the modal window down on the about page
+        if($('body').hasClass("AboutPage"))
+        {
+            document.getElementById("myModalCloser").style.setProperty("top", "10px");
+            document.getElementById("MediaModalCloser").style.setProperty("top", "10px");
+        }
     }
     else
     {
@@ -237,8 +242,12 @@ function loadNavBar()
         {
             pixelsdown = "80px"; //go further down on mobile screens so its not covered by the navbar
         }
-        document.getElementById("myModalCloser").style.setProperty("top", pixelsdown);
-        document.getElementById("MediaModalCloser").style.setProperty("top", "60px");
+
+        if($('body').hasClass("AboutPage"))
+        {
+            document.getElementById("myModalCloser").style.setProperty("top", pixelsdown);
+            document.getElementById("MediaModalCloser").style.setProperty("top", "60px");
+        }
     }
     prevScrollPos = currentScrollPos;
 
@@ -302,7 +311,22 @@ function loadText(tagID, fileLocation)
     $(tagID).load(fileLocation);
 }
 
-
+/*Handle 3rd party cookie GDPR*/
+//elementToReveal is the element on the page that is hidden until agreeing to allow cookies
+//xSize is how big to draw the accept cookie dialog box on the x-axis
+//ySize is how big to draw the accept cookie dialog box on the y-axis
+function acceptCookies(elementToReveal, elementToHide)
+{
+    if(document.getElementById(elementToReveal))
+    {
+        document.getElementById(elementToHide).style.display = 'none';
+        document.getElementById(elementToReveal).style.display = 'block';
+    }
+    else
+    {
+        console.log("Error: '" + elementtoReveal +"' not found, unable to accept.")
+    }
+}
 
 /*Modal Stuff*/
 function handleImageModal()
