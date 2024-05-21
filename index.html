@@ -67,7 +67,7 @@
                 <p>
                     In order to display the newsfeed, you must first opt-in to allow <a href="./legal.html#thirdparty" title="View our legal and cookie policy here.">3rd party cookies</a>  from <a href="https://widgetbot.io/cookie" title="Click here to view WidgetBot's terms.">WidgetBot</a>.  This feature is disabled until you opt in.
                 </p>
-                <button onclick="acceptCookies('widgetbotdiv', 'cookieBanner')">Allow</button>
+                <button onclick="acceptCookiesJavascript('widgetbotdiv', 'cookieBanner', 'https://cdn.jsdelivr.net/npm/@widgetbot/html-embed')">Allow</button>
             </div>
 
             <div id="widgetbotdiv">
@@ -99,7 +99,6 @@
             window.jQuery || document.write('\x3Cscript type="text/javascript" src="scripts/jquery-3.7.1.min.js">\x3C/script>');
     </script>
     <script async type="text/javascript" src="scripts/scripts.js"></script>
-    <script async defer src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>  
     </body>
     
 </html>
