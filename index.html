@@ -58,17 +58,28 @@
             <p id="manualNews">[loading...]</p> <!--update \text\newsFeed.txt with new news, supports html so feel free to add pics whatever"-->
         </div>
 
-        <div class="centerdiv" id="widgetbotdiv">
+
+
+        <div class="centerdiv" id="newsfeed">
             <h2><a href="https://discord.gg/YuG8Zks" alt="Discord server invite link." title="Click to join the JKG Discord community.">Discord Announcements</a></h2>
 
-            <widgetbot
-                id="widgetbotframe"
-                server="152168677578506240"
-                channel="152169339208990721"
-                width="480"
-                height="375"
-                shard="https://e.widgetbot.io"
-            </widgetbot>
+            <div class="cookie-banner" id="cookieBanner">
+                <p>
+                    In order to display the newsfeed, you must first opt-in to allow <a href="./legal.html#thirdparty" title="View our legal and cookie policy here.">3rd party cookies</a>  from <a href="https://widgetbot.io/cookie" title="Click here to view WidgetBot's terms.">WidgetBot</a>.  This feature is disabled until you opt in.
+                </p>
+                <button onclick="acceptCookies('widgetbotdiv', 'cookieBanner')">Allow</button>
+            </div>
+
+            <div id="widgetbotdiv">
+                <widgetbot
+                    id="widgetbotframe"
+                    server="152168677578506240"
+                    channel="152169339208990721"
+                    width="480"
+                    height="375"
+                    shard="https://e.widgetbot.io"
+                </widgetbot>
+            </div>
 
             <!-- //this is the backup iframe if too many people complain about no javascript - it doesn't work as well so I don't want to use it if we can avoid it
             <iframe src="https://e.widgetbot.io/channels/152168677578506240/152169339208990721" height="480" width="350"></iframe>
@@ -88,7 +99,7 @@
             window.jQuery || document.write('\x3Cscript type="text/javascript" src="scripts/jquery-3.7.1.min.js">\x3C/script>');
     </script>
     <script async type="text/javascript" src="scripts/scripts.js"></script>
-    <script async defer src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>      
+    <script async defer src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>  
     </body>
     
 </html>
