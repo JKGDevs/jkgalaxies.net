@@ -598,3 +598,40 @@ a.bigDownloadHoverBtn:active {
     display: none;
     visibility: hidden;
   }
+
+  .cookie-banner
+  {
+    color: white;
+    background-color: #313339;
+    border-radius: 6px;
+    padding: 10px 20px;
+    min-width: 300px;
+    min-height: 175px;
+    width:25%;
+    height:20%;
+
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+  }
+
+  .cookie-banner button
+  {
+    background-color: #0476c2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+   }
+
+   #widgetbotdiv
+   {
+    display: none;
+   }
+
+   #youtubevids
+   {
+    display: none;
+   }
