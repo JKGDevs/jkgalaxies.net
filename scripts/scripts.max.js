@@ -311,14 +311,33 @@ function loadText(tagID, fileLocation)
     $(tagID).load(fileLocation);
 }
 
+
 /*
 Handle 3rd party cookie GDPR
-This is specifically for embedded widgetbot.
+Generic function for just hiding an element (doesn't block any resources).
+*/
+function acceptCookies(elementToReveal, elementToHide, link)
+{
+    if(document.getElementById(elementToReveal))
+    {
+        document.getElementById(elementToHide).style.display = 'none';
+        document.getElementById(elementToReveal).style.display = 'block';
+    }
+    else
+    {
+        console.log("Error: '" + elementtoReveal +"' not found, unable to accept.")
+    }
+}
+
+/*
+Handle 3rd party cookie GDPR
+This is a generic element for iframes.
 */
 //elementToReveal is the element on the page that is hidden until agreeing to allow cookies
 //elementToHide is typically the cookie banner (it goes away after you press hide)
-//link is the url to the embedded javascript (usually handled as an iframe under the hood)
-function acceptCookiesJavascript(elementToReveal, elementToHide, link)
+//link is the url to the embedded iframe
+//id specifies what div id to look at
+function acceptCookiesIframe(elementToReveal, elementToHide, link, id)
 {
     if(document.getElementById(elementToReveal))
     {
@@ -331,18 +350,15 @@ function acceptCookiesJavascript(elementToReveal, elementToHide, link)
         return;
     }
 
-    if(link === undefined || typeof(link) === undefined)
+    if(link === undefined || typeof(link) === undefined || id == undefined || typeof(id) === undefined)
         return;
     else
     {
 
-        var s = document.createElement("script");
-        s.async = true;
-        s.defer = true;
-        s.type = "text/javascript";
-        s.src = link;
-        $("head").append(s);
-
+        if(document.getElementById(id))
+        {
+            document.getElementById(id).src = link;
+        }
     }
 }
 
@@ -381,13 +397,12 @@ function acceptCookiesYoutube(elementToReveal, elementToHide, link, id)
 
 /*
 Handle 3rd party cookie GDPR
-This is a generic element for iframes.
+This is specifically for embedded widgetbot.
 */
 //elementToReveal is the element on the page that is hidden until agreeing to allow cookies
 //elementToHide is typically the cookie banner (it goes away after you press hide)
-//link is the url to the embedded iframe
-//id specifies what div id to look at
-function acceptCookiesIframe(elementToReveal, elementToHide, link, id)
+//link is the url to the embedded javascript (usually handled as an iframe under the hood)
+function acceptCookiesJavascript(elementToReveal, elementToHide, link)
 {
     if(document.getElementById(elementToReveal))
     {
@@ -400,15 +415,18 @@ function acceptCookiesIframe(elementToReveal, elementToHide, link, id)
         return;
     }
 
-    if(link === undefined || typeof(link) === undefined || id == undefined || typeof(id) === undefined)
+    if(link === undefined || typeof(link) === undefined)
         return;
     else
     {
 
-        if(document.getElementById(id))
-        {
-            document.getElementById(id).src = link;
-        }
+        var s = document.createElement("script");
+        s.async = true;
+        s.defer = true;
+        s.type = "text/javascript";
+        s.src = link;
+        $("head").append(s);
+
     }
 }
 
