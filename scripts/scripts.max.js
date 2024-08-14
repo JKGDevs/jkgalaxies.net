@@ -2,27 +2,30 @@
 window.addEventListener('load', function ()
 {
         /*reveal navbar by clicking logo*/
-        $('#logo').click(function()
+        $('.logo').click(function()
         {
             window.scrollBy(0, 301);
             window.scrollBy(0, -301);
+            loadNavBar();               //call this directly in case the resolution of the screen is big enough there's no scrollbar
         });
 
         //if you want different behavior between mobile/desktop
         /*
         if( $(window).width() < 769 && (window.innerHeight > window.innerWidth) )
         {
-            $('#logo').click(function()
+            $('.logo').click(function()
             {
                 window.scrollBy(0, 301);
                 window.scrollBy(0, -301);
+                loadNavBar();
             });
         }
         else
         {
-            $('#logo').click(function()
+            $('.logo').click(function()
             {
                 window.scrollBy(0, 301);
+                loadNavBar();
             });
         }
         */
