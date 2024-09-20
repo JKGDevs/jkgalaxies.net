@@ -18,8 +18,11 @@ Contains the main parts of the web page.
 * contributors.html lists all the developers and volunteers that have worked on the mod.  
 * download.html contains download links to the test and stable releases for the mod.  
 * legal.html a boring page with legal crap required by law.  
+* discord.html redirects users that visit to the Discord link (https://discord.gg/YuG8Zks)
+* servers.html redirects users that visit to the Serverlist hosted by Flate at https://dark-clan.servegame.com/serverlist_new/serverlist.html#autoRefresh=1&theme=dark&game=jkg&sortBy=humans
 * update.index.html will serve as a splash page, if someone tries to go to update.jkgalaxies.net - right now it doesn't really serve a real purpose until someone fixes the launcher.  For now it simply displays the latest version string of the game.
 * styles.css (overrides styles for the site, most pages use this, additional css styling pages can also be added to root, however, the primary css file is styles.css and you should try to just update that if possible before adding new style sheets.
+
 
 #### text ####
 Contains easy-to-update .txt files that contain textual blobs that can be/are inserted into the site such as newsFeed.txt this does support html text technically, so you can do formatting if you want.

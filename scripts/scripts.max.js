@@ -70,6 +70,13 @@ $(document).ready(function()
         }
     }
 
+    if($('body').hasClass("ServersPage"))
+    {
+        window.onload = function() {
+            window.location.replace("https://dark-clan.servegame.com/serverlist_new/serverlist.html#autoRefresh=1&theme=dark&game=jkg&sortBy=humans");
+        }
+    }
+
     
     if($('body').hasClass("IndexPage"))
     {

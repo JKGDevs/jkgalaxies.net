@@ -19,3 +19,7 @@ ErrorDocument 403 /403.shtml
 #Redirect 301 /privacy http://jkgalaxies.net/legal.html
 #Redirect 301 /tos http://jkgalaxies.net/legal.html
 #Redirect 301 /discord https://www.jkgalaxies.net/discord.html
+#Redirect 301 /community https://www.jkgalaxies.net/discord.html
+#Redirect 301 /servers https://www.jkgalaxies.net/servers.html
+#Redirect 301 /server https://www.jkgalaxies.net/servers.html
+#Redirect 301 /forum https://jkhub.org/forum/117-jedi-knight-galaxies/
