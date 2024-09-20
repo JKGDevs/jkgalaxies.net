@@ -466,6 +466,16 @@ function handleImageModal()
             case 68:
                 showSlides(slideIndex += 1);
                 break;
+            //key press: down or s    
+            case 40:
+            case 83:
+                showSlides(slideIndex += -4);
+                break;
+            //key press up or w
+            case 33:
+            case 87:
+                showSlides(slideIndex += 4);
+                break;
         }
     });
 }
