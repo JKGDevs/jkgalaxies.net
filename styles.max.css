@@ -55,6 +55,7 @@ td, tr
   
 tr:nth-child(even){background-color: #353535}
 
+/*for prearranged paragraph's of code-like text*/
 pre
 {
     font-size: 16px;
@@ -62,6 +63,15 @@ pre
     background-color: #232323;
     color: #b1afac;
     margin: 25px;
+}
+
+/*for small code-like snippets inserted directly into a paragraph*/
+code
+{
+    /*todo: add syntax highlighting for various languages*/
+    font-family: "Consolas";
+    background-color: #232323;
+    color: #b1afac;
 }
 
 th, td 
