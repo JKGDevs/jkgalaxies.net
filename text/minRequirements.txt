@@ -18,8 +18,8 @@ Other: The following libraries are required dependencies:  libjpeg, libpng, zlib
 An internet connection is required to play online.
 While JKG should work on most debian distributions, it is only occasionally tested for Ubuntu.  
 If you would like to compile the binaries yourself, visit the readme on the Github 
-page for instructions: https://github.com/JKGDevs/JediKnightGalaxies/tree/develop#build-guide
-An in depth linux guide for compiling can also be found here: https://github.com/JKGDevs/JediKnightGalaxies/wiki/Flate%27s-Debian-Ubuntu-Compiling-Guide
+page for instructions: <a href="https://github.com/JKGDevs/JediKnightGalaxies/tree/develop#build-guide" title="Link to Build Guide">https://github.com/JKGDevs/JediKnightGalaxies/tree/develop#build-guide</a>
+An in depth linux guide for compiling can also be found here: <a href="https://github.com/JKGDevs/JediKnightGalaxies/wiki/Flate%27s-Debian-Ubuntu-Compiling-Guide" title="Link to Flate's Build Guide.">https://github.com/JKGDevs/JediKnightGalaxies/wiki/Flate%27s-Debian-Ubuntu-Compiling-Guide</a>
 
 <strong>Macintosh</strong>
 MacOS is no longer supported.  If you would like to help us develop for mac builds, please reach out to us on <a href="https://www.jkgalaxies.net/discord.html" title="Join the Discord.">the Discord</a>.
