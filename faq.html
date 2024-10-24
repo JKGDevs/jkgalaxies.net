@@ -211,17 +211,17 @@
             <pre id="minRequirements">[loading...]</pre>
         </div>
 
-        <div class="maindiv">
-            <h2>What happened to jkgalaxies.com?</h2>
-            <p>
-                Unfortunately, the domain expired and was bought out by a domain name troll/cybersquatter before we could acquire it from the original owner, Jake.  It is now marked up considerably and in the hands of a domain name retailer who has no intention of parting with it cheaply.  The site also fell into disrepair prior to that point, due to the annoyance of updating it constantly (we used Wordpress back then) and dealing with constant bot attacks.  At that point, the domain name expired.
-            </p>
-        </div>
-
         <div class="maindiv" id="launcher">
             <h2>What happened to the launcher?</h2>
             <p>
                 Its development has been delayed until further notice while we work on the main game.  We will probably bring it back at some point when we are ready.  Unfortunately, it had quite a few bugs when initially released and its code base is now quite old and so we need to update it quite a bit before it can be used again.  Additionally, it required large amounts of bandwidths to use that were not practical for our small team to support financially, which is the primary reason we stopped using it.
+            </p>
+        </div>
+
+        <div class="maindiv">
+            <h2>What happened to jkgalaxies.com?</h2>
+            <p>
+                Unfortunately, the domain expired and was bought out by a domain name troll/cybersquatter before we could acquire it from the original owner, Jake.  It is now marked up considerably and in the hands of a domain name retailer who has no intention of parting with it cheaply.  The site also fell into disrepair prior to that point, due to the annoyance of updating it constantly (we used Wordpress back then) and dealing with constant bot attacks.  At that point, the domain name expired.
             </p>
         </div>
 
@@ -231,7 +231,7 @@
                 First, understand that JKG is a hobby passion project and is not intended to be a professional, (as in you pay money for it, and we make a profit off of it) large industry game.  This means we work on it, because we enjoy it, not because we expect it to become a massive AAA title or because we expect monetary compensation.  We expect it to be a free, open source game.<br><br>
                 Second, know that we love Star Wars and this is very much a fan project, as such we don't really want to divorce the IP (Star Wars) from the game and create our own IP so that we could do the above mentioned.<br><br>
                 Third, know that the Star Wars IP is protected by powerful guardian lawyers paid very well by The Mouse and they have been known to shut down Star Wars <a href="https://kotaku.com/star-wars-kotor-fan-remake-shutting-down-after-cease-a-1829720602" title="KOTOR mod shutdown.">mod projects</a> that strayed too far away from the legal side of the law.  Because Jedi Knight Galaxies is a mod released under the original Jedi Academy modding licensing, it remains under the protection of the law granted by the original Jedi Academy game.<br><br>
-                Fourth, understand that switching engines is a lot of work and would set us back months or even years of development and we simply don't think it is worth doing.  Especially since we have the full source code of Jedi Academy to work with and can literally add whatever we want, new renderers, physics engines, game mechanics, etc. with enough effort.
+                Fourth, understand that switching engines is a lot of work and would set us back years of development and we simply don't think it is worth doing.  Especially since we have the full source code of Jedi Academy to work with and can literally add whatever we want, including new renderers, physics engines, game mechanics, etc. with enough effort.
             </p>
         </div>
 
@@ -245,7 +245,7 @@
         <div class="maindiv" id="sabers">
             <h2>Where are the lightsabers?</h2>
             <p>
-                JKG's lightsaber system is still under development, it will initially be released with v1.4.0.  Until then, sabers are only available through debugging via the console.  We don't recommend playing with them yet, they're very unstable.
+                JKG's lightsaber system is still under development, it will initially be released with v1.4.0.  Until then, sabers are only available through debugging via the console.  We don't recommend playing with them yet, they're very unstable and incomplete.
             </p>
         </div>
 
@@ -256,11 +256,19 @@
             </p>
         </div>
 
+        <div class="maindiv" id="meansofdamage">
+            <h2>What are damage types/means of damage?</h2>
+            <p>
+                Each type of damage or attack in JKG has a "means of damage" associated with it, each of these has various different effects and helps classify damage into different groupings or categories.  Some examples of different means of damage include: fire, blaster, falilng, healing (which does negative damage), saber, pulse, ion, stamina loss/gain, etc.
+            </p>
+
+        </div>
+
         <div class="maindiv" id="jetpacks">
             <h2>How do I use a jetpack?</h2>
             <p>
-                After purchasing a jetpack make sure it is equipped to your ACI (press i to open your inventory and assign it to an ACI slot, they auto assign themselves upon purchase so this is probably not needed).  Once equipped, you can press the use command (+use, the default binding is to e), while you are midair to activate it.  Alternatively you can also tap the ACI key the jetpack is bound to to activate.  Tap the key again to deactivate the jetpack.<br><br>
-                There are different types of jetpacks, for example, the cheapest (and most difficult to control) are 'burst' jetpacks, which rapidly burn through a small fuel tank to provide a 'burst' jump.  While your jetpack is activated you can also hold down shift to engage the turbo.  Keep in mind this burns fuel even faster than normal.  Be warned, if your jetpack runs out of fuel it will shut off in mid air!  Jetpacks can also be disabled by certain types of ion damage.  Note: Most jetpacks cannot be activated while you are carrying the flag in CTF mode.
+                After purchasing a jetpack make sure it is equipped to your ACI (press i to open your inventory and assign it to an ACI slot, they auto assign themselves upon purchase so this is probably not needed).  Once equipped, you can press the use command (+use, the default binding is to e), while you are midair to activate it.  Alternatively you can also tap the ACI key the jetpack is bound to to activate (eg: 2).  Tap the key again to deactivate the jetpack.<br><br>
+                There are different types of jetpacks, for example, the cheapest (and most difficult to control) are 'burst' jetpacks, which rapidly burn through a small fuel tank to provide a 'burst' jump.  While your jetpack is activated you can also hold down shift to engage the turbo.  Keep in mind this burns fuel even faster than normal.  Be warned, if your jetpack runs out of fuel it will shut off in mid air!  Jetpacks can also be disabled by certain types of ion and electrical damage.  Note: Most jetpacks cannot be activated while you are carrying the flag in CTF mode.
             </p>
         </div>
 
@@ -268,14 +276,46 @@
             <h2>How do shields work?</h2>
             <p>
                 After a shield is assigned to your ACI, your shield will start charging after its cooldown has expired.  Some shields do not have a cool down.  The shield bar (visible in the upper left corner of the UI), shows how strong your current shield is at the present moment.  Shields will act as a scapegoat for your health for certain types of damage.  If your shield is damaged, it will stop charging until the cooldown for the recharge resets.  If your shield is completely overloaded with damage (reduced to 0), you will be vulnerable to damage until it begins recharging.<br><br>
-                Blue damage plums appear if you are damaged and the shield does its job of protecting your hp from damage.  Please note that shields cannot protect you from all damage types. For example, slugthrowers or ACP can pierce through shields, and shields cannot protect you from fall damage or other similar circumstances.
+                Blue damage plums appear if you are damaged and the shield does its job of protecting your hp from damage.  Please note that shields cannot protect you from all damage types. For example, slugthrowers or ACP can pierce through shields, and shields cannot protect you from fall damage or other similar circumstances.  Note some shields can be modified to protect or be vulnerable damage types different from standard shields.  Some shields may also have activatable effects which can be triggered by pressing the ACI key the shield is bound to.
+            </p>
+            <h2>What damage types do shields block?</h2>
+            <p>
+                A standard shield will protect from the following damage types: unknown, world, blaster, disruptor, ACP(partially), pulse, ion, ionblaster, electrical, sonic, cold, fire, explosion, quarrel, frozen, carbonite, emp, and stun.  
+
+                Shields can also be modified to protect from additional damage types (or <em>not</em> protect from certain damage types.)
+            </p>
+        </div>
+
+        <div class="maindiv" id="armor">
+            <h2>How does armor work?</h2>
+            <p>
+                To benefit from armor you will first need to purchase armor and then equip it from within the inventory menu (i).  Each type of armor has a slot and will protect that portion of your body while equipped.  For example, a helmet is equipped on the head slot and will reduce damage you take at that hit location. Armor has two ways of protecting you from damage.  First, armor can be resistant against a specific means (or types) of damages (eg: armor may reduce fire damage to that location by 40%). Second, it has an inherent armor value which will reduce damage, a higher value means more reduction of damage. Armor is calculated as follows:
+                <ol>
+                    <li>If the armor is resistant against the damage type (fire, blaster, etc) it will be reduced by that armor's resistance value (eg: 25%).</li>
+                    <li>If armor penetration exists for the damage type, reduce armor by the % of penetration.  This will reduce the EHP in the next step.</li>
+                    <li>Any remaining damage after the first step, will then be calculated based on the value of the armor's effective hit points (EHP).  The effectiveness of this reduction in damage is calculated by multiplying by your (max health / max health + EHP).</li>
+                    <li>The result of the prior step is then multiplied by the damage type's effectiveness against armor. Finally the incoming damage is multiplied by this result to reduce it.</li>
+                </ol>
+                Keep in mind, some means of damage can ignore armor or have penetration which reduces armor's effectiveness against that type of damage.  Most armors will also reduce your movement speed.
+            </p>
+        </div>
+
+        <div class="maindiv" id="shopping">
+            <h2>How do I get/buy equipment?</h2>
+            <p>
+                When you first spawn in the game, you will be given a starting pistol and small amount of credits, however you will probably want to increase your equipment arsenal after you earn a few credits.  Credits are earned by killing enemy players or accomplishing objectives.  You can also earn credits in a myriad of otherways such as by participating in a kill, completing quests, passive credit salary earnings, collecting bounties, or by destroying enemy equipment.  To spend your credits you'll need to find an NPC shopkeeper and press the +use key while facing them (e).  This will open up the shop dialogue screen where you can see what they have available and purchase items you want.  You can also sell the items to them for half the credits of the original value.  Most vendors will refresh what they have available in their shop regularly throughout the match.  There are typically vendors near your team's spawn point, but they may be located inside of a building or doorway so be sure to check near where you spawn.  Some maps may also have travelling vendors which will wander the map looking to sell their wares.<br>
+                <div class="centerdiv">
+                    <a target="_blank" href="https://i.imgur.com/8Xvd2Sa.jpg" alt="Link to vednor screenshot.">
+                        <img class="img-fluid" src="https://i.imgur.com/8Xvd2Sa.jpg" alt="Screenshot of Vendor" title="A rodian vendor.">
+                    </a>
+                </div>
             </p>
         </div>
 
         <div class="maindiv" id="melee">
             <h2>How do I use melee or punch people?</h2>
             <p>
-                You can enter melee mode, by pressing on an ACI key a weapon is currently bound to.  For example, the starting pistol is often bound to slot 0, so pressing 0 will toggle melee mode.  Tap 0 again to switch back to your gun.  You can then punch people in melee mode by pressing the attack key (MOUSE 1).  Special moves can be performed by a combination of MOUSE2 and MOUSE1, such as kicks.
+                You can enter melee mode, by pressing on an ACI key a weapon is currently bound to.  For example, the starting pistol is often bound to slot 0, so pressing 0 will toggle melee mode while ACI slot 0 is selected.  Tap 0 again to switch back to your gun.  You can then punch people in melee mode by pressing the attack key (MOUSE 1).  Special moves can be performed by a combination of MOUSE2 and MOUSE1, such as kicks.
             </p>
         </div>
 
@@ -289,8 +329,22 @@
         <div class="maindiv" id="pazaak">
             <h2>How do I play Pazaak with someone else?</h2>
             <p>
-                You will need to bind the cmd "pzktest" to a key and then face another player and press that key.  You can either open the console (~), and use the command: <pre>/bind [key] pzktest</pre>  You may also use the ingame menu to select a binding for pazaak. This is not bound by default due to still being a beta feature.
+                You can press j (or whatever the <code>/pzktest</code> cmd is bound to) while facing another player to challenge them to a match of Pazaak.  You can also challenge the AI by pressing j while not facing anyone.
             </p>
+            </p>
+        </div>
+
+        <div class="maindiv" id="emotes">
+            <h2>How do I use emotes?</h2>
+            <p>
+                Type in the cmd <code>/emoteHelp</code> in the console (~) or chat and it will display a help message detailing what emotes are avialable and how to use.  You can type these in the console (~) or action chat (U) to use.  For example, <code>/salute</code> will make your character salute whoever they are facing.
+            </p>
+        </div>
+
+        <div class="maindiv" id="roll">
+            <h2>How do I use dice rolls?</h2>
+            <p>
+                Type in the cmd <code>/roll</code> in the console (~) or chat and it will display a help message detailing how to use the dice set.  For example, <code>/roll 20 team</code> will roll a single 20 sided dice and display the result to your team in chat.
             </p>
         </div>
 
