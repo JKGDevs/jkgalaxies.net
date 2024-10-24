@@ -211,17 +211,17 @@
             <pre id="minRequirements">[loading...]</pre>
         </div>
 
-        <div class="maindiv">
-            <h2>What happened to jkgalaxies.com?</h2>
-            <p>
-                Unfortunately, the domain expired and was bought out by a domain name troll/cybersquatter before we could acquire it from the original owner, Jake.  It is now marked up considerably and in the hands of a domain name retailer who has no intention of parting with it cheaply.  The site also fell into disrepair prior to that point, due to the annoyance of updating it constantly (we used Wordpress back then) and dealing with constant bot attacks.  At that point, the domain name expired.
-            </p>
-        </div>
-
         <div class="maindiv" id="launcher">
             <h2>What happened to the launcher?</h2>
             <p>
                 Its development has been delayed until further notice while we work on the main game.  We will probably bring it back at some point when we are ready.  Unfortunately, it had quite a few bugs when initially released and its code base is now quite old and so we need to update it quite a bit before it can be used again.  Additionally, it required large amounts of bandwidths to use that were not practical for our small team to support financially, which is the primary reason we stopped using it.
+            </p>
+        </div>
+
+        <div class="maindiv">
+            <h2>What happened to jkgalaxies.com?</h2>
+            <p>
+                Unfortunately, the domain expired and was bought out by a domain name troll/cybersquatter before we could acquire it from the original owner, Jake.  It is now marked up considerably and in the hands of a domain name retailer who has no intention of parting with it cheaply.  The site also fell into disrepair prior to that point, due to the annoyance of updating it constantly (we used Wordpress back then) and dealing with constant bot attacks.  At that point, the domain name expired.
             </p>
         </div>
 
@@ -260,7 +260,7 @@
             <h2>How do I use a jetpack?</h2>
             <p>
                 After purchasing a jetpack make sure it is equipped to your ACI (press i to open your inventory and assign it to an ACI slot, they auto assign themselves upon purchase so this is probably not needed).  Once equipped, you can press the use command (+use, the default binding is to e), while you are midair to activate it.  Alternatively you can also tap the ACI key the jetpack is bound to to activate.  Tap the key again to deactivate the jetpack.<br><br>
-                There are different types of jetpacks, for example, the cheapest (and most difficult to control) are 'burst' jetpacks, which rapidly burn through a small fuel tank to provide a 'burst' jump.  While your jetpack is activated you can also hold down shift to engage the turbo.  Keep in mind this burns fuel even faster than normal.  Be warned, if your jetpack runs out of fuel it will shut off in mid air!  Jetpacks can also be disabled by certain types of ion damage.  Note: Most jetpacks cannot be activated while you are carrying the flag in CTF mode.
+                There are different types of jetpacks, for example, the cheapest (and most difficult to control) are 'burst' jetpacks, which rapidly burn through a small fuel tank to provide a 'burst' jump.  While your jetpack is activated you can also hold down shift to engage the turbo.  Keep in mind this burns fuel even faster than normal.  Be warned, if your jetpack runs out of fuel it will shut off in mid air!  Jetpacks can also be disabled by certain types of ion and electrical damage.  Note: Most jetpacks cannot be activated while you are carrying the flag in CTF mode.
             </p>
         </div>
 
@@ -268,7 +268,32 @@
             <h2>How do shields work?</h2>
             <p>
                 After a shield is assigned to your ACI, your shield will start charging after its cooldown has expired.  Some shields do not have a cool down.  The shield bar (visible in the upper left corner of the UI), shows how strong your current shield is at the present moment.  Shields will act as a scapegoat for your health for certain types of damage.  If your shield is damaged, it will stop charging until the cooldown for the recharge resets.  If your shield is completely overloaded with damage (reduced to 0), you will be vulnerable to damage until it begins recharging.<br><br>
-                Blue damage plums appear if you are damaged and the shield does its job of protecting your hp from damage.  Please note that shields cannot protect you from all damage types. For example, slugthrowers or ACP can pierce through shields, and shields cannot protect you from fall damage or other similar circumstances.
+                Blue damage plums appear if you are damaged and the shield does its job of protecting your hp from damage.  Please note that shields cannot protect you from all damage types. For example, slugthrowers or ACP can pierce through shields, and shields cannot protect you from fall damage or other similar circumstances.  Note some shields can be modified to protect or be vulnerable damage types different from standard shields.  Some shields may also have activatable effects which can be triggered by pressing the ACI key the shield is bound to.
+            </p>
+        </div>
+
+        <div class="maindiv" id="armor">
+            <h2>How does armor work?</h2>
+            <p>
+                To benefit from armor you will first need to purchase armor and then equip it from within the inventory menu (i).  Each type of armor has a slot and will protect that portion of your body while equipped.  For example, a helmet is equipped on the head slot and will reduce damage you take at that hit location.  Armor reduces damage in the following ways:
+                <ol>
+                    <li>If the armor is resistant against the damage type (fire, blaster, etc) it will be reduced by that armor's resistance value (eg: 25%).</li>
+                    <li>If armor penetration exists for the damage type, reduce armor by the % of penetration.  This will reduce the EHP in the next step.</li>
+                    <li>Any remaining damage after the first step, will then be calculated based on the value of the armor's effective hit points (EHP).  The effectiveness of this reduction in damage is calculated by multiplying by your (max health / max health + EHP).</li>
+                    <li>The result of the prior step is then multiplied by the damage type's effectiveness against armor. Finally the incoming damage is multiplied by this result to reduce it.</li>
+                </ol>
+            </p>
+        </div>
+
+        <div class="maindiv" id="shopping">
+            <h2>How do I get/buy equipment?</h2>
+            <p>
+                When you first spawn in the game, you will be given a starting pistol and small amount of credits, however you will probably want to increase your equipment arsenal after you earn a few credits.  Credits are earned by killing enemy players or accomplishing objectives.  You can also earn credits in a myriad of otherways such as by participating in a kill, completing quests, passive credit salary earnings, collecting bounties, or by destroying enemy equipment.  To spend your credits you'll need to find an NPC shopkeeper and press the +use key while facing them (e).  This will open up the shop dialogue screen where you can see what they have available and purchase items you want.  You can also sell the items to them for half the credits of the original value.  Most vendors will refresh what they have available in their shop regularly throughout the match.  There are typically vendors near your team's spawn point, but they may be located inside of a building or doorway so be sure to check near where you spawn.  Some maps may also have wandering vendors which will wander the map looking to sell their wares.<br>
+                <div class="centerdiv">
+                    <a target="_blank" href="https://i.imgur.com/8Xvd2Sa.jpg" alt="Link to vednor screenshot.">
+                        <img class="img-fluid" src="https://i.imgur.com/8Xvd2Sa.jpg" alt="Screenshot of Vendor" title="A rodian vendor.">
+                    </a>
+                </div>
             </p>
         </div>
 
@@ -291,6 +316,20 @@
             <p>
                 You will need to bind the cmd "pzktest" to a key and then face another player and press that key.  You can either open the console (~), and use the command: <pre>/bind [key] pzktest</pre>  You may also use the ingame menu to select a binding for pazaak. This is not bound by default due to still being a beta feature.
             </p>
+            </p>
+        </div>
+
+        <div class="maindiv" id="emotes">
+            <h2>How do I use emotes?</h2>
+            <p>
+                Type in the cmd <pre>/emoteHelp</pre> in the console (~) or chat and it will display a help message detailing what emotes are avialable and how to use.  You can type these in the console (~) or action chat (U) to use.  For example, <pre>/salute</pre> will make your character salute whoever they are facing.
+            </p>
+        </div>
+
+        <div class="maindiv" id="roll">
+            <h2>How do I use dice rolls?</h2>
+            <p>
+                Type in the cmd <pre>/roll</pre> in the console (~) or chat and it will display a help message detailing how to use the dice set.  For example, <pre>/roll 20 team</pre> will roll a single 20 sided dice and display the result to your team in chat.
             </p>
         </div>
 
