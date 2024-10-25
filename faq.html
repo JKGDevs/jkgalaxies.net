@@ -49,7 +49,7 @@
 
         <div class="maindiv">
             <h2>What is the game like?</h2>
-            <p>Current gameplay is a Star Wars FPS shooter, with some alternative objectives (such as capture the flag).  Earn credits by getting kills or completing objectives, then spend those credits on new equipment in the shop.  Check out the gameplay video below which highlights some of the newer introduced features in v1.3:</p>
+            <p>Current gameplay is a Star Wars FPS shooter, with some alternative objectives (such as capture the flag).  Earn credits by getting kills or completing objectives, then spend those credits on new equipment from the shop which is regularly refreshed with new items throughout the match.  Scores of different items are availble to use that offer a variety of different playstyles and strategies to experiment with.  Items include weapons: such as pistols, blaster rifles, grenades, trip mines, etc. Other examples of items include: shields, armor, jetpacks, and consumables. Check out the gameplay video below which highlights some of the newer introduced features in v1.3:</p>
 
             <div class="cookie-banner" id="cookieBanner">
                 <p>
@@ -103,6 +103,13 @@
             <h2>Can I beta-test JKG?</h2>
             <p>
                 If you've downloaded the mod and tried it, you already are! But we will announce when we need testers for specific things when the need arises.  We will usually announce this on the <a href="https://discord.gg/YuG8Zks">Discord</a> when we need help, so come hang out with us there!
+            </p>
+        </div>
+
+        <div class="maindiv" id="release-schedule">
+            <h2>When will the next release be?</h2>
+            <p>
+                As this is an unpaid volunteer project made by hobbyists in our spare time, releases tend to be somewhat sporadic and inconsistent.  However, on average there is a new version released every two years.  Releases may come more or less often than this of course, but that is the typical lifecycle of each version based on our history of past releases since 2012 when JKG was first released.
             </p>
         </div>
 
@@ -194,15 +201,15 @@
         <div class="maindiv" id="platforms">
             <h2>What platforms will JKG be released on?</h2>
             <p>
-                JKG is currently only supported on Windows; however, Linux builds are also available, but not as widely tested.  OSX builds are not available at this time, but the game should work/build on OSX (up till Catalina).
+                JKG is currently only supported on Windows; however, Linux builds are also available, but not as widely tested.  MacOS builds are not available at this time, but the game should work/build on OSX (up till Catalina, but will not work on later versions of macOS without changes).
             </p>
         </div>
 
         <div class="maindiv">
             <h2 id="FAQJA2Play">Is Jedi Academy required in order to play?</h2>
             <p>
-                Yes.  To play JKG, you will first need Jedi Academy installed.  You will need to make sure you have v1.01 of Jedi Academy installed to ensure you have all the assets required.<br><br>
-                If you don't already own the game you can buy it from online stores such as <a href="http://store.steampowered.com/app/6020/">Steam</a>, <a href="http://www.amazon.com/Star-Wars-Jedi-Knight-Academy-Pc/dp/B0000A2MCN">Amazon</a>, or <a href="https://www.gog.com/game/star_wars_jedi_knight_jedi_academy">GOG</a>.  It frequently goes on sale for less than $4 USD and is still quite fun.  There are also many many mods available for Jedi Academy that make it well worth purchasing for more than just JKG.
+                Yes.  To play Jedi Knight Galaxies, you will first need Jedi Academy installed.  You will need to make sure you have v1.01 of Jedi Academy installed to ensure you have all the assets required.<br><br>
+                If you don't already own the game you can buy it from online stores such as <a href="http://store.steampowered.com/app/6020/">Steam</a>, <a href="http://www.amazon.com/Star-Wars-Jedi-Knight-Academy-Pc/dp/B0000A2MCN">Amazon</a>, or <a href="https://www.gog.com/game/star_wars_jedi_knight_jedi_academy">GOG</a>.  It frequently goes on sale for less than $4 USD and is still quite fun.  There are also many many mods available for Jedi Academy that make it well worth purchasing for more than just JKG.  For example, check some of the <a href="https://jkhub.org/mods/jediacademy/" title="List of recommended mods from JKHub.">recommended mods at JKHub.org</a>.
             </p>
         </div>
 
@@ -292,7 +299,7 @@
                 To benefit from armor you will first need to purchase armor and then equip it from within the inventory menu (i).  Each type of armor has a slot and will protect that portion of your body while equipped.  For example, a helmet is equipped on the head slot and will reduce damage you take at that hit location. Armor has two ways of protecting you from damage.  First, armor can be resistant against a specific means (or types) of damages (eg: armor may reduce fire damage to that location by 40%). Second, it has an inherent armor value which will reduce damage, a higher value means more reduction of damage. Armor is calculated as follows:
                 <ol>
                     <li>If the armor is resistant against the damage type (fire, blaster, etc) it will be reduced by that armor's resistance value (eg: 25%).</li>
-                    <li>If armor penetration exists for the damage type, reduce armor by the % of penetration.  This will reduce the EHP in the next step.</li>
+                    <li>If armor penetration exists for the damage type or weapon, reduce armor by the % of penetration.  This will reduce the EHP in the next step.</li>
                     <li>Any remaining damage after the first step, will then be calculated based on the value of the armor's effective hit points (EHP).  The effectiveness of this reduction in damage is calculated by multiplying by your (max health / max health + EHP).</li>
                     <li>The result of the prior step is then multiplied by the damage type's effectiveness against armor. Finally the incoming damage is multiplied by this result to reduce it.</li>
                 </ol>
@@ -303,7 +310,7 @@
         <div class="maindiv" id="shopping">
             <h2>How do I get/buy equipment?</h2>
             <p>
-                When you first spawn in the game, you will be given a starting pistol and small amount of credits, however you will probably want to increase your equipment arsenal after you earn a few credits.  Credits are earned by killing enemy players or accomplishing objectives.  You can also earn credits in a myriad of otherways such as by participating in a kill, completing quests, passive credit salary earnings, collecting bounties, or by destroying enemy equipment.  To spend your credits you'll need to find an NPC shopkeeper and press the +use key while facing them (e).  This will open up the shop dialogue screen where you can see what they have available and purchase items you want.  You can also sell the items to them for half the credits of the original value.  Most vendors will refresh what they have available in their shop regularly throughout the match.  There are typically vendors near your team's spawn point, but they may be located inside of a building or doorway so be sure to check near where you spawn.  Some maps may also have travelling vendors which will wander the map looking to sell their wares.<br>
+                When you first spawn in the game, you will be given a starting blaster pistol and small amount of credits.  You will probably want to increase your equipment arsenal after you earn a few credits.  Credits are earned by killing enemy players or accomplishing objectives.  You can also earn credits in a myriad of otherways such as by participating in a kill, completing objectives/quests, passive credit salary earnings, collecting bounties, selling items, or by destroying enemy equipment.  To spend your credits you'll need to find an NPC shopkeeper and press the +use key while facing them (e).  This will open up the shop dialogue screen where you can see what they have available and purchase items you want.  You can also sell the items to them for half the credits of the original value.  Most vendors will refresh what they have available in their shop regularly throughout the match.  There are typically vendors near your team's spawn point, but they may be located inside of a building or doorway so be sure to check near where you spawn.  Some maps may also have travelling vendors which will wander the map looking to sell their wares.<br>
                 <div class="centerdiv">
                     <a target="_blank" href="https://i.imgur.com/8Xvd2Sa.jpg" alt="Link to vednor screenshot.">
                         <img class="img-fluid" src="https://i.imgur.com/8Xvd2Sa.jpg" alt="Screenshot of Vendor" title="A rodian vendor.">
@@ -331,6 +338,13 @@
             <p>
                 You can press j (or whatever the <code>/pzktest</code> cmd is bound to) while facing another player to challenge them to a match of Pazaak.  You can also challenge the AI by pressing j while not facing anyone.
             </p>
+            </p>
+        </div>
+
+        <div class="maindiv" id="mouse-sensitivity">
+            <h2>How do I adjust my mouse sensitivity in game?</h2>
+            <p>
+                Open the console (~) and then type in <code>/sensitivity x</code>, where x is desired sensivity value.  The default is 5, decrease it for lower sensitivity and increase it for higher sensitivity.
             </p>
         </div>
 
