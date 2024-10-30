@@ -11,7 +11,6 @@ How the site code is organized.  Note that some directories contain multiple ins
 
 #### root ####
 Contains the main parts of the web page.  
-* html files (such as index.html, about.html, etc.)  
 * index.html the primary web page, just contains a brief description and announcement feeds, directs to other pages.  
 * about.html explains what the mod is and has some media showing the mod off, also links to the faq page.
 * faq.html answers common questions about the mod and provides general information and links to resources.
@@ -21,7 +20,8 @@ Contains the main parts of the web page.
 * discord.html redirects users that visit to the Discord link (https://discord.gg/YuG8Zks)
 * servers.html redirects users that visit to the Serverlist hosted by Flate at https://dark-clan.servegame.com/serverlist_new/serverlist.html#autoRefresh=1&theme=dark&game=jkg&sortBy=humans
 * update.index.html will serve as a splash page, if someone tries to go to update.jkgalaxies.net - right now it doesn't really serve a real purpose until someone fixes the launcher.  For now it simply displays the latest version string of the game.
-* styles.css (overrides styles for the site, most pages use this, additional css styling pages can also be added to root, however, the primary css file is styles.css and you should try to just update that if possible before adding new style sheets.
+* styles.css overrides styles for the site, most pages use this, additional css styling pages can also be added to root, however, the primary css file is styles.css and you should try to just update that if possible before adding new style sheets. (Please note their is a format friendly version called styles.max.css which is the same thing but with spacing/comments etc).
+* Error Pages such as: 404.html, 403.html, etc.
 
 
 #### text ####
@@ -39,8 +39,9 @@ Contains easy-to-update .txt files that contain textual blobs that can be/are in
 Contains site javascript files.  
 * downloads.js is specialized for download.html and contains logic for autoupdating download page, this is probably the most important script. 
 * scripts.js is a common script shared among most web pages.  Keep in mind that any changes used here will globally affect things unless you control it to affect certain pages only.
-* jquery 3.6.0 is also contained here (most pages load it from a CDN, but this one is a fallback since jquery is critical to the site's functionality).  Some brief testing on jquery's latest stable release should be done about once every few months, to ensure we can update to the later versions.  The primary motivation for updating is mostly just for security fixes and compatibility with other libraries (such as Bootstrap).
-* steam_sale.js an experimental javascript for querying the steam api and checking if Jedi Academy is on sale.
+* jquery 3.7.1 is also contained here (most pages load it from a CDN, but this one is a fallback since jquery is critical to the site's functionality).  Some brief testing on jquery's latest stable release should be done about once every few months, to ensure we can update to the later versions.  The primary motivation for updating is mostly just for security fixes and compatibility with other libraries (such as Bootstrap).
+* steam_sale.js an experimental javascript for querying the steam api and checking if Jedi Academy is on sale.  Currently disabled.
+* As a note each script has a max version which includes comments and nice formatting.  It is best to work on the max script first, and then compress/minify it to the regular one when its ready for deployment.
 
 #### images ####
 Contain site images such as the banner, or icons.
