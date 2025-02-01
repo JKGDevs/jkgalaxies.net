@@ -11,47 +11,47 @@ Edit when assets are updated.
 */
 var OSName = "Unknown";
 
-//urlrs and hashes - these need to get updated per release by hand, since hashing automatically isn't possible and none of the mirrors ('cept Github) have apis we can leverage :(
+//urlrs and hashes - these need to get updated per release by hand, since hashing automatically isn't possible (while hosted through Github pages) and none of the mirrors ('cept Github) have apis we can leverage :(
 
 //mirror urls for bin release 
 
 //names
 const mirror0 = "Github.com";
-const mirror1 = "Box.com";
+const mirror1 = "Icedrive.net";
 const mirror2 = "ModDB.com";
 const mirror3 = "JK2T.ddns.net";
 const mirror4 = "JKHub.org";
 
-//hash of bin release
-const bin_win_hash_release = "C2A812AA0D80293F95FED73A24069D910C87B5E703615FDDE836F3A120450DA5"; //sha256 hashes zip files, fixme: autocalculate :(
-const bin_lin_hash_release = "0FE4DAD5159808236180669C4BBA54A0B680A7EE4C76D5D2F6D79C307BE49ED7";
-const bin_osx_hash_release = "42B533831AE0A4B2323B5BF840F51C9A2464ACB2F076328FB0C4ADD10C7651DF";
-const bin_hash_release_array = [bin_win_hash_release, bin_lin_hash_release, bin_osx_hash_release];
+//hash of bin release/stable
+const bin_win_hash_release = "F7E9D2D8E79B65D740171E15CAF07F932875FEE6AC91ABDD4E780454A5447525"; //sha256 hashes zip files, fixme: autocalculate :(
+const bin_lin_hash_release = "D74266B63C53A185AE097CA9D5CB73F61BAC050761EF681FE66EE43433C287CB";
+const bin_mac_hash_release = "";
+const bin_hash_release_array = [bin_win_hash_release, bin_lin_hash_release, bin_mac_hash_release];
 
-//hash of bin beta
+//hash of bin beta/test
 const bin_win_hash_beta = "F7E9D2D8E79B65D740171E15CAF07F932875FEE6AC91ABDD4E780454A5447525";
 const bin_lin_hash_beta = "D74266B63C53A185AE097CA9D5CB73F61BAC050761EF681FE66EE43433C287CB";
-const bin_osx_hash_beta = "";
-const bin_hash_beta_array = [bin_win_hash_beta, bin_lin_hash_beta, bin_osx_hash_beta];
+const bin_mac_hash_beta = "";
+const bin_hash_beta_array = [bin_win_hash_beta, bin_lin_hash_beta, bin_mac_hash_beta];
 
-//binary urls release
-const bin_win_url1 = "https://uvu.box.com/shared/static/qzj1ewi28g2k8glv4arparbxp36gwzjq.zip"; //for box
-const bin_lin_url1 = "https://uvu.box.com/shared/static/dds514xxoh9xgg8tsuutugd16ve53837.zip"; //for box
-const bin_osx_url1 = ""; //for box
+//binary urls release/stable
+const bin_win_url1 = "https://icedrive.net/s/u1V6WFb4RtN6QgYVXX21b4PaS9SA"; //for icedrive
+const bin_lin_url1 = "https://icedrive.net/s/hwVF1RaNNP9k6Wk63fYVPFvbFZAN"; //for icedrive
+const bin_mac_url1 = ""; //for icedrive
 const bin_win_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1-3-23-win"; //for moddb
 const bin_lin_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1-3-23-linux"; //for moddb
-const bin_osx_url2 = ""; //for moddb
+const bin_mac_url2 = ""; //for moddb
 const bin_win_url3 = "https://jk2t.ddns.net/jkgalaxies/jkgalaxies_v1.3.23_win.zip";  //for jk2t
 const bin_lin_url3 = "https://jk2t.ddns.net/jkgalaxies/jkgalaxies_v1.3.23_linux.zip";  //for jk2t
-const bin_osx_url3 = "";    //for jk2t
+const bin_mac_url3 = "";    //for jk2t
 
-//binary urls beta
-const bin_win_beta_url3 = "https://uvu.box.com/shared/static/l3eo6vduufz26kwiioumeem8xup16a3i.zip";  //box is probably the only mirror we'll have for test releases, add em here
-const bin_lin_beta_url3 = "https://uvu.box.com/shared/static/hjbaon0bfi15xu3beyscq37cmywpe7t6.zip";
-const bin_osx_beta_url3 = "";
+//binary urls beta/test
+const bin_win_beta_url3 = "https://icedrive.net/s/u1V6WFb4RtN6QgYVXX21b4PaS9SA";  //icedrive is probably the only mirror we'll have for test releases, add em here
+const bin_lin_beta_url3 = "https://icedrive.net/s/hwVF1RaNNP9k6Wk63fYVPFvbFZAN";
+const bin_mac_beta_url3 = "";
 
-//asset urls and hash
-const asset_url_release1 = "https://uvu.box.com/shared/static/geejtm8xcovvcyt9jra4e6f585beatx1.zip";
+//release/stable asset urls and hash
+const asset_url_release1 = "https://icedrive.net/s/CfgDhyf1BSwNbQ9bWgQWu7y22CvQ";  //for icedrive
 const asset_url_release2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jedi-knight-galaxies-v1-3-23-assets"; //for moddb
 const asset_url_release3 = "https://jk2t.ddns.net/jkgalaxies/geejtm8xcovvcyt9jra4e6f585beatx1.zip";
 const asset_url_release4 = "https://jkhub.org/files/file/3116-jedi-knight-galaxies/";     //for jkhub, note: download contains both assets and binaries
@@ -59,9 +59,9 @@ const asset_release_hash = "B6792B130E52313BFCE44963D3000411261570B9B20647217211
 const asset_size_release = "257 MB";
 const asset_date_release = "2022-08-25";
 
-//beta asset urls and hash
+//beta/test asset urls and hash
 const asset_url_beta1 = "https://jkhub.org/files/file/3126-jedi-knight-galaxies-assets-beta/";      //for jkhub (currently disabled)
-const asset_url_beta2 = "https://uvu.box.com/shared/static/geejtm8xcovvcyt9jra4e6f585beatx1.zip";   //for box
+const asset_url_beta2 = "https://icedrive.net/s/CfgDhyf1BSwNbQ9bWgQWu7y22CvQ";   //for icedrive
 const asset_beta_hash = "B0449F1068EB67832AE6D4073A40979D28137CBB79CD423881C0FFA1FCDC3C50";
 const asset_size_beta = "257 MB";
 const asset_date_beta = "2022-08-25";
@@ -69,17 +69,17 @@ const asset_date_beta = "2022-08-25";
 //map pack urls and hashes
 const mapPack01_url_jkhub = "https://jkhub.org/files/file/2652-jedi-knight-galaxies-map-bundle-1/";
 const mapPack01_url_ddns = "https://jk2t.ddns.net/jkgalaxies/2wm4soep000wcffah9rra7xpsqfwzit7.zip";
-const mapPack01_url_box = "https://uvu.box.com/shared/static/2wm4soep000wcffah9rra7xpsqfwzit7.zip";
+const mapPack01_url_icedrive = "https://icedrive.net/s/Dt5tGzx9ihNhzZjxGky9g9w3SPQ5";
+//const mapPack01_url_box = "https://uvu.box.com/shared/static/2wm4soep000wcffah9rra7xpsqfwzit7.zip"; //Box no longer in use
 const mapPack01_url_moddb = "https://www.moddb.com/mods/jkgalaxies/addons/jkgalaxies-maps1-v1-03";
-
-const mapPack02_url_jkhub = "https://jkhub.org/files/file/3778-jedi-knight-galaxies-map-bundle-2/";
-const mapPack02_url_ddns = "https://jk2t.ddns.net/jkgalaxies/beqd7odfuqj2yzh72i55tw6ls2110x3w.zip";
-const mapPack02_url_box = "https://uvu.box.com/shared/static/beqd7odfuqj2yzh72i55tw6ls2110x3w.zip";
-const mapPack02_url_moddb = "https://www.moddb.com/mods/jkgalaxies/addons/jkgalaxies-maps2-v1-03";
-
 const mapPack01_hash = "1FAAD62441894D7A1284F75DC9B62EEDEBC1A0ABAC03DE913B32D0BF954CC61A";
 const mapPack01_size = "243 MB";
 
+const mapPack02_url_jkhub = "https://jkhub.org/files/file/3778-jedi-knight-galaxies-map-bundle-2/";
+const mapPack02_url_ddns = "https://jk2t.ddns.net/jkgalaxies/beqd7odfuqj2yzh72i55tw6ls2110x3w.zip";
+const mapPack02_url_icedrive = "https://icedrive.net/s/Wk6kP2i436CAg7jStzSghQNhj1u7";
+//const mapPack02_url_box = "https://uvu.box.com/shared/static/beqd7odfuqj2yzh72i55tw6ls2110x3w.zip"; //Box no longer in use
+const mapPack02_url_moddb = "https://www.moddb.com/mods/jkgalaxies/addons/jkgalaxies-maps2-v1-03";
 const mapPack02_hash = "1AA44880D607A2E331BE5F41D8EF1657D3E3F60AC15DF9B1DF46CB7150859DC7";
 const mapPack02_size = "113 MB";
 
@@ -179,12 +179,14 @@ function DetectClientOS()
     document.getElementById("downloadAssetBtnTestSm").href=asset_url_beta2; //note: use box.com for this specifically cause it looks nicer
 
     document.getElementById("downloadType").innerHTML += "<br>";
+    if (window.navigator.userAgent.indexOf("Windows NT 11.0")!= -1) OSName="Windows";   //note win11, still uses NT 10.0, but this might change in the future one day...maybe
     if (window.navigator.userAgent.indexOf("Windows NT 10.0")!= -1) OSName="Windows";
     if (window.navigator.userAgent.indexOf("Windows NT 6.2") != -1) OSName="Windows";
     if (window.navigator.userAgent.indexOf("Windows NT 6.1") != -1) OSName="Windows";
     if (window.navigator.userAgent.indexOf("Windows NT 6.0") != -1) OSName="Windows";
     if (window.navigator.userAgent.indexOf("Windows NT 5.1") != -1) OSName="WindowsXP";
-    if (window.navigator.userAgent.indexOf("Mac")            != -1) OSName="OSX";
+    if (window.navigator.userAgent.indexOf("MacIntel")       != -1) OSName="Mac";
+    if (window.navigator.userAgent.indexOf("Mac")            != -1) OSName="Mac";
     if (window.navigator.userAgent.indexOf("Linux")          != -1) OSName="Linux";
 
     if(OSName == "Windows")
@@ -196,9 +198,9 @@ function DetectClientOS()
         document.getElementById("downloadType").innerHTML += " Windows XP";
         alert("Warning, Windows XP is depreciated and unsupported.")
     }
-    else if(OSName == "OSX")
+    else if(OSName == "Mac")
     {
-        document.getElementById("downloadType").innerHTML += " OSX";
+        document.getElementById("downloadType").innerHTML += " Mac";
     }
     else if(OSName == "Linux")
     {
@@ -228,9 +230,9 @@ function obtainBuildType(OS_builds, version)
         {
             build_type = OS_builds.indexOf(jkgtag+version+"_linux.zip");
         }
-        else if(OSName == "OSX")
+        else if(OSName == "Mac")
         {
-            build_type = OS_builds.indexOf(jkgtag+version+"_osx.zip");
+            build_type = OS_builds.indexOf(jkgtag+version+"_mac.zip");
         }
         else
             build_type = -1;
@@ -391,7 +393,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
     //sha256 hashes of mostly "fixed" files, fixme: autocalculate these somehow
     
     var assetHash = "";     //hash of assets, there are two types of assets (beta or release)
-    var binHashArr = [];       //hash of binaries, there are two main types (beta or release) and 3 sub types (win, osx, linux)
+    var binHashArr = [];       //hash of binaries, there are two main types (beta or release) and 3 sub types (win, mac, linux)
     var whichTable = "";    //which table flag (doubles as as fillable html)  
     var asset_size = "0 MB";                //size of the asset download
     var asset_url = "";                     //url to the asset mirror
@@ -452,11 +454,11 @@ function drawTable(version, release, asset, OS_builds, releasetype)
                 binHash = binHashArr[1];
                 break;
             case 2:
-                OSName = "OSX";
-                bin_mirror_url1 = bin_osx_url1;
-                bin_mirror_url2 = bin_osx_url2;
-                bin_mirror_url3 = bin_osx_url3;
-                bin_test_mirror_url = bin_osx_beta_url3;
+                OSName = "Mac";
+                bin_mirror_url1 = bin_mac_url1;
+                bin_mirror_url2 = bin_mac_url2;
+                bin_mirror_url3 = bin_mac_url3;
+                bin_test_mirror_url = bin_mac_beta_url3;
                 binHash = binHashArr[2];
                 break;
         }
@@ -573,18 +575,18 @@ function drawTable(version, release, asset, OS_builds, releasetype)
     var cellContent3_0 = '<td><a href="' + mapPack02_url_jkhub + '" >' + mirror4 +'</a></td>';
     if(whichTable == "#tablePrimaryDownload")
     {
-        var cellContent2_1 = '<td><a href="' + mapPack01_url_box + '" >' + mirror1 +'</a></td>';
+        var cellContent2_1 = '<td><a href="' + mapPack01_url_icedrive + '" >' + mirror1 +'</a></td>';
         var cellContent2_2 = '<td><a href="' + mapPack01_url_moddb + '" >' + mirror2 +'</a></td>'; 
         var cellContent2_3 = '<td><a href="' + mapPack01_url_ddns + '" >' + mirror3 +'</a></td>'; 
-        var cellContent3_1 = '<td><a href="' + mapPack02_url_box + '" >' + mirror1 +'</a></td>';
+        var cellContent3_1 = '<td><a href="' + mapPack02_url_icedrive + '" >' + mirror1 +'</a></td>';
         var cellContent3_2 = '<td><a href="' + mapPack02_url_moddb + '" >' + mirror2 +'</a></td>'; 
         var cellContent3_3 = '<td><a href="' + mapPack02_url_ddns + '" >' + mirror3 +'</a></td>';
     }
 
     if(whichTable == "#tableTestDownload")
     {
-        var cellContent2_1 = '<td><a href="' + mapPack01_url_box + '" >' + mirror1 +'</a></td>';
-        var cellContent3_1 = '<td><a href="' + mapPack02_url_box + '" >' + mirror1 +'</a></td>'; 
+        var cellContent2_1 = '<td><a href="' + mapPack01_url_icedrive + '" >' + mirror1 +'</a></td>';
+        var cellContent3_1 = '<td><a href="' + mapPack02_url_icedrive + '" >' + mirror1 +'</a></td>'; 
     }
         
     $(whichTable + " tbody")
