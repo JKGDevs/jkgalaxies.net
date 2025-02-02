@@ -10,6 +10,7 @@ Global Vars Links
 Edit when assets are updated.
 */
 var OSName = "Unknown";
+var stableVersion = "v0.0.0";   //version string of release/stable
 
 //urlrs and hashes - these need to get updated per release by hand, since hashing automatically isn't possible (while hosted through Github pages) and none of the mirrors ('cept Github) have apis we can leverage :(
 
@@ -370,6 +371,7 @@ function GetLatestReleaseInfo(repo, releasetype)
         //draw last update info.
         if(releasetype == "stable")
         {
+            stableVersion = version; //update stableVersion
             $(".release-info").text(releaseInfo);
             $(".patchnotes").attr("href", release.html_url);
 
@@ -378,10 +380,17 @@ function GetLatestReleaseInfo(repo, releasetype)
 
         if(releasetype == "test")
         {
-            $(".test-release-info").text(releaseInfo);
-            $(".test-patchnotes").attr("href", release.html_url);
-            
-            drawTable(version, release, asset, OS_builds, releasetype);
+            //if test/beta is same as stable, don't show it
+            if(version == stableVersion)
+            {
+                $("#testdiv").hide(); 
+            }
+            else
+            {
+                $(".test-release-info").text(releaseInfo);
+                $(".test-patchnotes").attr("href", release.html_url);
+                drawTable(version, release, asset, OS_builds, releasetype);
+            }
    
         }
     });
