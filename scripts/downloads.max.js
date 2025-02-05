@@ -90,8 +90,9 @@ window.onload = function()
     var github_repo = "JKGDevs/JediKnightGalaxies"; //location of github repo
 
     DetectClientOS();
-    GetLatestReleaseInfo(github_repo, "test"); //test is for pre-release table, stable is for latest stable release
-    GetLatestReleaseInfo(github_repo, "stable");
+	stableVersion = "v0.0.0"; //reset/initialize
+    GetLatestReleaseInfo(github_repo, "stable"); //test is for pre-release table, stable is for latest stable release
+    GetLatestReleaseInfo(github_repo, "test");
     loadDirectoryText();
     //testVirusTotal("https://github.com/JKGDevs/JediKnightGalaxies/releases/download/Version1.3.20/jkgalaxies_v1.3.20_win.zip");
     resizeMarginsVertMode();
@@ -115,7 +116,7 @@ function resizeMarginsVertMode()
 
 function revealInstructionsSpoiler()
 {
-    if(document.getElementById('instructionBody') .style.display=='none')
+    if(document.getElementById('instructionBody') .style.display === 'none')
     {
         document.getElementById('instructionBody') .style.display='';
     }
@@ -190,20 +191,20 @@ function DetectClientOS()
     if (window.navigator.userAgent.indexOf("Mac")            != -1) OSName="Mac";
     if (window.navigator.userAgent.indexOf("Linux")          != -1) OSName="Linux";
 
-    if(OSName == "Windows")
+    if(OSName === "Windows")
     {
         document.getElementById("downloadType").innerHTML += " Windows";
     }
-    else if(OSName == "WindowsXP")
+    else if(OSName === "WindowsXP")
     {
         document.getElementById("downloadType").innerHTML += " Windows XP";
         alert("Warning, Windows XP is depreciated and unsupported.")
     }
-    else if(OSName == "Mac")
+    else if(OSName === "Mac")
     {
         document.getElementById("downloadType").innerHTML += " Mac";
     }
-    else if(OSName == "Linux")
+    else if(OSName === "Linux")
     {
         document.getElementById("downloadType").innerHTML += " Linux";
     }
@@ -219,19 +220,19 @@ function obtainBuildType(OS_builds, version)
     var jkgtag = "jkgalaxies_"; //what the build download name starts with
 
         //determine which index is this?
-        if(OSName == "Windows")
+        if(OSName === "Windows")
         {
             build_type = OS_builds.indexOf(jkgtag+version+"_win.zip"); //format: jkgalaxies_vx.x.x_os.zip
         }
-        else if(OSName == "WindowsXP")
+        else if(OSName === "WindowsXP")
         {
             build_type = OS_builds.indexOf(jkgtag+version+"_winXP.zip");
         }
-        else if(OSName == "Linux")
+        else if(OSName === "Linux")
         {
             build_type = OS_builds.indexOf(jkgtag+version+"_linux.zip");
         }
-        else if(OSName == "Mac")
+        else if(OSName === "Mac")
         {
             build_type = OS_builds.indexOf(jkgtag+version+"_mac.zip");
         }
@@ -239,19 +240,19 @@ function obtainBuildType(OS_builds, version)
             build_type = -1;
 
     return build_type;
-    // -1 == not found, 0>= specific OS found
+    // -1 === not found, 0>= specific OS found
 }
 
 
 /* Update links with Latest (stable) Github Release binaries*/
 function GetLatestReleaseInfo(repo, releasetype) 
 {
-    if(releasetype == "test" || releasetype == "beta")
+    if(releasetype === "test" || releasetype === "beta")
     {
         repo = "https://api.github.com/repos/" + repo + "/releases";
         releasetype = "test"; //don't deal with beta, its the same as test
     }
-    else if(releasetype == "stable" || releasetype == "final")
+    else if(releasetype === "stable" || releasetype === "final")
     {
         repo = "https://api.github.com/repos/" + repo + "/releases/latest";
         releasetype = "stable";
@@ -265,7 +266,7 @@ function GetLatestReleaseInfo(repo, releasetype)
     $.getJSON(repo).done(function(json) 
     {
         var release = json; //set release equal to json
-        if(releasetype == "test")
+        if(releasetype === "test")
         {
             var totalDownloadCount = 0;
             var release = json[0];  //includes pre-releases, we only care about json[0] the most recent
@@ -292,11 +293,11 @@ function GetLatestReleaseInfo(repo, releasetype)
         if(build_type < 0)  //if not found
         {
             //revert to default of jumping to table
-            if(releasetype == "test")
+            if(releasetype === "test")
             {
                 document.getElementById("downloadBinBtn").href = "#tableTestDownload";
             }
-            if(releasetype == "stable")
+            if(releasetype === "stable")
             {
                 document.getElementById("downloadBinBtn").href = "#tablePrimaryDownload";
             }
@@ -308,11 +309,11 @@ function GetLatestReleaseInfo(repo, releasetype)
         {
             asset = release.assets[build_type];
 
-            if(releasetype == "test")
+            if(releasetype === "test")
             {
                 document.getElementById("downloadBinBtnTestSm").href=asset.browser_download_url;
             }
-            if(releasetype == "stable")
+            if(releasetype === "stable")
             {
                 document.getElementById("downloadBinBtn").href=asset.browser_download_url;
                 document.getElementById("downloadBinBtnSm").href=asset.browser_download_url;
@@ -339,7 +340,7 @@ function GetLatestReleaseInfo(repo, releasetype)
         else if (dateDiff < oneYear)
         {
             timeAgo = (dateDiff / oneDay).toFixed(0);
-            if(timeAgo == 1)
+            if(timeAgo === 1)
                 timeAgo += " day ago";
             else
                 timeAgo += " days ago";
@@ -347,7 +348,7 @@ function GetLatestReleaseInfo(repo, releasetype)
         else
         {
             timeAgo = (dateDiff / oneYear).toFixed(1);
-            if(timeAgo == 1)
+            if(timeAgo === 1)
                 timeAgo += " year ago";
             else
                 timeAgo += " years ago";
@@ -357,11 +358,11 @@ function GetLatestReleaseInfo(repo, releasetype)
         var releaseInfo = version + " last updated " + timeAgo +".";
         if(downloadCount > 0)
         {
-            if(releasetype == "test")
+            if(releasetype === "test")
             {
                 document.getElementById("test-download-count").innerHTML += downloadCount.toLocaleString();
             }
-            if(releasetype == "stable")
+            if(releasetype === "stable")
             {
                 document.getElementById("download-count").innerHTML += downloadCount.toLocaleString();
             }
@@ -369,7 +370,7 @@ function GetLatestReleaseInfo(repo, releasetype)
         }
 
         //draw last update info.
-        if(releasetype == "stable")
+        if(releasetype === "stable")
         {
             stableVersion = version; //update stableVersion
             $(".release-info").text(releaseInfo);
@@ -378,10 +379,10 @@ function GetLatestReleaseInfo(repo, releasetype)
             drawTable(version, release, asset, OS_builds, releasetype);
         }
 
-        if(releasetype == "test")
+        if(releasetype === "test")
         {
             //if test/beta is same as stable, don't show it
-            if(version == stableVersion)
+            if(version === stableVersion)
             {
                 $("#testdiv").hide(); 
             }
@@ -412,7 +413,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
     //additional Map Packs go here
     
     
-    if (releasetype == "test") 
+    if (releasetype === "test") 
     {
         assetHash = asset_beta_hash; 
         whichTable = "#tableTestDownload";
@@ -422,7 +423,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
         asset_date = asset_date_beta;
     }
 
-    else if(releasetype == "stable")
+    else if(releasetype === "stable")
     {
         assetHash = asset_release_hash;
         whichTable = "#tablePrimaryDownload";
@@ -483,14 +484,14 @@ function drawTable(version, release, asset, OS_builds, releasetype)
 
             var cellContent0_1 = "";
             var cellContent0_2 = "";
-            if (whichTable == "#tablePrimaryDownload")
+            if (whichTable === "#tablePrimaryDownload")
             {
                 cellContent0_1 = '<td><a href="' + bin_mirror_url1 + '" >' + mirror1 + '</a></td>';
                 cellContent0_2 = '<td><a href="' + bin_mirror_url2 + '" >' + mirror2 + '</a></td>';
                 cellContent0_3 = '<td><a href="' + bin_mirror_url3 + '" >' + mirror3 + '</a></td>';
             }
 
-            if(whichTable == '#tableTestDownload')
+            if(whichTable === '#tableTestDownload')
             {
                 cellContent0_1 = '<td><a href="' + bin_test_mirror_url + '" >' + mirror1 + '</a></td>';
                 cellContent0_3 = '';
@@ -536,14 +537,14 @@ function drawTable(version, release, asset, OS_builds, releasetype)
 
     //assets for table
     var cellContent1_0 = '<td><a href="' + asset_url + '" >' + mirror4 +'</a></td>'; 
-    if(whichTable == "#tablePrimaryDownload")
+    if(whichTable === "#tablePrimaryDownload")
     {
         var cellContent1_1 = '<td><a href="' + asset_url_release1 + '" >' + mirror1 +'</a></td>';
         var cellContent1_2 = '<td><a href="' + asset_url_release2 + '" >' + mirror2 +'</a></td>';
         var cellContent1_3 = '<td><a href="' + asset_url_release3 + '" >' + mirror3 +'</a></td>'; 
     }
 
-    if(whichTable == '#tableTestDownload')
+    if(whichTable === '#tableTestDownload')
     {
         var cellContent1_1 = '<td><a href="' + asset_url_beta2 + '" >' + mirror1 +'</a></td>'; 
     }
@@ -582,7 +583,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
     //map packs for table
     var cellContent2_0 = '<td><a href="' + mapPack01_url_jkhub + '" >' + mirror4 +'</a></td>';
     var cellContent3_0 = '<td><a href="' + mapPack02_url_jkhub + '" >' + mirror4 +'</a></td>';
-    if(whichTable == "#tablePrimaryDownload")
+    if(whichTable === "#tablePrimaryDownload")
     {
         var cellContent2_1 = '<td><a href="' + mapPack01_url_icedrive + '" >' + mirror1 +'</a></td>';
         var cellContent2_2 = '<td><a href="' + mapPack01_url_moddb + '" >' + mirror2 +'</a></td>'; 
@@ -592,7 +593,7 @@ function drawTable(version, release, asset, OS_builds, releasetype)
         var cellContent3_3 = '<td><a href="' + mapPack02_url_ddns + '" >' + mirror3 +'</a></td>';
     }
 
-    if(whichTable == "#tableTestDownload")
+    if(whichTable === "#tableTestDownload")
     {
         var cellContent2_1 = '<td><a href="' + mapPack01_url_icedrive + '" >' + mirror1 +'</a></td>';
         var cellContent3_1 = '<td><a href="' + mapPack02_url_icedrive + '" >' + mirror1 +'</a></td>'; 
