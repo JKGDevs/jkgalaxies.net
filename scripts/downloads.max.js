@@ -30,8 +30,8 @@ const bin_mac_hash_release = "";
 const bin_hash_release_array = [bin_win_hash_release, bin_lin_hash_release, bin_mac_hash_release];
 
 //hash of bin beta/test
-const bin_win_hash_beta = "F7E9D2D8E79B65D740171E15CAF07F932875FEE6AC91ABDD4E780454A5447525";
-const bin_lin_hash_beta = "D74266B63C53A185AE097CA9D5CB73F61BAC050761EF681FE66EE43433C287CB";
+const bin_win_hash_beta = "4969A5A2FDFCA25FA8007207D754CDCAF8BA4D27344A09910D12DD78EBC07AFB";
+const bin_lin_hash_beta = "68391EFFE0134A2453E1AA22BD2BFFAAECF5BF1B7381E1AA15DC64BCB80F9CBA";
 const bin_mac_hash_beta = "";
 const bin_hash_beta_array = [bin_win_hash_beta, bin_lin_hash_beta, bin_mac_hash_beta];
 
@@ -47,8 +47,8 @@ const bin_lin_url3 = "https://jk2t.ddns.net/jkgalaxies/jkgalaxies_v1.3.23_linux.
 const bin_mac_url3 = "";    //for jk2t
 
 //binary urls beta/test
-const bin_win_beta_url3 = "https://icedrive.net/s/u1V6WFb4RtN6QgYVXX21b4PaS9SA";  //icedrive is probably the only mirror we'll have for test releases, add em here
-const bin_lin_beta_url3 = "https://icedrive.net/s/hwVF1RaNNP9k6Wk63fYVPFvbFZAN";
+const bin_win_beta_url3 = "https://icedrive.net/s/kwA2gfQN1ZhZPS6ABzaD33ajuuDa";  //icedrive is probably the only mirror we'll have for test releases, add em here
+const bin_lin_beta_url3 = "https://icedrive.net/s/TfFVx1FZjzRCfAa5bwj375TSYfXi";
 const bin_mac_beta_url3 = "";
 
 //release/stable asset urls and hash
@@ -62,10 +62,10 @@ const asset_date_release = "2022-08-25";
 
 //beta/test asset urls and hash
 const asset_url_beta1 = "https://jkhub.org/files/file/3126-jedi-knight-galaxies-assets-beta/";      //for jkhub (currently disabled)
-const asset_url_beta2 = "https://icedrive.net/s/CfgDhyf1BSwNbQ9bWgQWu7y22CvQ";   //for icedrive
-const asset_beta_hash = "B0449F1068EB67832AE6D4073A40979D28137CBB79CD423881C0FFA1FCDC3C50";
-const asset_size_beta = "257 MB";
-const asset_date_beta = "2022-08-25";
+const asset_url_beta2 = "https://icedrive.net/s/vCPGvig58W7Sxbi7y9ATy4N4ki8B";   //for icedrive
+const asset_beta_hash = "3CAB1793FF8DAB9151AF5C4480CE75E9CCB6CF5B1B9883933A5589C490BC50BE";
+const asset_size_beta = "406 MB";
+const asset_date_beta = "2025-05-01";
 
 //map pack urls and hashes
 const mapPack01_url_jkhub = "https://jkhub.org/files/file/2652-jedi-knight-galaxies-map-bundle-1/";
