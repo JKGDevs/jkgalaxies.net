@@ -61,10 +61,10 @@ const asset_size_release = "257 MB";
 const asset_date_release = "2022-08-25";
 
 //beta/test asset urls and hash
-const asset_url_beta1 = "https://jkhub.org/files/file/3126-jedi-knight-galaxies-assets-beta/";      //for jkhub (currently disabled)
+const asset_url_beta1 = asset_url_release4;      //for jkhub (beta/test assets are now hosted on the same JKHub page as stable assets are)
 const asset_url_beta2 = "https://icedrive.net/s/vCPGvig58W7Sxbi7y9ATy4N4ki8B";   //for icedrive
 const asset_beta_hash = "3CAB1793FF8DAB9151AF5C4480CE75E9CCB6CF5B1B9883933A5589C490BC50BE";
-const asset_size_beta = "406 MB";
+const asset_size_beta = "387 MB";
 const asset_date_beta = "2025-05-01";
 
 //map pack urls and hashes
