@@ -1,10 +1,10 @@
 <strong>Jedi Academy Required to Play</strong>
 
 <strong>Windows</strong>
-Operating system: Windows 7. Recommended: Windows 10
+Operating system: Windows 10. Recommended: Windows 11
 Memory: 1GB RAM. Recommended: 2GB+ RAM
 Graphics: OpenGL 1.2 compliant card. Recommended: OpenGL 3 compliant card.
-Hard Drive: 700 MB free space. Recommended: At least 5GB free space.
+Hard Drive: 800 MB free space. Recommended: At least 5GB free space.
 DirectX: DirectX 9.0c (for sound)
 Other: Microsoft VS2017 C++ Redistributable
 An internet connection is required to play online.
@@ -13,12 +13,12 @@ An internet connection is required to play online.
 Operating System: Debian Based Distribution.  Recommended: Ubuntu
 Memory: 1GB RAM. Recommended: 2GB+ RAM
 Graphics: OpenGL 1.2 compliant card. Recommended: OpenGL 3 compliant card.
-Hard Drive: 700 MB free space. Recommended: At least 5GB free space.
+Hard Drive: 800 MB free space. Recommended: At least 5GB free space.
 Other: The following libraries are required dependencies:  libjpeg, libpng, zlib, OpenGL, SDL2.  
 An internet connection is required to play online.
 While JKG should work on most debian distributions, it is only occasionally tested for Ubuntu.  
 If you would like to compile the binaries yourself, visit the readme on the Github 
-page for instructions: <a href="https://github.com/JKGDevs/JediKnightGalaxies/tree/develop#build-guide" title="Link to Build Guide">https://github.com/JKGDevs/JediKnightGalaxies/tree/develop#build-guide</a>
+page for instructions: <a href="https://github.com/JKGDevs/JediKnightGalaxies/wiki/Compilation-Guide" title="Link to Compilation Guide">https://github.com/JKGDevs/JediKnightGalaxies/wiki/Compilation-Guide</a>
 An in depth linux guide for compiling can also be found here: <a href="https://github.com/JKGDevs/JediKnightGalaxies/wiki/Flate%27s-Debian-Ubuntu-Compiling-Guide" title="Link to Flate's Build Guide.">https://github.com/JKGDevs/JediKnightGalaxies/wiki/Flate%27s-Debian-Ubuntu-Compiling-Guide</a>
 
 <strong>Macintosh</strong>

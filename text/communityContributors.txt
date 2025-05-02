@@ -1,6 +1,6 @@
 ﻿
-Acika(jkgalaxies.com site web code)<br>
-AngelModder(Mapping)<br>
+Acika (old jkgalaxies.com site web code)<br>
+AngelModder (Mapping)<br>
 Arkan (Mapping)<br>
 Ashura (Mandalorian Neo-Crusader model)<br>
 Awec (jkgalaxies.net web help)<br>
@@ -12,7 +12,7 @@ Dwayne "Oddjob" Douglass (<a href="https://mrwonko.de/jk3files/Jedi%20Outcast/Mo
 Flate (jk2t.ddns.net mirror and server list)<br>
 George (Code help with sabers)<br>
 Hapslash (Stormtrooper Model & Capes)<br>
-iFish (jkgalaxies.com site webdesign)<br>
+iFish (old jkgalaxies.com site webdesign)<br>
 Inyri Forge (Instruments & KotoR Objects)<br>
 Krattle (Chalmun’s Cantina)<br>
 MountainDew (Advising)<br>
@@ -22,8 +22,10 @@ Obliviion<br>
 orb101 (Video editing)<br>
 Ori'Ramikad<br>
 Orj (Mosquito Vibroblade)<br>
+Phazzer (SotE Imperial Guard model)<br>
 Plasma (Mapping)<br>
 RoboPhred (Programming)<br>
+Scerendo (Shoretrooper model)<br>
 Seto (Advising)<br>
 Smoo (Servers, code, and moderation)<br>
 Supa (Advising)<br>
@@ -32,6 +34,7 @@ Toshi (<a href="https://jkhub.org/files/file/1006-toshis-rotj-luke-skywalker/">R
 Tommy (Models)<br>
 Tx606 (Advising)<br>
 Xel (Bacta Grenade models)<br>
+ZanderNao (SotE Imperial Guard model)<br>
 Zappa (Video editing)<br><br>
 
 And many more!
