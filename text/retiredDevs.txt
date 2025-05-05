@@ -10,7 +10,6 @@ Vek892<br>
 Xycaleth<br><br>
 
 <strong>Mapping</strong><br>
-Cort3x<br>
 dvg94<br>
 Juggernut<br>
 MaceCrusherMadunusus<br>
@@ -47,6 +46,7 @@ Jimmy the Bassist<br><br>
 AdZ<br>
 BlasTech/Ocriel<br>
 HellKobra<br>
+Jake<br>
 Mike<br>
 Pande<br>
 Raschu<br>
@@ -73,15 +73,15 @@ Caelum<br>
 DarthLex<br>
 HellKobra<br>
 Fighter<br>
-Jake (Project Founder)<br>
+Jake<br>
 JohnGWolf<br>
 Konradwerks<br>
-Mart<br>
+Mart / iFish<br>
 Sharpie<br>
 TheDarkness<br><br>
 
 <strong>Former Project Leads</strong><br>
-Jake<br>
+Jake (Project Founder)<br>
 BobaFett<br>
 MaceCrusherMadunusus<br>
 DarthLex<br>

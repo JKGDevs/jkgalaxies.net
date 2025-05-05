@@ -1,7 +1,6 @@
 <a href="https://www.jkgalaxies.net/download.html" title="Download v1.3.23.">v1.3.23</a> is the current stable release.<br><br>
 <a href="https://www.jkgalaxies.net/download.html#testdiv" title="Download v1.3.24.">v1.3.24</a> is now the current beta release.<br><br>
-A series of scrimmage matches to beta test v1.3.24 is being <a href="https://jkhub.org/forums/topic/13339-announcement-may-4th-jkg-scrimmages/" title="View scrimmage schedule on JKHub.">held this weekend</a>.  May the 4th be with you!<br><br>
-NOTICE: The original linux release of v1.3.24 had an issue, we've now hotfixed it, <a href="https://github.com/JKGDevs/JediKnightGalaxies/releases/download/Version1.3.24/jkgalaxies_v1.3.24_linux.zip">get it from github</a>.
+Two additional scrimmage matches are <a href="https://jkhub.org/forums/topic/13339-announcement-may-4th-jkg-scrimmages/" title="View scrimmage schedule on JKHub.">planned for the upcoming weekend</a>.<br><br>
 <br>
 <br>
 <!--DO NOT MODIFY BELOW THIS POINT-->
