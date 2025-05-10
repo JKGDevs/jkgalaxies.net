@@ -63,7 +63,7 @@ const asset_date_release = "2022-08-25";
 //beta/test asset urls and hash
 const asset_url_beta1 = asset_url_release4;      //for jkhub (beta/test assets are now hosted on the same JKHub page as stable assets are)
 const asset_url_beta2 = "https://icedrive.net/s/P35WiVwjAtT6Rt3QA27ADhZwjDwY";   //for icedrive
-const asset_beta_hash = "C82D82F4658992E8C47FD5D55FBD5C30A8B505EB37CA92208AA89920A0C376F9";
+const asset_beta_hash = "6AA04676797AA933A66250A661E4B548D71D320CBFFDC999E65F29F807FEF37E";
 const asset_size_beta = "388 MB";
 const asset_date_beta = "2025-05-09";
 
