@@ -1,6 +1,7 @@
 <a href="https://www.jkgalaxies.net/download.html" title="Download v1.3.23.">v1.3.23</a> is the current stable release.<br><br>
 <a href="https://www.jkgalaxies.net/download.html#testdiv" title="Download v1.3.25.">v1.3.25</a> was just released and is now the current beta release!<br><br>
-One additional scrimmage match to test the final changes for v1.3.24/v1.3.25 <a href="https://jkhub.org/forums/topic/13339-announcement-may-4th-jkg-scrimmages/" title="View scrimmage schedule on JKHub.">will be held tomorrow</a>.<br><br>
+We will try to host another scrimmage to test v1.3.25 this week, more details coming soon.
+<br><br>
 <br>
 <br>
 <!--DO NOT MODIFY BELOW THIS POINT-->
