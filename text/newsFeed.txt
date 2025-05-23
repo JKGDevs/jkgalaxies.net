@@ -1,6 +1,5 @@
-<a href="https://www.jkgalaxies.net/download.html" title="Download v1.3.23.">v1.3.23</a> is the current stable release.<br><br>
-<a href="https://www.jkgalaxies.net/download.html#testdiv" title="Download v1.3.25.">v1.3.25</a> was just released and is now the current beta release!<br><br>
-We will try to host another scrimmage to test v1.3.25 this week, more details coming soon.
+<a href="https://www.jkgalaxies.net/download.html" title="Download v1.3.25.">v1.3.25</a> is now the current stable release.<br><br>
+We have started work on the <a href="https://github.com/JKGDevs/JediKnightGalaxies/issues/349" title="Checklist for the next release on Github.">next patch</a>.
 <br><br>
 <br>
 <br>
