@@ -324,6 +324,8 @@ function GetLatestReleaseInfo(repo, releasetype)
         var oneDay = 24 * oneHour;
         var oneYear = 365 * oneDay;
         var dateDiff = new Date() - new Date(asset.updated_at);
+        var dateStamp = new Date(asset.updated_at);
+        dateStamp = dateStamp.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' });
         var timeAgo;
         if (dateDiff < oneDay) 
         {
@@ -372,6 +374,7 @@ function GetLatestReleaseInfo(repo, releasetype)
         {
             stableVersion = version; //update stableVersion
             $(".release-info").text(releaseInfo);
+            $(".release-info").attr('title', dateStamp);
             $(".patchnotes").attr("href", release.html_url);
 
             drawTable(version, release, asset, OS_builds, releasetype);
@@ -387,6 +390,7 @@ function GetLatestReleaseInfo(repo, releasetype)
             else
             {
                 $(".test-release-info").text(releaseInfo);
+                $(".test-release-info").attr('title', dateStamp);
                 $(".test-patchnotes").attr("href", release.html_url);
                 drawTable(version, release, asset, OS_builds, releasetype);
             }
