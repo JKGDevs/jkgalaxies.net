@@ -24,8 +24,8 @@ const mirror3 = "JK2T.ddns.net";
 const mirror4 = "JKHub.org";
 
 //hash of bin release/stable
-const bin_win_hash_release = "F7E9D2D8E79B65D740171E15CAF07F932875FEE6AC91ABDD4E780454A5447525"; //sha256 hashes zip files, fixme: autocalculate :(
-const bin_lin_hash_release = "D74266B63C53A185AE097CA9D5CB73F61BAC050761EF681FE66EE43433C287CB";
+const bin_win_hash_release = "7474B0FF163767899C3D18C16C4E88978CF6FA2DAEEF9F489FEF84356AF9BBBB"; //sha256 hashes zip files, fixme: autocalculate :(
+const bin_lin_hash_release = "BC8EE51A0FCBCF0BFD64B8AA44BABC807F13B9A6AFC8F6645D295451F56C4DF6";
 const bin_mac_hash_release = "";
 const bin_hash_release_array = [bin_win_hash_release, bin_lin_hash_release, bin_mac_hash_release];
 
@@ -39,11 +39,11 @@ const bin_hash_beta_array = [bin_win_hash_beta, bin_lin_hash_beta, bin_mac_hash_
 const bin_win_url1 = "https://icedrive.net/s/u1V6WFb4RtN6QgYVXX21b4PaS9SA"; //for icedrive
 const bin_lin_url1 = "https://icedrive.net/s/hwVF1RaNNP9k6Wk63fYVPFvbFZAN"; //for icedrive
 const bin_mac_url1 = ""; //for icedrive
-const bin_win_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1-3-23-win"; //for moddb
-const bin_lin_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1-3-23-linux"; //for moddb
+const bin_win_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1-3-25-win"; //for moddb
+const bin_lin_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1-3-25-linux"; //for moddb
 const bin_mac_url2 = ""; //for moddb
-const bin_win_url3 = "https://jk2t.ddns.net/jkgalaxies/jkgalaxies_v1.3.23_win.zip";  //for jk2t
-const bin_lin_url3 = "https://jk2t.ddns.net/jkgalaxies/jkgalaxies_v1.3.23_linux.zip";  //for jk2t
+const bin_win_url3 = "https://jk2t.ddns.net/jkgalaxies/jkgalaxies_v1.3.25_win.zip";  //for jk2t
+const bin_lin_url3 = "https://jk2t.ddns.net/jkgalaxies/jkgalaxies_v1.3.25_linux.zip";  //for jk2t
 const bin_mac_url3 = "";    //for jk2t
 
 //binary urls beta/test
@@ -52,20 +52,21 @@ const bin_lin_beta_url3 = "https://icedrive.net/s/4GhiDVbF6FWQfu2j3ah1a6iPBCj9";
 const bin_mac_beta_url3 = "";
 
 //release/stable asset urls and hash
-const asset_url_release1 = "https://icedrive.net/s/CfgDhyf1BSwNbQ9bWgQWu7y22CvQ";  //for icedrive
-const asset_url_release2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jedi-knight-galaxies-v1-3-23-assets"; //for moddb
-const asset_url_release3 = "https://jk2t.ddns.net/jkgalaxies/geejtm8xcovvcyt9jra4e6f585beatx1.zip";
+const asset_url_release1 = "https://icedrive.net/s/P35WiVwjAtT6Rt3QA27ADhZwjDwY";  //for icedrive
+const asset_url_release2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jedi-knight-galaxies-v1-3-25-assets"; //for moddb
+const asset_url_release3 = "https://jk2t.ddns.net/jkgalaxies/jkgalaxies-assets_v1.3.25.zip";
 const asset_url_release4 = "https://jkhub.org/files/file/3116-jedi-knight-galaxies/";     //for jkhub, note: download contains both assets and binaries
-const asset_release_hash = "B0449F1068EB67832AE6D4073A40979D28137CBB79CD423881C0FFA1FCDC3C50";
-const asset_size_release = "257 MB";
-const asset_date_release = "2022-08-25";
+const asset_release_hash = "AB0C4B6EC0B27205375D61E61A5FFFC51677ECCD5E4BDB40E1F08F9375EE1F15";
+const asset_size_release = "357 MB";
+const asset_date_release = "2025-05-10";
 
 //beta/test asset urls and hash
-const asset_url_beta1 = asset_url_release4;      //for jkhub (beta/test assets are now hosted on the same JKHub page as stable assets are)
-const asset_url_beta2 = "https://icedrive.net/s/P35WiVwjAtT6Rt3QA27ADhZwjDwY";   //for icedrive
-const asset_beta_hash = "AB0C4B6EC0B27205375D61E61A5FFFC51677ECCD5E4BDB40E1F08F9375EE1F15";
-const asset_size_beta = "357 MB";
-const asset_date_beta = "2025-05-10";
+//these should have their own unique values, unless they are the same as the latest stable/release
+const asset_url_beta1 = asset_url_release4;   //for jkhub (beta/test assets are now hosted on the same JKHub page as stable assets are)
+const asset_url_beta2 = asset_url_release1;   //for icedrive
+const asset_beta_hash = asset_release_hash;
+const asset_size_beta = asset_size_release;
+const asset_date_beta = asset_date_release;
 
 //map pack urls and hashes
 const mapPack01_url_jkhub = "https://jkhub.org/files/file/2652-jedi-knight-galaxies-map-bundle-1/";
