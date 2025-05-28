@@ -23,21 +23,20 @@ const mirror2 = "ModDB.com";
 const mirror3 = "JK2T.ddns.net";
 const mirror4 = "JKHub.org";
 
+
+/*
+==== STABLE/RELEASE ====
+*/
+
 //hash of bin release/stable
 const bin_win_hash_release = "7474B0FF163767899C3D18C16C4E88978CF6FA2DAEEF9F489FEF84356AF9BBBB"; //sha256 hashes zip files, fixme: autocalculate :(
 const bin_lin_hash_release = "BC8EE51A0FCBCF0BFD64B8AA44BABC807F13B9A6AFC8F6645D295451F56C4DF6";
 const bin_mac_hash_release = "";
 const bin_hash_release_array = [bin_win_hash_release, bin_lin_hash_release, bin_mac_hash_release];
 
-//hash of bin beta/test
-const bin_win_hash_beta = "7474B0FF163767899C3D18C16C4E88978CF6FA2DAEEF9F489FEF84356AF9BBBB";
-const bin_lin_hash_beta = "BC8EE51A0FCBCF0BFD64B8AA44BABC807F13B9A6AFC8F6645D295451F56C4DF6";
-const bin_mac_hash_beta = "";
-const bin_hash_beta_array = [bin_win_hash_beta, bin_lin_hash_beta, bin_mac_hash_beta];
-
 //binary urls release/stable
-const bin_win_url1 = "https://icedrive.net/s/u1V6WFb4RtN6QgYVXX21b4PaS9SA"; //for icedrive
-const bin_lin_url1 = "https://icedrive.net/s/hwVF1RaNNP9k6Wk63fYVPFvbFZAN"; //for icedrive
+const bin_win_url1 = "https://icedrive.net/s/i18j1Qb8fa4x4CzzZxhxbywDXxjQ"; //for icedrive
+const bin_lin_url1 = "https://icedrive.net/s/4GhiDVbF6FWQfu2j3ah1a6iPBCj9"; //for icedrive
 const bin_mac_url1 = ""; //for icedrive
 const bin_win_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1-3-25-win"; //for moddb
 const bin_lin_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1-3-25-linux"; //for moddb
@@ -45,11 +44,6 @@ const bin_mac_url2 = ""; //for moddb
 const bin_win_url3 = "https://jk2t.ddns.net/jkgalaxies/jkgalaxies_v1.3.25_win.zip";  //for jk2t
 const bin_lin_url3 = "https://jk2t.ddns.net/jkgalaxies/jkgalaxies_v1.3.25_linux.zip";  //for jk2t
 const bin_mac_url3 = "";    //for jk2t
-
-//binary urls beta/test
-const bin_win_beta_url3 = "https://icedrive.net/s/i18j1Qb8fa4x4CzzZxhxbywDXxjQ";  //icedrive is probably the only mirror we'll have for test releases, add em here
-const bin_lin_beta_url3 = "https://icedrive.net/s/4GhiDVbF6FWQfu2j3ah1a6iPBCj9";
-const bin_mac_beta_url3 = "";
 
 //release/stable asset urls and hash
 const asset_url_release1 = "https://icedrive.net/s/P35WiVwjAtT6Rt3QA27ADhZwjDwY";  //for icedrive
@@ -60,14 +54,28 @@ const asset_release_hash = "AB0C4B6EC0B27205375D61E61A5FFFC51677ECCD5E4BDB40E1F0
 const asset_size_release = "357 MB";
 const asset_date_release = "2025-05-10";
 
-//beta/test asset urls and hash
+
+/*
+==== BETA/TEST ====
+*/
 //these should have their own unique values, unless they are the same as the latest stable/release
+
+//binary urls beta/test
+const bin_win_beta_url3 = bin_win_url1;  //icedrive is probably the only mirror we'll have for test releases, add em here
+const bin_lin_beta_url3 = bin_lin_url1;
+const bin_mac_beta_url3 = "";
+
+//beta/test asset urls and hash
 const asset_url_beta1 = asset_url_release4;   //for jkhub (beta/test assets are now hosted on the same JKHub page as stable assets are)
 const asset_url_beta2 = asset_url_release1;   //for icedrive
 const asset_beta_hash = asset_release_hash;
 const asset_size_beta = asset_size_release;
 const asset_date_beta = asset_date_release;
 
+
+/*
+==== MAPS ====
+*/
 //map pack urls and hashes
 const mapPack01_url_jkhub = "https://jkhub.org/files/file/2652-jedi-knight-galaxies-map-bundle-1/";
 const mapPack01_url_ddns = "https://jk2t.ddns.net/jkgalaxies/2wm4soep000wcffah9rra7xpsqfwzit7.zip";
