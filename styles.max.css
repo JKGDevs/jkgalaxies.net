@@ -105,7 +105,8 @@ a:visited
 a:hover
 {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
+
 
 }
 a:active
