@@ -38,8 +38,8 @@ const bin_hash_release_array = [bin_win_hash_release, bin_lin_hash_release, bin_
 const bin_win_url1 = "https://icedrive.net/s/i18j1Qb8fa4x4CzzZxhxbywDXxjQ"; //for icedrive
 const bin_lin_url1 = "https://icedrive.net/s/4GhiDVbF6FWQfu2j3ah1a6iPBCj9"; //for icedrive
 const bin_mac_url1 = ""; //for icedrive
-const bin_win_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1-3-25-win"; //for moddb
-const bin_lin_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jkgalaxies-v1-3-25-linux"; //for moddb
+const bin_win_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jedi-knight-galaxies-v1325-windows-binaries"; //for moddb
+const bin_lin_url2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jedi-knight-galaxies-v1325-linux-binaries"; //for moddb
 const bin_mac_url2 = ""; //for moddb
 const bin_win_url3 = "https://jk2t.ddns.net/jkgalaxies/jkgalaxies_v1.3.25_win.zip";  //for jk2t
 const bin_lin_url3 = "https://jk2t.ddns.net/jkgalaxies/jkgalaxies_v1.3.25_linux.zip";  //for jk2t
@@ -47,7 +47,7 @@ const bin_mac_url3 = "";    //for jk2t
 
 //release/stable asset urls and hash
 const asset_url_release1 = "https://icedrive.net/s/P35WiVwjAtT6Rt3QA27ADhZwjDwY";  //for icedrive
-const asset_url_release2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jedi-knight-galaxies-v1-3-25-assets"; //for moddb
+const asset_url_release2 = "https://www.moddb.com/mods/jkgalaxies/downloads/jedi-knight-galaxies-v1325-assets"; //for moddb
 const asset_url_release3 = "https://jk2t.ddns.net/jkgalaxies/jkgalaxies-assets_v1.3.25.zip";
 const asset_url_release4 = "https://jkhub.org/files/file/3116-jedi-knight-galaxies/";     //for jkhub, note: download contains both assets and binaries
 const asset_release_hash = "AB0C4B6EC0B27205375D61E61A5FFFC51677ECCD5E4BDB40E1F08F9375EE1F15";
