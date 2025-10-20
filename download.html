@@ -65,9 +65,12 @@
         <br><br><br>
         <h3><a href="#alternatives" title="Download early test releases or for a different operating system.">Alternative Downloads</a></h3>
     </div>
-    <br id="instructions"><br><br><br>
+    <br  onclick="revealInstructionsSpoiler()" id="instructions"><br><br><br>
    
-    <h1 onclick="revealInstructionsSpoiler()" title="Click to show/hide installation instructions.">Installation Info</h1>
+    <div onclick="revealInstructionsSpoiler()">
+    <h1 onmouseover="revealInstallSpoiler()" onmouseout="hideInstallSpoiler()" title="Click to show/hide installation instructions.">Installation Info</h1>
+    <h6 id="installPrompt" title="Show/Hide install instructions.">(click to show/hide instructions)</h6>
+    </div>
     <div class="maindiv" id="instructionBody">
         <h2>Instructions for Installation</h2>
         
@@ -96,13 +99,13 @@
 
         <p><strong>Which linux distributions are available?</strong><br>
             A debian based distribution compiled for ubuntu is available. You may also <a
-                href="https://github.com/JKGDevs/JediKnightGalaxies" alt="Link to Github." target="_blank">build the source code yourself</a> to run it on
+                href="https://github.com/JKGDevs/JediKnightGalaxies" title="Link to Github." target="_blank">build the source code yourself</a> to run it on
             distributions not provided here.
         </p>
 
         <p><strong>Is macOS available?</strong><br>
             Mac builds are not supported at this time.  The game will likely compile for macOS if you wish to <a
-            href="https://github.com/JKGDevs/JediKnightGalaxies" alt="Link to Github." target="_blank">build the source code yourself</a>,
+            href="https://github.com/JKGDevs/JediKnightGalaxies" title="Link to Github." target="_blank">build the source code yourself</a>,
             but we have not tested it since OSX.
         </p>
 
@@ -119,6 +122,14 @@
             some vendors are paranoid and notorious for incorrectly identifying legitimate software for malware. If you
             would like a 2nd opinion, feel free to upload it to <a href="https://www.virustotal.com" alt="Link to virustotal.com" target="_blank">Virus Total</a> to
             have it scanned by major antivirus vendors.
+        </p>
+
+        <p><strong>Microsoft Defender SmartScreen is blocking JKG.</strong><br>
+            Microsoft Defender by default prevents Windows devices from running apps it does not recognize, you will need to click "More info" 
+            and then click Run anyway in order to start Jedi Knight Galaxies.  JKG not a signed application, and does not usually have thousands of
+            downloads so Microsoft often doesn't recognize it.  You can view the <a href="https://github.com/JKGDevs/JediKnightGalaxies" title="Link to Github." 
+            target="_blank">source code on Github</a>, if you prefer to build it yourself. 
+            Checksum hashes are also available in the <a href="#alternatives" title="Alternative downloads.">alternative downloads table</a> below.  See also the previous FAQ question for more information.
         </p>
 
         <p><strong>Where can I get more information about the game?</strong><br>

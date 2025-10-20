@@ -637,6 +637,16 @@ a.bigDownloadHoverBtn:active {
     cursor: pointer;
    }
 
+   #instructionBody
+   {
+    display: none;
+   }
+
+   #installPrompt
+   {
+    display: none;
+   }
+
    #widgetbotdiv
    {
     display: none;

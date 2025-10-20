@@ -123,15 +123,25 @@ function resizeMarginsVertMode()
 
 function revealInstructionsSpoiler()
 {
-    if(document.getElementById('instructionBody') .style.display === 'none')
+    if(document.getElementById('instructionBody').style.display === 'block')
     {
-        document.getElementById('instructionBody') .style.display='';
+        document.getElementById('instructionBody').style.display='none';
     }
 
     else
     {
-        document.getElementById('instructionBody') .style.display='none';
+        document.getElementById('instructionBody').style.display='block';
     }
+}
+
+function revealInstallSpoiler()
+{
+    document.getElementById('installPrompt').style.display='block';
+}
+
+function hideInstallSpoiler()
+{
+    document.getElementById('installPrompt').style.display='none';
 }
 
 //test virustotal api
