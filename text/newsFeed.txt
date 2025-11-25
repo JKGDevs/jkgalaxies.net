@@ -1,5 +1,5 @@
 <a href="https://www.jkgalaxies.net/download.html" title="Download v1.3.25.">v1.3.25</a> is the current stable release.<br><br>
-We are continuing work on the <a href="https://github.com/JKGDevs/JediKnightGalaxies/issues/349" title="Checklist for the next release on Github.">next patch</a>.
+We are continuing work on the <a href="https://github.com/JKGDevs/JediKnightGalaxies/issues/349" title="Checklist for the next release on Github.">next patch</a>.  Community scrimmage matches are being held over the 2025 Thanksgiving weekend, come join us!  See the Discord announcements channel for details on time.
 <br><br>
 <br>
 <br>
