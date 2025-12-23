@@ -24,13 +24,14 @@
     <link rel="icon" type="image/png" href="images/JKG_logo-inverted-16x16.png" sizes="16x16">
     <meta name="msapplication-TileColor" content="#010412">
     <meta name="msapplication-TileImage" content="images/JKG_logo-inverted-144x144.png">
-    <link async rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" onload="this.media='all'">
-    <link async rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"></noscript>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="DownloadPage">
-    <div id="navbar">
-        <img id="navbarLogoImg" src="images/jkg_logo-inverted-dropshadow.webp" class="img-fluid" alt="Jedi Knight Galaxies" align="right">
+    <div id="navbar" role="navigation">
+        <img id="navbarLogoImg" src="images/jkg_logo-inverted-dropshadow.webp" class="img-fluid" alt="Jedi Knight Galaxies" width="65" height="65" align="right">
         <a href="index.html" title="Home page." alt="Go to JKG home page.">Home</a>
         <a href="download.html" title="Get the game!" alt="Go to JKG download page.">Download</a>
         <a href="about.html" title="Learn more about the game." alt="Go to JKG about page.">About</a>
@@ -41,9 +42,10 @@
     
     <div class="logo" id="logo">
         <br>
-        <img src="images/jkg-big_logo-inverted-dropshadow.webp" class="img-fluid" alt="Jedi Knight Galaxies logo, click to show menu." align="center" width="728" height="305">
+        <img src="images/jkg-big_logo-inverted-dropshadow.webp" class="img-fluid" alt="Jedi Knight Galaxies logo, click to show menu." width="728" height="305" align="center">
     </div>
 
+    <main>
     <h1 id="downloadType">Download</h1>
     <div class="centerdiv">
         <a id="downloadBinBtn" href="#alternatives" class="binBtnDownload"
@@ -65,6 +67,8 @@
         <br><br><br>
         <h3><a href="#alternatives" title="Download early test releases or for a different operating system.">Alternative Downloads</a></h3>
     </div>
+    </main>
+    
     <br  onclick="revealInstructionsSpoiler()" id="instructions"><br><br><br>
    
     <div onclick="revealInstructionsSpoiler()">

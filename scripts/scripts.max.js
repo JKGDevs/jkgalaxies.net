@@ -39,7 +39,7 @@ $(document).ready(function()
     if($('body').hasClass("IndexPage"))
     {
         loadText("#manualNews", "text/newsFeed.txt");
-        loadText("welcomemsg", "text/welcomeText.txt");
+        //loadText("#welcomemsg", "text/welcomeText.txt");  //disabled because we currently don't change this, so no need to make it more complex
     }
     
     if($('body').hasClass("FAQPage"))
