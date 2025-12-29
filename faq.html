@@ -55,13 +55,13 @@
                 <p>
                     To display the embedded <a href="http://www.youtube.com/watch?v=vJnh-hNendI" title="View the video directly on YouTube here." target="_blank">YouTube video</a>, you must first opt-in to allow <a href="./legal.html#thirdparty" title="View our legal and cookie policy here.">3rd party cookies</a>  from <a href="https://policies.google.com/privacy" title="Click here to view YouTube/Google's terms.">Google</a>.  This feature is disabled until you opt in.
                 </p>
-                <button onclick="acceptCookiesYoutube('youtubevids', 'cookieBanner', 'https://www.youtube.com/embed/vJnh-hNendI', 'youtubevids')">Allow</button>
+                <button onclick="acceptCookiesYoutube('youtubevids', 'cookieBanner', 'https://www.youtube-nocookie.com/embed/vJnh-hNendI?si=utm_source=jkgalaxies.net', 'youtubevids')">Allow</button>
             </div>
 
             <div id="youtubevids" class="embed-responsive embed-responsive-16by9">
                 <iframe width="560" height="315" src=""
                         frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope;
-                picture-in-picture" allowfullscreen alt="Gameplay Video" class="embed-responsive-item">
+                picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="Gameplay Video" class="embed-responsive-item">
                 </iframe>
             </div>
         </div>
@@ -215,11 +215,11 @@
             <p>
                 To display the <a href="https://store.steampowered.com/widget/6020/" alt="Steam JKA link." title="View Steam directly here.">Steam Widget</a>, you must first opt-in to allow <a href="./legal.html#thirdparty" title="View our legal and cookie policy here.">3rd party cookies</a>  from <a href="https://store.steampowered.com/privacy_agreement/" title="Click here to view Steam's terms.">Steam</a>.  This feature is disabled until you opt in.
             </p>
-            <button onclick="acceptCookiesIframe('steamprice', 'cookieBannerSteam', 'https://store.steampowered.com/widget/6020/', 'steamwidget')">Allow</button>
+            <button onclick="acceptCookiesIframe('steamprice', 'cookieBannerSteam', 'https://store.steampowered.com/widget/6020/?utm_source=jkgalaxies.net', 'steamwidget')">Allow</button>
             </div>
 
             <div id="steamprice">
-                <iframe id="steamwidget" width="646" height="190" src="https://store.steampowered.com/widget/6020/" frameborder="2"></iframe>
+                <iframe id="steamwidget" class="embed-responsive embed-responsive-16by9" scrolling="no" width="646" height="190" src="" frameborder="1"></iframe>
              </div>
         </div>
 
