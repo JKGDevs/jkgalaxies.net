@@ -475,7 +475,14 @@ a.bigDownloadHoverBtn:active {
     margin:10px 2px 10px 2px;
 }
 
-
+.socialblock img:hover
+{
+    border: 1px solid #3da5ee;
+    box-shadow: 0 0 0px 0 rgba(163, 237, 255, 0.603), 0 0 30px 0 rgba(163, 237, 255, 0.603);
+    cursor: pointer;
+    border-radius: 29%;
+    background-color:rgba(255, 255, 255, 0.18);
+}
 
 /* Modal Stuff */
 
