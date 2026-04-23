@@ -1,5 +1,5 @@
 # JKGalaxies.net Readme
-Jedi Knight Galaxies Website (www.jkgalaxies.net)
+Jedi Knight Galaxies Website (https://jkgalaxies.net)
 
 This contains public website code.  Private information, such as api security keys etc. should NOT be uploaded to this repository.  If you're looking for the game's repository itself, go here: https://github.com/JKGDevs/JediKnightGalaxies
 
