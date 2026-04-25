@@ -1,5 +1,23 @@
 <a href="https://www.jkgalaxies.net/download.html" title="Download v1.3.25.">v1.3.25</a> is the current stable release.<br><br>
-Work on the <a href="https://github.com/JKGDevs/JediKnightGalaxies/issues/349" title="Checklist for the next release on Github.">next patch</a> continues.
+
+<br><br>
+Work on the <a href="https://github.com/JKGDevs/JediKnightGalaxies/issues/349" title="Checklist for the next release on Github.">next patch</a> continues.<br>
+
+<br><hr><br>
+
+<h3>May 4th Scrimmages!</h3><br>
+Join us on for three planned scrimmage matches with the community this coming May weekend!<br>
+<a href="https://jkgalaxies.net/download.html"><img class="img-fluid" src="https://i.imgur.com/OImO8bA.png" width="80%" height="auto" title="May the 4th be with you!"></a><br>
+ <br><br>
+<ul>
+    <li><a href="https://countingdownto.com/?c=7064193" title="Countdown: Scrimmage #1">Sunday, 03 May 2026 01:30 GMT</a></li>
+    <li><a href="https://countingdownto.com/?c=7064196" title="Countdown: Scrimmage #1">Sunday, 03 May 2026 22:00 GMT</a></li>
+    <li><a href="https://countingdownto.com/?c=7064198" title="Countdown: Scrimmage #1">Monday, 04 May 2026 23:00 GMT</a></li>
+    Times are UTC/GMT+0.
+</ul><br>
+
+
+
 <br><br>
 <br>
 <br>
