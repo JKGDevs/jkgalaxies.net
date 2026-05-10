@@ -3,12 +3,6 @@
 <br><br>
 Work on the <a href="https://github.com/JKGDevs/JediKnightGalaxies/issues/349" title="Checklist for the next release on Github.">next patch</a> is nearly complete.<br>
 
-<br><hr><br>
-
-<h3>May 4th Scrimmages!</h3><br>
-Thanks for joining us for May 4th Scrimmages this past weekend.  May the force be with you!<br>
-<a href="https://jkgalaxies.net/download.html"><img class="img-fluid" src="https://i.imgur.com/OImO8bA.png" width="80%" height="auto" title="May the 4th be with you!"></a>
-<br><br>
 <!--DO NOT MODIFY BELOW THIS POINT-->
 <p id="newsDate"></p>
 <script>
