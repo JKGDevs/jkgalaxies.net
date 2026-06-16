@@ -690,16 +690,30 @@ a.bigDownloadHoverBtn:active {
        
    }
 
-   #faqAccordian .card .card-header button:before {
-       content: "\2B9F";
-       float: right;
-       color: #fff;
-   }
+#faqAccordian .card .card-header button:before {
+    font-family: "IBM Plex Mono";
+    content: "\2B9F"; /* "\0076" simple version*/
+    float: right;
+    color: #fff;
+}
 
-   #faqAccordian .card .card-header button.collapsed::before {
-       content: "\2B9E";
-       color: lightskyblue;
-   }
+#faqAccordian .card .card-header button.collapsed::before {
+    font-family: "IBM Plex Mono";
+    content: "\2B9E"; /* "\003E" simple version*/
+    color: lightskyblue;
+}
+
+@media (max-width: 1000px) {
+    #faqAccordian .card .card-header button:before {
+        content: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    #faqAccordian .card .card-header button.collapsed::before {
+        content: none;
+    }
+}
 
    #faqAccordian .card .collapse {
        border: 0;
