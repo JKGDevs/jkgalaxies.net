@@ -642,29 +642,66 @@ a.bigDownloadHoverBtn:active {
     padding: 10px 20px;
     margin: 5px;
     cursor: pointer;
+}
+
+   #instructionBody {
+       display: none;
    }
 
-   #instructionBody
-   {
-    display: none;
+   #installPrompt {
+       display: none;
    }
 
-   #installPrompt
-   {
-    display: none;
+   #widgetbotdiv {
+       display: none;
    }
 
-   #widgetbotdiv
-   {
-    display: none;
+   #youtubevids {
+       display: none;
    }
 
-   #youtubevids
-   {
-    display: none;
+   #steamprice {
+       display: none;
    }
 
-   #steamprice
-   {
-    display: none;
+   #faqAccordian .card {
+       background-color: #021f31;
+       text-align: justify;
+   }
+
+   #faqAccordian.card:hover {
+       box-shadow: 0 4px 8px 0 rgba(163, 237, 255, 0.603), 0 6px 20px 0 rgba(163, 237, 255, 0.603);
+       color: #fff;
+   }
+
+   #faqAccordian button {
+       color: lightskyblue;
+       text-decoration: none;
+       outline:none;
+       box-shadow: none;
+   }
+   
+   #faqAccordian button:hover {
+       color: #fff;
+   }
+
+   #faqAccordian .card .card-header button {
+       display: block;
+       
+   }
+
+   #faqAccordian .card .card-header button:before {
+       content: "\2B9F";
+       float: right;
+       color: #fff;
+   }
+
+   #faqAccordian .card .card-header button.collapsed::before {
+       content: "\2B9E";
+       color: lightskyblue;
+   }
+
+   #faqAccordian .card .collapse {
+       border: 0;
+       background-color: #051926;
    }
