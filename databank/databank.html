@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>JKG Databank</title>
+        <meta charset="utf-8">
+        <meta name="Description" content="Jedi Knight Galaxies Databank.">
+        <meta name="Copyright" content="Jedi Knight Galaxies Team">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Language" content="English">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://jkgalaxies.net/">
+        <meta property="og:title" content="Jedi Knight Galaxies | Databank">
+        <meta property="og:description" content="Jedi Knight Galaxies, a free open-source mod for Jedi Academy.">
+        <meta property="og:image" content="images/JKG_logo-inverted.png">
+
+        <link rel="icon" href="images/JKG_logo-inverted.ico" type="image/x-icon">
+        <link rel="apple-touch-icon-precomposed" href="images/JKG_logo-inverted.png">
+        <link rel="icon" type="image/png" href="images/JKG_logo-inverted-64x64.png" sizes="64x64">
+        <link rel="icon" type="image/png" href="images/JKG_logo-inverted-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="images/JKG_logo-inverted-16x16.png" sizes="16x16">
+        <meta name="msapplication-TileColor" content="#010412">
+        <meta name="msapplication-TileImage" content="images/JKG_logo-inverted-144x144.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" media="print" onload="this.media='all'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"></noscript>
+        <link rel="stylesheet" href="https://jkgalaxies.net/styles.css">
+    </head>
+    <body class="DatabankPage">
+        <div id="navbar" role="navigation">
+            <img id="navbarLogoImg" src="images/jkg_logo-inverted-dropshadow.webp" class="img-fluid" alt="Jedi Knight Galaxies" width="65" height="65" align="right">
+            <a href="index.html" title="Home page." alt="Go to JKG home page.">Home</a>
+            <a href="download.html" title="Get the game!" alt="Go to JKG download page.">Download</a>
+            <a href="about.html" title="Learn more about the game." alt="Go to JKG about page.">About</a>
+            <a href="databank.html" title="Database for Jedi Knight Galaxies.">Databank</a>
+            <a href="contributors.html" title="Who makes the game?" alt="Contributors page.">Credits</a>
+            <a href="https://dark-clan.servegame.com/serverlist_new/serverlist.html#autoRefresh=1&theme=dark&game=jkg&sortBy=humans" title="Check server stats, provided by dark-clan.servegame.com" alt="Go to dark-clan.servegame.com's JKG server listing page.">Servers</a>
+            <a href="https://jkhub.org/forum/117-jedi-knight-galaxies/" title="Hosted by JKHub.org." alt="Go to JKG forums, hosted by JKHub.org">Forum</a>
+        </div>
+        
+        <div class="logo" id="logo">
+            <br>
+            <img src="images/jkg-big_logo-inverted-dropshadow.webp" class="img-fluid" alt="Jedi Knight Galaxies logo, click to show menu." width="728" height="305" align="center">
+        </div>
+
+        <main>
+        <div class="centerdiv">
+            <h1>Databank</h1>
+            <h2>Truth, Cataloged. Order, Preserved.</h2>
+            <h3>-Maintained by the Imperial Bureau of Information-</h3>
+            <h4>This is an example page of creating a databank using the Github API, experimental.</h4>
+        </div>
+        <div>
+            <p>Current Game Version: 
+                <span id="gameversion"></span>
+            </p>
+            <h5>C22 Frag Grenades</h5>
+            <p>
+                Internal Name: <span id="frag"></span><br>
+                Damage: <span id="fragdmg"></span>
+            </p>
+
+            <h4>Full Json Content:</h4>
+            <p id="fragcontent"></p>
+        </div>
+        </main>
+
+
+        <div class="copyright">
+                <p><a href="legal.html">Legal & Privacy Policy</a></p>
+                <p>&copyJedi Knight Galaxies <script>document.write(new Date().getFullYear());</script></p>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+                window.jQuery || document.write('\x3Cscript type="text/javascript" src="scripts/jquery-3.7.1.min.js">\x3C/script>');
+        </script>
+        <script async type="text/javascript" src="scripts/scripts.js"></script>
+
+        <script async type="text/javascript">
+            $( document ).ready(function() 
+            {
+                 $.getJSON("https://api.github.com/repos/JKGDevs/JediKnightGalaxies/releases/latest").done(function (json) 
+                {
+                    var release = json; //set release equal to json
+                    var version = release.tag_name; //which version the tag is
+                    version = version.replace("Version", "v");
+                    document.getElementById("gameversion").innerHTML = version;
+                });
+
+                $.getJSON("https://api.github.com/repos/JKGDevs/JediKnightGalaxies/contents/JKGalaxies/ext_data/weapons/Grenade_1_C22Frag.wpn").done(function (json) 
+                {
+                    var release = json; //set release equal to json
+                    var name = release.name; //internal item name
+                    //document.getElementById("frag").innerHTML = name;
+
+
+                     // Base64 content from GitHub
+                    var encoded = json.content;
+
+                    // GitHub inserts line breaks every ~76 chars, remove them
+                    encoded = encoded.replace(/\n/g, '');
+
+                    // Decode Base64
+                    var decoded = atob(encoded);
+
+                    // Display file contents
+                    document.getElementById("fragcontent").textContent = decoded;
+
+
+
+                    //remove c-comments from json
+                    decoded = decoded.replace(/\/\*[\s\S]*?\*\//g, '') // remove block comments
+                    decoded = decoded.replace(/\/\/.*$/gm, '');        // remove line comments
+
+                    
+                    const wpndata = JSON.parse(decoded);    //parse JSON
+                    document.getElementById("frag").textContent = wpndata.classname;  // Display classname
+
+                    document.getElementById("fragdmg").textContent = wpndata.firemode0.damage.damage;
+
+    
+
+
+                });
+            });
+        </script>
+    </body>
+</html>
+        
+        
+        
