@@ -72,22 +72,47 @@
                 </div>
             </div>
 -->
+            
+<!--
+        //generated version
+-->
+        <div class="card">
+                <div class="card-header" id="v_latest">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-justify collapsed" type="button" data-toggle="collapse"
+                            data-target="#v_latest_info" aria-expanded="true" aria-controls="v_latest_info">
+                            <h2 id="v_latest_gameversion">v0.0.0</h2>
+                    </button> 
+                    </h2>
+                </div>
+        
+                <div id="v_latest_info" class="collapse show" aria-labelledby="v_latest" data-parent="#faqAccordian">
+                    <div class="card-body">
+                        <h2 id="v_latest_date">Release Date: </h2>
+                        <br><br>
+                        <div id="v_latest_body">If you see this text, reload the page.</div>
 
+                    </div>
+                </div>
+            </div>
+
+            
+<!--
+            //example:
             <div class="card">
                 <div class="card-header" id="v1-3-25">
                     <h2 class="mb-0">
                         <button class="btn btn-link btn-block text-justify collapsed" type="button" data-toggle="collapse"
-                            data-target="#v1-3-25_info" aria-expanded="true" aria-controls="v1-3-25_info">
+                            data-target="#v1-3-25_info" aria-expanded="false" aria-controls="v1-3-25_info">
                             <h2>v1.3.25</h2>
                     </button> 
                     </h2>
                 </div>
         
-                <div id="v1-3-25_info" class="collapse show" aria-labelledby="v1-3-25" data-parent="#faqAccordian">
+                <div id="v1-3-25_info" class="collapse" aria-labelledby="v1-3-25" data-parent="#faqAccordian">
                     <div class="card-body">
                         
                         <h2>Release Date: May 10, 2025</h2>
-                        <h2>v1.3.25 Patchnotes</h2>
                         <p>Hello there! This is a small patch with bug fixes for the initial <a
                                 href="https://github.com/JKGDevs/JediKnightGalaxies/releases/tag/Version1.3.24">v1.3.24 released earlier</a>
                             this month, and fixes issues found in our public beta testing.</p>
@@ -123,6 +148,7 @@
                     </div>
                 </div>
             </div>
+-->
 
             <div class="card">
                 <div class="card-header" id="v1-3-24">
@@ -2202,18 +2228,51 @@
 
         <script async type="text/javascript" src="scripts/scripts.js"></script>
 
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/dompurify@3.3.0/dist/purify.min.js"></script>
+
         <script async type="text/javascript">
             $( document ).ready(function() 
             {
-                 $.getJSON("https://api.github.com/repos/JKGDevs/JediKnightGalaxies/releases/latest").done(function (json) 
+                $.getJSON("https://api.github.com/repos/JKGDevs/JediKnightGalaxies/releases/latest").done(function (json) 
                 {
                     var release = json; //set release equal to json
                     var version = release.tag_name; //which version the tag is
                     version = version.replace("Version", "v");
-                    document.getElementById("gameversion").innerHTML = version;
+                    document.getElementById("v_latest_gameversion").innerHTML = version;
+                    var dateStamp = new Date(release.created_at);
+                    dateStamp = dateStamp.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+                    var patchnotes = DOMPurify.sanitize(marked.parse(release.body));   //markdown -> html using marked, then sanitize the html using DOMPurify
+
+                    // Wrap every image in <p class="text-center"><img clas="img-fluid"></p>
+                    var container = document.createElement("div"); // Create a temporary container
+                    container.innerHTML = patchnotes;
+
+                    // Wrap images in centered paragraphs
+                    container.querySelectorAll("img").forEach(function(img) 
+                    {
+                        img.classList.add("img-fluid");
+
+                        var wrapper = document.createElement("p");
+                        wrapper.className = "text-center";
+
+                        img.parentNode.insertBefore(wrapper, img);
+                        wrapper.appendChild(img);
+
+                        //img.remove();   //remove img
+                    });
+                    
+
+                    // Insert into page
+
+                    document.getElementById("v_latest_body").innerHTML = container.innerHTML;
+                    document.getElementById("v_latest_date").innerHTML = "Release Date: " + dateStamp;
                 });
             });
         </script>
+
+
+        
 
     </body>
 </html>
