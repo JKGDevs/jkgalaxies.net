@@ -2234,6 +2234,7 @@
         <script async type="text/javascript">
             $( document ).ready(function() 
             {
+                //get latest patchnote
                 $.getJSON("https://api.github.com/repos/JKGDevs/JediKnightGalaxies/releases/latest").done(function (json) 
                 {
                     var release = json; //set release equal to json
@@ -2268,6 +2269,30 @@
                     document.getElementById("v_latest_body").innerHTML = container.innerHTML;
                     document.getElementById("v_latest_date").innerHTML = "Release Date: " + dateStamp;
                 });
+
+               
+
+                //get the other patchnotes
+                /*$.getJSON("https://api.github.com/repos/JKGDevs/JediKnightGalaxies/releases").done(function (json)
+                {
+                    var releases = json;
+                    var patches = releases.length;
+
+                    //github orders 0 == newest, 15 == oldest
+                    for(var i = 1; i<patches; i++)
+                    {
+                        $("div")
+                            .append($("<tr>")
+                                .append($("<td>")
+                                    .text("")
+                    )
+
+                    }
+                    
+
+                });*/
+
+
             });
         </script>
 
