@@ -106,6 +106,70 @@ $(document).ready(function()
             
     }
 
+    if($('body').hasClass("PatchNotes"))
+    {
+
+        //get latest patchnote
+        $.getJSON("https://api.github.com/repos/JKGDevs/JediKnightGalaxies/releases/latest").done(function (json) 
+        {
+            var release = json; //set release equal to json
+            var version = release.tag_name; //which version the tag is
+            var patchnoteURL = "https://github.com/JKGDevs/JediKnightGalaxies/releases/tag/Version";
+            version = version.replace("Version", "v");
+            document.getElementById("v_latest_gameversion").innerHTML = version;
+
+            var dateStamp = new Date(release.created_at);
+            dateStamp = dateStamp.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+            var patchnotes = DOMPurify.sanitize(marked.parse(release.body));   //markdown -> html using marked, then sanitize the html using DOMPurify
+
+            // Wrap every image in <p class="text-center"><img clas="img-fluid"></p>
+            var container = document.createElement("div"); // Create a temporary container
+            container.innerHTML = patchnotes;
+
+            // Wrap images in centered paragraphs
+            container.querySelectorAll("img").forEach(function (img) 
+            {
+                img.classList.add("img-fluid");
+
+                var wrapper = document.createElement("p");
+                wrapper.className = "text-center";
+
+                img.parentNode.insertBefore(wrapper, img);
+                wrapper.appendChild(img);
+
+                //img.remove();   //remove img
+            });
+
+
+            // Insert into page
+            document.getElementById("v_latest_body").innerHTML = container.innerHTML;
+            document.getElementById("v_latest_date").innerHTML = "Release Date: " + dateStamp;
+            document.getElementById("v_latest_patchtitle").innerHTML = version + " Patchnotes";
+            document.getElementById("v_latest_patchlink").href = patchnoteURL + version.replace("v", "");
+        });
+
+
+
+        //get the other patchnotes, todo or not todo?  Maybe we want old patchnotes to be indexed?
+        /*$.getJSON("https://api.github.com/repos/JKGDevs/JediKnightGalaxies/releases").done(function (json)
+        {
+            var releases = json;
+            var patches = releases.length;
+
+            //github orders 0 == newest, 15 == oldest
+            for(var i = 1; i<patches; i++)
+            {
+                $("div")
+                    .append($("<tr>")
+                        .append($("<td>")
+                            .text("")
+            )
+
+            }
+        });*/
+
+    }
+
     /*resize window before load is complete (for mobile)*/
     if ((window.innerHeight > window.innerWidth) && ($(window).width() < 768)) 
     {
