@@ -38,6 +38,7 @@ $(document).ready(function()
     /*load text from file into webpage*/
     if($('body').hasClass("IndexPage"))
     {
+        downloadHOverButtonHover();
         loadText("#manualNews", "text/newsFeed.txt");
         //loadText("#welcomemsg", "text/welcomeText.txt");  //disabled because we currently don't change this, so no need to make it more complex
     }
@@ -61,6 +62,7 @@ $(document).ready(function()
     if($('body').hasClass("AboutPage"))
     {
         handleImageModal();
+        downloadHOverButtonHover();
     }
 
     if($('body').hasClass("DiscordPage"))
@@ -75,35 +77,6 @@ $(document).ready(function()
         window.onload = function() {
             window.location.replace("https://dark-clan.servegame.com/serverlist_new/serverlist.html#autoRefresh=1&theme=dark&game=jkg&sortBy=humans");
         }
-    }
-
-    
-    if($('body').hasClass("IndexPage"))
-    {
-        //handle hovering dwnload btn
-        let hover_dwnload_btn = document.getElementById('downloadHoverButton');
-        hover_dwnload_btn.onmouseover = hover_dwn_btn;
-        hover_dwnload_btn.onmouseleave = unhover_dwn_btn
-        hover_dwn_btn_text = "";
-        
-        function hover_dwn_btn(btn)
-        {
-            dwn_btn_text = btn.currentTarget.innerHTML;
-            btn.currentTarget.innerHTML = "Get<br>JKG!";
-            
-        }
-        
-        function unhover_dwn_btn(btn)
-        {
-            btn.currentTarget.innerHTML = dwn_btn_text;
-        }
-
-        //only win10 currently supports extended unicode :( so nobody else gets fancy download arrow yet
-        if ((window.navigator.userAgent.indexOf("Windows NT 10.0") !=-1))
-        {
-            document.getElementById("downloadHoverButton").innerHTML = "&#11123;";
-        }
-            
     }
 
     if($('body').hasClass("PatchNotes"))
@@ -620,4 +593,32 @@ function copyMediaShare()
     navigator.clipboard.writeText(document.getElementById("rawtext").innerHTML);
     document.getElementById("clipNotify").style.display = "block";
     document.getElementById("clipNotify").style.visibility = "visible";
+}
+
+/* download button on about/index pages */
+function downloadHOverButtonHover()
+{
+        //handle hovering dwnload btn
+        let hover_dwnload_btn = document.getElementById('downloadHoverButton');
+        hover_dwnload_btn.onmouseover = hover_dwn_btn;
+        hover_dwnload_btn.onmouseleave = unhover_dwn_btn
+        hover_dwn_btn_text = "";
+        
+        function hover_dwn_btn(btn)
+        {
+            dwn_btn_text = btn.currentTarget.innerHTML;
+            btn.currentTarget.innerHTML = "Get<br>JKG!";
+            
+        }
+        
+        function unhover_dwn_btn(btn)
+        {
+            btn.currentTarget.innerHTML = dwn_btn_text;
+        }
+
+        //only win10 currently supports extended unicode :( so nobody else gets fancy download arrow yet
+        if ((window.navigator.userAgent.indexOf("Windows NT 10.0") !=-1))
+        {
+            document.getElementById("downloadHoverButton").innerHTML = "&#11123;";
+        }
 }
